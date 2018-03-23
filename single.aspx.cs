@@ -93,7 +93,7 @@ public partial class 单品 : System.Web.UI.Page
         AlipayTradePagePayRequest payRequest = new AlipayTradePagePayRequest();
         payRequest.SetBizModel(model);
         string form = client.pageExecute(payRequest).Body;
-        Response.Write("<script> alert('Success');</script>");
         Response.Write(form);
+        Response.Write("<script> alert('Success');</script>");
     }
 }
