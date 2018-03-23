@@ -66,6 +66,7 @@
 </head>
 
 <body>
+    <form id="form1" runat="server">
 <!-----header部分------->
 
 	<ul id="gudie">
@@ -108,7 +109,7 @@
   <img src="images/shopdetail/macbook03.jpg" width="400" height="400" />
 
 	</div>
-		<div id="showsum"></div>
+		<div id="`` 1showsum"></div>
 		<p class="showpage">
  		 <a href="javascript:void(0);" id="showlast"> < </a>
   		 <a href="javascript:void(0);" id="shownext"> > </a>
@@ -121,7 +122,7 @@
     <div class="centerbox">
     	<p class="imgname">Macbook</p>
     	<p class="Aprice">底价：<samp>￥24000.00</samp></p>
-    	<p class="price">当前价：<samp>￥<%=price %></samp></p>
+    	<p class="price">当前价：<samp runat="server">￥<%=price %></samp></p>
     	<p class="youhui">店铺优惠：<samp>包邮</samp></p>
     	<p class="kefu">客服：<a href="mailto:keepagreement@foxmail.com" title="18018848081"><img src="images/shopdetail/tell03.png" margin-top="10px"margin-left="10px"
 	width="90px"></a></p>
@@ -135,9 +136,10 @@
         <p class="chima">规格：</p>
         <p class="buy">
             <%if (userId != null){%>
-                <a href="single.aspx" id="firstbuy">竞价</a>
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:Button ID="Button1" runat="server"  Text="竞价"  Visible="True"  style="z-index:999" Height="27px" BackColor="#FF3300" Font-Bold="True" ForeColor="White" OnClick="Button1_Click1"/>
             <%}else{%>
-                <a href="home.aspx">请先登录</a>
+                <a href="login.aspx">请先登录</a>
             <%} %>
             <a href="#">加入愿望单</a>
         </p>
@@ -379,6 +381,8 @@
     
 	</div>
 </div>
+
+    </form>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="BlockChain.aspx.cs" Inherits="BlockChain" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" ValidateRequest="false" CodeFile="BlockChain.aspx.cs" Inherits="BlockChain" %>
 
 <!DOCTYPE html>
 

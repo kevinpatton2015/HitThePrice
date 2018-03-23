@@ -14,6 +14,7 @@ public partial class BlockChain : System.Web.UI.Page
     public static int flag = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
+
         if (Session["userID"] != null)
         {
             userId = Session["userID"].ToString();
@@ -52,6 +53,7 @@ public partial class BlockChain : System.Web.UI.Page
         }       
     }
 }
+
 public struct Block
 {
     /// <summary>
