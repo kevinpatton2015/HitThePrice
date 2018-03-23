@@ -6,12 +6,13 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.OleDb;
 using System.Configuration;
 using System.Web.Security;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using System.Data.OleDb;
-public partial class denglu : System.Web.UI.Page
+
+public partial class re : System.Web.UI.Page
 {
     public string strConnection;
     SqlConnection conn;
