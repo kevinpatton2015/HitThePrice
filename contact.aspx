@@ -192,8 +192,8 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.html">Home</a> / Contact Us</div>
-                                <h1 class="pagetitle">Contact Us</h1>
+                                <div class="breadcrumb"><a href="index.html">首页</a> / 联系我们</div>
+                                <h1 class="pagetitle">我们在这里</h1>
                                 	<div class="frame">
                        				<iframe src="map.html" style="width:100%; height:316px; border:0; margin:0 0 0px 0; display:block;"></iframe>
                                     </div>
@@ -235,13 +235,12 @@
                     	<div class="sidebar">
                         <ul>
                             <li class="widget-container">
-                                <h2 class="widget-title">Our Address</h2>
+                                <h2 class="widget-title">公司地址</h2>
                                 <div class="textarea">
                                 <p>上海市 奉贤区</p>
                                     <p>奉浦大道123号</p>
                                     <p>上海商学院</p>
-                                
-                                <p>Telp: +86 64870020
+                                    <p>Telp: +86 64870020
                                     </p>
                                 
                                   <a href="mailto:kevinpatton2015@icloud.com"> kevinpatton2015@icloud.com</a>

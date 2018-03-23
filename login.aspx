@@ -22,7 +22,7 @@
 
 	<!-- CSS
   ================================================== -->
-  	<link href='http://fonts.useso.com/css?family=Ubuntu:400,700,500,300,400italic,300italic' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.useso.com/css?family=Ubuntu:400,700,500,300,400italic,300italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/inner.css" />
     <link rel="stylesheet" href="styles/layout.css" />
@@ -142,7 +142,7 @@
                             </li>
                             <li><a href="portfolio.html">近期热卖</a></li>
                             <li><a href="product-list.html">最省钱</a></li>
-                            <li><a href="contact.html">联系我们</a></li>
+                            <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
                     </nav><!-- nav -->	
                     </div>
@@ -186,8 +186,8 @@
                                     <form method="post" action="" id="loginform1">
                                     <fieldset>
                                     <label>手机号：</label><br />
-                                    <input type="text"/><br />
-                                    <input type="button" class="button" value="注册" />
+                                    <input type="text" name="phone_number" id="phone_number" runat="server"/><br />
+                                    <input type="button" class="button" value="注册" onserverclick="Direct2Register" runat="server"/>
                                     </fieldset>
                                     </form>
                                 </div>

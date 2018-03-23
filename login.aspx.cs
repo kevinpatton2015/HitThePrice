@@ -46,7 +46,7 @@ public partial class re : System.Web.UI.Page
                     Session["userID"] = this.TextBox1.Text.Trim();
                     if (IsPostBack)
                     {
-                        Response.Write("<script>window.location.href='home.aspx';</script>");
+                        Response.Write("<script>window.location.href='index.html';</script>");
                     }
                     Session["name"] = TextBox1.Text;
                 }
@@ -71,5 +71,12 @@ public partial class re : System.Web.UI.Page
         conn.Open();
        
     }*/
+    }
+
+    protected void Direct2Register(object sender, EventArgs e)
+    {
+        string Phone = phone_number.Value;
+        Session["Phone"] = Phone;
+        Response.Write("<script>alert('即将跳转到注册页');window.location.href='register.aspx';</script>");
     }
 }
