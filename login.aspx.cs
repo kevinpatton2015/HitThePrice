@@ -46,7 +46,7 @@ public partial class re : System.Web.UI.Page
                     Session["userID"] = this.TextBox1.Text.Trim();
                     if (IsPostBack)
                     {
-                        Response.Write("<script>window.location.href='index.html';</script>");
+                        Response.Write("<script>window.location.href='index.aspx';</script>");
                     }
                     Session["name"] = TextBox1.Text;
                 }
