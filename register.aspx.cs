@@ -39,25 +39,24 @@ public partial class re : System.Web.UI.Page
 
         string strConnection = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("userchec.mdb");
         OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
-        objConnection.Open();//打开连接 
 
         //写入用户信息到数据库
         bool IsSuccess=true;
         try
         {
             string sqlstr = "insert into user_infor" + "(txtUserID,txtLoginName,txtPwd,txtEmail,txtSecPwd)" + "values('" + Name + "','" + Name + "','" + Password + "','" + EmailAddress + "','" + Password + "')";
-            objConnection.Open();
+            objConnection.Open();//打开连接 
             OleDbCommand cmd = new OleDbCommand(sqlstr, objConnection);
-            cmd.ExecuteNonQuery();
-            objConnection.Close();
+            cmd.ExecuteNonQuery();          
         }
-        catch
+        catch(System.Data.OleDb.OleDbException)
         {
-            Response.Write("<script>alert('用户已注册');</script>");
             IsSuccess = false;
+            Response.Write("<script>alert('用户已注册');</script>");            
         }
         finally
         {
+            objConnection.Close();
             if (IsSuccess == true)
             {
                 Response.Write("<script>alert('注册成功');window.location.href='login.aspx';</script>");
