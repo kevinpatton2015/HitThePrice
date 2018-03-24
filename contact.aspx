@@ -53,10 +53,8 @@
                     <div class="container">
                         <div class="row">
                             <div id="topmenu" class=" six columns">
-                                <ul id="topnav">
                                     <div class="clear"></div>
                                     <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
-                                </ul>
                             </div>
                             <div id="topright" class="six columns">
                                 <div class="language">
@@ -79,8 +77,8 @@
 
                                 <form action="#" id="searchform" method="get">
 
-                                    <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field">
-                                    <input type="submit" value="" class="searchbutton">
+                                    <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field"/>
+                                    <input type="submit" value="" class="searchbutton"/>
 
                                 </form>
 
@@ -117,7 +115,7 @@
                     </div>
                 </div>
 
-               <section id="navigation">
+                     <section id="navigation">
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
@@ -129,34 +127,34 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li><a href="#">手机</a></li>
-                                            <li><a href="#">移动电源</a></li>
-                                            <li><a href="#">耳机</a></li>
-                                            <li><a href="#">存储卡</a></li>
+                                            <li><a href="product-list-phone.aspx">手机</a></li>
+                                            <li><a href="product-list-powerbank.aspx">移动电源</a></li>
+                                            <li><a href="product-list-headset.aspx">耳机</a></li>
+                                            <li><a href="product-list-SDcard.aspx">存储卡</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-                                            <li><a href="#">平板电脑</a></li>
-                                            <li><a href="#">笔记本电脑</a></li>
-                                            <li><a href="#">键盘</a></li>
-                                            <li><a href="#">鼠标</a></li>
+                                            <li><a href="product-list-tablet.aspx">平板电脑</a></li>
+                                            <li><a href="product-list-laptop.aspx">笔记本电脑</a></li>
+                                            <li><a href="product-list-keyboard.aspx">键盘</a></li>
+                                            <li><a href="product-list-mouse.aspx">鼠标</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-                                            <li><a href="#">数码相机</a></li>
-                                            <li><a href="#">单反相机</a></li>
-                                            <li><a href="#">微单\单电相机</a></li>
-                                            <li><a href="#">单反镜头</a></li>
+                                            <li><a href="product-list-digitalcamera.aspx">数码相机</a></li>
+                                            <li><a href="product-list-SLR.aspx">单反相机</a></li>
+                                            <li><a href="product-list-mmcamera.aspx">微单\单电相机</a></li>
+                                            <li><a href="product-list-lensofSLR.aspx">单反镜头</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-pad.aspx">家用电器</a>
+                                    <li><a href="product-appliance.aspx">家用电器</a>
                                         <ul>
-                                            <li><a href="#">电视机</a></li>
-                                            <li><a href="#">洗衣机</a></li>
-                                            <li><a href="#">空调</a></li>
-                                            <li><a href="#">电冰箱</a></li>
+                                            <li><a href="product-list-tv.aspx">电视机</a></li>
+                                            <li><a href="product-list-washingmachine.aspx">洗衣机</a></li>
+                                            <li><a href="product-list-airconditioner.aspx">空调</a></li>
+                                            <li><a href="product-list-refrigerator.aspx">电冰箱</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -195,26 +193,26 @@
                                     </div>
                                     <br>
 
-                                	<h3>Contact Form</h3>
+                                	<h3>你的建议</h3>
                                     <div id="contactform">
                                         <form id="contact" action="#">
                                           <fieldset>
 
                                           <div class="left">
-                                          <input type="text" name="name" id="name" size="50" value="your name *" class="text-input" onblur="if (this.value == ''){this.value = 'your name *'; }" onfocus="if (this.value == 'your name *') {this.value = ''; }" />
-                                          <input type="text" name="email" id="email" size="50" value="your email *" class="text-input" onblur="if (this.value == ''){this.value = 'your email *'; }" onfocus="if (this.value == 'your email *') {this.value = ''; }" />
-                                          <input type="text" name="website" id="website"  value="your website" class="text-input" onblur="if (this.value == ''){this.value = 'your website'; }" onfocus="if (this.value == 'your website') {this.value = ''; }" />
-                                          <input type="text" name="subject" id="subject"  value="subject" class="text-input" onblur="if (this.value == ''){this.value = 'subject'; }" onfocus="if (this.value == 'subject') {this.value = ''; }" />
-                                          	<span class="error" id="name_error">Please enter name !</span>
-                                          	<span class="error" id="email_error">Please enter email address !</span>
-                                          	<span class="error" id="email_error2">Please enter valid email address !</span>
-                                          	<span class="error" id="msg_error">Please enter message !</span>
-                                          	<span>Input that has ( * ) is required input</span>
+                                          <input type="text" name="name" id="name" size="50" value="姓名 *" class="text-input" onblur="if (this.value == ''){this.value = '姓名 *'; }" onfocus="if (this.value == '姓名 *') {this.value = ''; }" />
+                                          <input type="text" name="phone" id="phone" size="50" value="联系方式 *" class="text-input" onblur="if (this.value == ''){this.value = '联系方式 *'; }" onfocus="if (this.value == '联系方式 *') {this.value = ''; }" />
+                                          <input type="text" name="email" id="email"  value="邮箱" class="text-input" onblur="if (this.value == ''){this.value = '邮箱'; }" onfocus="if (this.value == '邮箱') {this.value = ''; }" />
+                                          <input type="text" name="address" id="address"  value="地址" class="text-input" onblur="if (this.value == ''){this.value = '地址'; }" onfocus="if (this.value == '地址') {this.value = ''; }" />
+                                          	<span class="error" id="name_error">请输入姓名！</span>
+                                          	<span class="error" id="phone_error">请输入联系方式！</span>
+                                          	<span class="error" id="email_error">请输入邮箱！</span>
+                                          	<span class="error" id="msg_error">请输入建议！</span>
+                                          	<span>注：带*项为必填</span>
                                           </div>
                                           <div class="right">
-                                          <textarea cols="60" rows="10" name="msg" id="msg" class="text-input">Message *</textarea>
+                                          <textarea cols="60" rows="10" name="msg" id="msg" class="text-input">建议 *</textarea>
                                           <br class="clear" />
-                                          <input type="submit" name="submit" class="button mini" id="submit_btn" value="Send Message"/>
+                                          <input type="submit" name="submit" class="button mini" id="submit_btn" value="提交建议"/>
                                           </div>
                                           </fieldset>
                                         </form>
@@ -260,18 +258,18 @@
             <div id="carousel"  class="es-carousel-wrapper">
                 <div class="es-carousel">
                     <ul>
-                        <li><a title="Audio Jungle"  href="#"><img alt="Audio Jungle" src="images/content/audiojungle.png"></a></li>
-                        <li><a title="Active Den"  href="#"><img alt="Active Den" src="images/content/activeden.png"></a></li>
-                        <li><a title="Graphic River"  href="#"><img alt="Graphic River" src="images/content/graphicriver.png"></a></li>
-                        <li><a title="Photo Dune"  href="#"><img alt="Photo Dune" src="images/content/photodune.png"></a></li>
-                        <li><a title="Theme Forest"  href="#"><img alt="Theme Forest" src="images/content/themeforest.png"></a></li>
-                        <li><a title="Video Hive"  href="#"><img alt="Video Hive" src="images/content/videohive.png"></a></li>
-                        <li><a title="Audio Jungle"  href="#"><img alt="Audio Jungle" src="images/content/audiojungle.png"></a></li>
-                        <li><a title="Active Den"  href="#"><img alt="Active Den" src="images/content/activeden.png"></a></li>
-                        <li><a title="Graphic River"  href="#"><img alt="Graphic River" src="images/content/graphicriver.png"></a></li>
-                        <li><a title="Photo Dune"  href="#"><img alt="Photo Dune" src="images/content/photodune.png"></a></li>
-                        <li><a title="Theme Forest"  href="#"><img alt="Theme Forest" src="images/content/themeforest.png"></a></li>
-                        <li><a title="Video Hive"  href="#"><img alt="Video Hive" src="images/content/videohive.png"></a></li>
+                        <li><a title="Audio Jungle"  href="#"><img alt="Audio Jungle" src="images/content/audiojungle.png"/></a></li>
+                        <li><a title="Active Den"  href="#"><img alt="Active Den" src="images/content/activeden.png"/></a></li>
+                        <li><a title="Graphic River"  href="#"><img alt="Graphic River" src="images/content/graphicriver.png"/></a></li>
+                        <li><a title="Photo Dune"  href="#"><img alt="Photo Dune" src="images/content/photodune.png"/></a></li>
+                        <li><a title="Theme Forest"  href="#"><img alt="Theme Forest" src="images/content/themeforest.png"/></a></li>
+                        <li><a title="Video Hive"  href="#"><img alt="Video Hive" src="images/content/videohive.png"/></a></li>
+                        <li><a title="Audio Jungle"  href="#"><img alt="Audio Jungle" src="images/content/audiojungle.png"/></a></li>
+                        <li><a title="Active Den"  href="#"><img alt="Active Den" src="images/content/activeden.png"/></a></li>
+                        <li><a title="Graphic River"  href="#"><img alt="Graphic River" src="images/content/graphicriver.png"/></a></li>
+                        <li><a title="Photo Dune"  href="#"><img alt="Photo Dune" src="images/content/photodune.png"/></a></li>
+                        <li><a title="Theme Forest"  href="#"><img alt="Theme Forest" src="images/content/themeforest.png"/></a></li>
+                        <li><a title="Video Hive"  href="#"><img alt="Video Hive" src="images/content/videohive.png"/></a></li>
                     </ul>
                 </div>
                 <div class="clear"></div>
@@ -355,7 +353,7 @@
             <div id="outercopyright">
                 <div class="container">
                     <div id="copyright">
-                        Copyright &copy;2012. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作</a>
+                        Copyright &copy;2018. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作
                     </div>
                     <ul class="sn">
                         <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>

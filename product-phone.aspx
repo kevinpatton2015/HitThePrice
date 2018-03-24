@@ -119,8 +119,7 @@
                         </div>
                     </div>
                 </div>
-
-               <section id="navigation">
+ <section id="navigation">
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
@@ -132,34 +131,34 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li><a href="#">手机</a></li>
-                                            <li><a href="#">移动电源</a></li>
-                                            <li><a href="#">耳机</a></li>
-                                            <li><a href="#">存储卡</a></li>
+                                            <li><a href="product-list-phone.aspx">手机</a></li>
+                                            <li><a href="product-list-powerbank.aspx">移动电源</a></li>
+                                            <li><a href="product-list-headset.aspx">耳机</a></li>
+                                            <li><a href="product-list-SDcard.aspx">存储卡</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-                                            <li><a href="#">平板电脑</a></li>
-                                            <li><a href="#">笔记本电脑</a></li>
-                                            <li><a href="#">键盘</a></li>
-                                            <li><a href="#">鼠标</a></li>
+                                            <li><a href="product-list-tablet.aspx">平板电脑</a></li>
+                                            <li><a href="product-list-laptop.aspx">笔记本电脑</a></li>
+                                            <li><a href="product-list-keyboard.aspx">键盘</a></li>
+                                            <li><a href="product-list-mouse.aspx">鼠标</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-                                            <li><a href="#">数码相机</a></li>
-                                            <li><a href="#">单反相机</a></li>
-                                            <li><a href="#">微单\单电相机</a></li>
-                                            <li><a href="#">单反镜头</a></li>
+                                            <li><a href="product-list-digitalcamera.aspx">数码相机</a></li>
+                                            <li><a href="product-list-SLR.aspx">单反相机</a></li>
+                                            <li><a href="product-list-mmcamera.aspx">微单\单电相机</a></li>
+                                            <li><a href="product-list-lensofSLR.aspx">单反镜头</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-pad.aspx">家用电器</a>
+                                    <li><a href="product-appliance.aspx">家用电器</a>
                                         <ul>
-                                            <li><a href="#">电视机</a></li>
-                                            <li><a href="#">洗衣机</a></li>
-                                            <li><a href="#">空调</a></li>
-                                            <li><a href="#">电冰箱</a></li>
+                                            <li><a href="product-list-tv.aspx">电视机</a></li>
+                                            <li><a href="product-list-washingmachine.aspx">洗衣机</a></li>
+                                            <li><a href="product-list-airconditioner.aspx">空调</a></li>
+                                            <li><a href="product-list-refrigerator.aspx">电冰箱</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -191,38 +190,38 @@
                     
                         	<section class="content" id="product-container">
                             
-                                <div class="breadcrumb"><a href="index.aspx">Home</a> / Product Grid </div>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 手机数码 </div>
                    				<img src="images/content/clothing.jpg" alt=""/>
                                 
                                 <div class="sortPagiBar">
                                 <form action="index.aspx" class="productsSortForm">
                                     <p class="select">
-                                        <label for="selectPrductSort">Sort by</label>
+                                          <label for="selectPrductSort">综合排序</label>
                                         <select class="selectProductSort">
-                                            <option selected="selected" value="position:asc">Default</option>
-                                            <option value="price:asc">Price: lowest first</option>
-                                            <option value="price:desc">Price: highest first</option>
-                                            <option value="name:asc">Product Name: A to Z</option>
-                                            <option value="name:desc">Product Name: Z to A</option>
-                                            <option value="quantity:desc">In-stock first</option>
+                                            <option selected="selected" value="position:asc">综合</option>
+                                            <option value="price:asc">价格升序</option>
+                                            <option value="price:desc">价格降序</option>
+                                            <option value="quantity:desc">库存最多</option>
+                                            <option value="name:asc">品名拼音A到Z</option>
+                                            <option value="name:desc">品名拼音Z到A</option>
                                        	</select>
                                     </p>
                                 </form>
                                 
                                 <form action="index.aspx" class="productsShowForm">
                                     <p class="select">
-                                        <label for="selectPrductSort">Show:</label>
-                                        <select class="selectProductSort">
-                                            <option selected="selected"> 4 </option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                        <label>品牌：</label>
+                                        <select>
+                                            <option selected="selected"> … </option>
+                                            <option>苹果</option>
+                                            <option>小米</option>
+                                            <option>华为</option>
+                                            <option>三星</option>
+                                            <option>中兴</option>
                                        	</select>
                                     </p>
                                 </form>
-                                <a href="#" class="button">Compare</a>
+                                <a href="#" class="button">筛选</a>
                                 
                                 </div>
                                 
@@ -230,14 +229,14 @@
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
                                         	<span class="new"></span>
-                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="//g-search3.alicdn.com/img/bao/uploaded/i4/i3/1711821639/TB2zxmqnZnI8KJjSspeXXcwIpXa_!!1711821639.jpg" alt=""/></a>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
+                                            <a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx"><img src="images/content/products/iphonex-1.jpg" alt=""/></a>
+                                            <h3><a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx">苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details-iPhone X.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -505,7 +504,7 @@
             <div id="outercopyright">
                 <div class="container">
                     <div id="copyright">
-                        Copyright &copy;2012. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作</a>
+                        Copyright &copy;2018. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作
                     </div>
                     <ul class="sn">
                         <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>

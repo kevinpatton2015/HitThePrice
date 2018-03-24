@@ -30,7 +30,11 @@
 
 .row .one_half				{ width: 50%; }
 .row .one_third				{ width: 33.333%;}
-.row .one_fourth			{ width: 25%; }
+.row .one_fourth			{ width: 22%;
+    top: 0px;
+    left: 0px;
+    height: 201px;
+}
 .row .one_fifth				{ width: 20%;}
 .row .one_sixth 			{ width: 16.667%;}
 

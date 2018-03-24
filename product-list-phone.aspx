@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>电脑、配件 - HitThePrice - 价格再低一点</title>
+	<title>HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-               <section id="navigation">
+            <section id="navigation">
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
@@ -189,36 +189,36 @@
                     <section id="maincontent" class="ten columns positionleft">
                     	<div class="padcontent">
                     
-                        	<section class="content" id="product-container">
+                        	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">Home</a> / Product Grid </div>
-                   				<img src="images/content/clothing.jpg" alt=""/>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 手机数码 / 手机 </div>
+                   				<h1 class="pagetitle">手机</h1>
                                 
                                 <div class="sortPagiBar">
                                 <form action="index.aspx" class="productsSortForm">
                                     <p class="select">
-                                        <label for="selectPrductSort">Sort by</label>
+                                         <label for="selectPrductSort">综合排序</label>
                                         <select class="selectProductSort">
-                                            <option selected="selected" value="position:asc">Default</option>
-                                            <option value="price:asc">Price: lowest first</option>
-                                            <option value="price:desc">Price: highest first</option>
-                                            <option value="name:asc">Product Name: A to Z</option>
-                                            <option value="name:desc">Product Name: Z to A</option>
-                                            <option value="quantity:desc">In-stock first</option>
+                                            <option selected="selected" value="position:asc">综合</option>
+                                            <option value="price:asc">价格升序</option>
+                                            <option value="price:desc">价格降序</option>
+                                            <option value="quantity:desc">库存最多</option>
+                                            <option value="name:asc">品名拼音A到Z</option>
+                                            <option value="name:desc">品名拼音Z到A</option>
                                        	</select>
                                     </p>
                                 </form>
                                 
                                 <form action="index.aspx" class="productsShowForm">
                                     <p class="select">
-                                        <label for="selectPrductSort">Show:</label>
-                                        <select class="selectProductSort">
-                                            <option selected="selected"> 4 </option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                        <label>品牌：</label>
+                                        <select>
+                                            <option selected="selected"> … </option>
+                                            <option>苹果</option>
+                                            <option>小米</option>
+                                            <option>华为</option>
+                                            <option>三星</option>
+                                            <option>中兴</option>
                                        	</select>
                                     </p>
                                 </form>
@@ -227,127 +227,113 @@
                                 </div>
                                 
                                 <div class="row">
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                        	<span class="new"></span>
-                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
+                                <div id="product-list-container">
+                                
+                                	<div class="product-list-wrapper">
+                                        <div class="one_fifth columns product-img">
+                                            <a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx"><img src="images/content/products/iphonex-1.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="three_fifth columns">
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;苹果手机</div>
+                                            <h3><a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx">苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机</a></h3>
+                                            <p>优点：5.15英寸1920x1080像素屏幕，支持全功能NFC、微信指纹支付；四曲面玻璃的握持感优秀、外观；后置双1200万广角+长焦双摄，支持四轴光学防抖；旗舰级别的CPU和GPU，性能强大，MIUI9系统流畅。 <br />缺点：系统占内存过多；续航差、发热严重。</p>
+                                        </div>
+                                        <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                <div class="price">￥7749.00</div>
+                                                <form action="index.aspx" class="compare">
+                                                <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
+                                                <label>Add to Compare</label>
+                                                </form>
+                                                <div class="but-wrapper">
+                                                	<a href="checkout.htm" class="cart">加入收藏</a>
+                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
+										<div class="clear"></div>
+                                	</div>
+                                    
+                                	<div class="product-list-wrapper">
+                                        <div class="one_fifth columns product-img">
                                             <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="three_fifth columns">
+                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
                                             <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        </div>
+                                        <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                <div class="price">$120.00</div>
+                                                <form action="index.aspx" class="compare">
+                                                <input type="checkbox" class="comparator"> 
+                                                <label>Add to Compare</label>
+                                                </form>
+                                                <div class="but-wrapper">
+                                                	<a href="checkout.htm" class="cart">加入收藏</a>
+                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
+										<div class="clear"></div>
+                                	</div>
+                                    
+                                	<div class="product-list-wrapper">
+                                        <div class="one_fifth columns product-img">
                                             <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="three_fifth columns">
+                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
                                             <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        </div>
+                                        <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                <div class="price">$120.00</div>
+                                                <form action="index.aspx" class="compare">
+                                                <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
+                                                <label>Add to Compare</label>
+                                                </form>
+                                                <div class="but-wrapper">
+                                                	<a href="checkout.htm" class="cart">加入收藏</a>
+                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
+										<div class="clear"></div>
+                                	</div>
+                                    
+                                	<div class="product-list-wrapper">
+                                        <div class="one_fifth columns product-img">
                                             <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
+                                        </div>
+                                        <div class="three_fifth columns">
+                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
                                             <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        </div>
+                                        <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                <div class="price">$120.00</div>
+                                                <form action="index.aspx" class="compare">
+                                                <input type="checkbox"  class="comparator" > 
+                                                <label>Add to Compare</label>
+                                                </form>
+                                                <div class="but-wrapper">
+                                                	<a href="checkout.htm" class="cart">加入收藏</a>
+                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-5.jpg" alt=""/></a>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="White Dress" href="product-details.aspx"><img src="images/content/products/p-6.jpg" alt=""/></a>
-                                            <h3><a title="White Dress" href="product-details.aspx">White Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Unique Dress" href="product-details.aspx"><img src="images/content/products/p-7.jpg" alt=""/></a>
-                                            <h3><a title="Unique Dress" href="product-details.aspx">Unique Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Flower Dress" href="product-details.aspx"><img src="images/content/products/p-8.jpg" alt=""/></a>
-                                            <h3><a title="Flower Dress" href="product-details.aspx">Flower Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+										<div class="clear"></div>
+                                	</div>
+                                    
+                                </div>    
                                 </div>
 								<div class="wp-pagenavi">
                                 	<a href="#" class="page">1</a><span class="current"><span>2</span></span><a href="#" class="page">3</a> &nbsp;&nbsp;Showing 4 to 4 of 12 (3 Pages)

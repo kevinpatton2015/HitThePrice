@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>购物车 - HitThePrice - 价格再低一点</title>
+	<title>我的收藏 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-               <section id="navigation">
+                  <section id="navigation">
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
@@ -132,34 +132,34 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li><a href="#">手机</a></li>
-                                            <li><a href="#">移动电源</a></li>
-                                            <li><a href="#">耳机</a></li>
-                                            <li><a href="#">存储卡</a></li>
+                                            <li><a href="product-list-phone.aspx">手机</a></li>
+                                            <li><a href="product-list-powerbank.aspx">移动电源</a></li>
+                                            <li><a href="product-list-headset.aspx">耳机</a></li>
+                                            <li><a href="product-list-SDcard.aspx">存储卡</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-                                            <li><a href="#">平板电脑</a></li>
-                                            <li><a href="#">笔记本电脑</a></li>
-                                            <li><a href="#">键盘</a></li>
-                                            <li><a href="#">鼠标</a></li>
+                                            <li><a href="product-list-tablet.aspx">平板电脑</a></li>
+                                            <li><a href="product-list-laptop.aspx">笔记本电脑</a></li>
+                                            <li><a href="product-list-keyboard.aspx">键盘</a></li>
+                                            <li><a href="product-list-mouse.aspx">鼠标</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-                                            <li><a href="#">数码相机</a></li>
-                                            <li><a href="#">单反相机</a></li>
-                                            <li><a href="#">微单\单电相机</a></li>
-                                            <li><a href="#">单反镜头</a></li>
+                                            <li><a href="product-list-digitalcamera.aspx">数码相机</a></li>
+                                            <li><a href="product-list-SLR.aspx">单反相机</a></li>
+                                            <li><a href="product-list-mmcamera.aspx">微单\单电相机</a></li>
+                                            <li><a href="product-list-lensofSLR.aspx">单反镜头</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-pad.aspx">家用电器</a>
+                                    <li><a href="product-appliance.aspx">家用电器</a>
                                         <ul>
-                                            <li><a href="#">电视机</a></li>
-                                            <li><a href="#">洗衣机</a></li>
-                                            <li><a href="#">空调</a></li>
-                                            <li><a href="#">电冰箱</a></li>
+                                            <li><a href="product-list-tv.aspx">电视机</a></li>
+                                            <li><a href="product-list-washingmachine.aspx">洗衣机</a></li>
+                                            <li><a href="product-list-airconditioner.aspx">空调</a></li>
+                                            <li><a href="product-list-refrigerator.aspx">电冰箱</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -191,8 +191,8 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 购物车</div>
-                                <h1 class="pagetitle">我的购物车</h1>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 我的收藏</div>
+                                <h1 class="pagetitle">我的收藏</h1>
   
                                 <div class="table_block" id="order-detail-content">
                                     <table id="cart_summary">
@@ -210,51 +210,60 @@
 
                                         <tbody>
                                             <tr class="cart_item" >
-                                                <td class="cart_product">
-                                                    <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
+                                                <td width="70px" class="cart_product">
+                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
                                                 </td>
-                                                <td class="cart_description">
-                                                    iPhone 4S for Gift    	
+                                                <td width="250px"class="cart_description">
+                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
+                                                   【华东爽购】Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机  </a>   	
                                                 </td>
-                                                <td class="cart_ref">--</td>
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-                                                <td class="cart_unit"> $120.00 </td>
-                                                <td class="cart_quantity"> 1 </td>
-                                                <td class="cart_total">
-                                                    <span class="price">$120.00</span>
+                                                <td width="10px"class="cart_ref">--</td>
+                                                <td width="10px"class="cart_avail">&nbsp;</td>
+                                                <td width="100px" class="cart_unit item">
+                                                <a class="button" href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">GO</a>
                                                 </td>
-                                            </tr>
-                                            
-                                            <tr class="cart_item" >
-                                                <td class="cart_product">
-                                                    <a href="#"><img alt="" src="images/content/products/p-small2.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                    Modern Chair      	
-                                                </td>
-                                                <td class="cart_ref">--</td>
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-                                                <td class="cart_unit"> $250.00   </td>
-                                                <td class="cart_quantity"> 1 </td>
-                                                <td class="cart_total">
-                                                    <span class="price">$250.00  </span>
+                                                <td width="70px"class="cart_description"> 包邮 </td>
+                                                <td width="40px"class="cart_total">
+                                                    <span class="price"><font color = ＂#FF0000＂ >￥7749.00</span>
                                                 </td>
                                             </tr>
                                             
                                             <tr class="cart_item" >
                                                 <td class="cart_product">
-                                                    <a href="#"><img alt="" src="images/content/products/p-small3.jpg"></a>
+                                                    <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434"><img alt="" src="http://gfs10.gomein.net.cn/T1agbvBCKj1RCvBVdK_60.jpg"></a>
                                                 </td>
                                                 <td class="cart_description">
-                                                    Man's Watch Brown  	
+                                                     <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
+                                                    Apple iPhone X 64G 深空灰 全网通4G手机 </a>   	
                                                 </td>
                                                 <td class="cart_ref">--</td>
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-                                                <td class="cart_unit"> $120.00 </td>
-                                                <td class="cart_quantity"> 1 </td>
-                                                <td class="cart_total">
-                                                    <span class="price">$120.00</span>
+                                                <td width="10px"class="cart_avail">&nbsp;</td>
+                                                <td class="cart_unit item">
+                                                <a class="button" href="product-phone.aspx">GO</a></td>
+                                                <td class="cart_description"> 包邮 </td>
+                                                 <td class="cart_total">
+                                                    <span class="price"><font color = ＂#FF0000＂ >￥7888.00</span>
                                                 </td>
+
+                                            </tr>
+                                            
+                                            <tr class="cart_item" >
+                                                <td class="cart_product">
+                                                    <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1"><img alt="" src="http://img12.360buyimg.com/n8/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg"></a>
+                                                </td>
+                                                <td class="cart_description">
+                                                     <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
+                                                    Apple 苹果 手机 iPhone X 深空灰色 64G</a>    	
+                                                </td>
+                                                <td class="cart_ref">--</td>
+                                                <td width="10px"class="cart_avail">&nbsp;</td>
+                                                <td class="cart_unit item">
+                                                <a class="button" href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">GO</a></td>
+                                                <td class="cart_description"> 包邮 </td>
+                                                <td class="cart_total">
+                                                    <span class="price"><font color = ＂#FF0000＂ >￥7947.00</span>
+                                                </td>
+                                                
                                             </tr>
                                         </tbody>
                                         
@@ -495,7 +504,7 @@
             <div id="outercopyright">
                 <div class="container">
                     <div id="copyright">
-                        Copyright &copy;2012. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作</a>
+                        Copyright &copy;2018. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作
                     </div>
                     <ul class="sn">
                         <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>
