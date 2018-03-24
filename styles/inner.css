@@ -155,7 +155,10 @@ USE THIS STYLE SHEET FOR INNER PAGE
 /* Register */
 #register .row{ margin-bottom:50px;}
 #register h3{ text-transform:uppercase; font-size:13px;}
-#register .columns{ margin-bottom:0px;}
+#register .columns{ margin-bottom:0px;
+    top: 29px;
+    left: 12px;
+}
 #register label{ display:block; margin-bottom:5px; }
 #register input[type="text"], #register select { width:96%; padding:10px 5px;}
 #register #billing_company{ width:98%;}

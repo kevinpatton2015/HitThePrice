@@ -43,7 +43,7 @@ public partial class re : System.Web.UI.Page
                 if (this.TextBox2.Text.Trim() == read["txtPwd"].ToString().Trim())
                 {
                     Response.Write("<script language='javascript'>alert('登录成功');</script>");
-                    Session["userID"] = this.TextBox1.Text.Trim();
+                    Session["UserId"] = this.TextBox1.Text.Trim();
                     if (IsPostBack)
                     {
                         Response.Write("<script>window.location.href='index.aspx';</script>");
