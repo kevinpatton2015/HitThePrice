@@ -19,16 +19,19 @@ public partial class re : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-   //     billing_company.Value = Session["Phone"].ToString();
+        if (Session["Phone"]!=null)
+        {
+            string phone = Session["Phone"].ToString();
+            billing_phone.Value = phone;
+        }
+        
     }
 
     protected void Submit2Back(object sender, EventArgs e)
     {
         string Name = billing_name.Value;
         string Password = billing_password.Value;
-        string Company = billing_company.Value;
         string Address = billing_address_1.Value;
-        string Address2 = billing_address_2.Value;
         string City = billing_city.ToString();
         string Postcode = billing_postcode.ToString();
         string EmailAddress = billing_email.ToString();
@@ -61,4 +64,41 @@ public partial class re : System.Web.UI.Page
         return;
 
     }
+
+    protected void CheckIsRegistered(object sender, EventArgs e)
+    {
+        string Name = billing_name.Value;
+
+        string strConnection = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("userchec.mdb");
+        OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
+        objConnection.Open();
+
+        /* string strConnection = "Server=.;database=USER; Integrated Security=SSPI;"; ;
+         conn = new SqlConnection(strConnection);
+         conn.Open();*/
+        string sqlstr = "select* from user_infor where txtUserID='" + Name + "'";
+        OleDbCommand sqlcom = new OleDbCommand(sqlstr, objConnection);
+        OleDbDataReader read = sqlcom.ExecuteReader();
+        read.Read();
+        if (Name.Trim().Length == 0)
+        {
+            Response.Write("<script language='javascript'>alert('用户ID不得为空');</script>");
+            return;
+        }
+        if (read.HasRows)
+        {
+            if (Name.Trim() == read["txtUserID"].ToString().Trim())
+            {
+                Response.Write("<script language='javascript'>alert('该用户ID已注册');</script>");
+                return;
+            }
+        }
+        else
+        {
+            Response.Write("<script language='javascript'>alert('该用户ID可用');</script>");
+        }
+        read.Close();
+        conn.Close();
+    }
+
 }
