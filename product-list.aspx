@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>Lastore</title>
+	<title>HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -120,60 +120,56 @@
                     </div>
                 </div>
 
-                <section id="navigation">
+            <section id="navigation">
                     <div class="container">
-                        <div class="row">
-                            <nav id="nav-wrap" class="twelve columns">
-                                <ul id="sf-nav" class="sf-menu">
-                                    <li class="current"><a href="index.html">首页</a></li>
-                                    <li><a href="about.html">关于我们</a></li>
+                    <div class="row">
+                    <nav id="nav-wrap" class="twelve columns">
+                        <ul id="sf-nav" class="sf-menu">
+                            <li class="current"><a href="index.aspx">首页</a></li>
+                            <li><a href="about.aspx">关于我们</a></li>
+                            <li><a href="catalogue.aspx">商品目录</a>
+                                <ul>
                                     <li>
-                                        <a href="catalogue.html">商品分类</a>
+                                        <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li>
-                                                <a href="product-phone.html">手机数码</a>
-                                                <ul>
-                                                    <li><a href="#">手机</a></li>
-                                                    <li><a href="#">移动电源</a></li>
-                                                    <li><a href="#">耳机</a></li>
-                                                    <li><a href="#">存储卡</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-laptop.html">电脑、配件</a>
-                                                <ul>
-                                                    <li><a href="#">平板电脑</a></li>
-                                                    <li><a href="#">笔记本电脑</a></li>
-                                                    <li><a href="#">键盘</a></li>
-                                                    <li><a href="#">鼠标</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-camera.html">摄影、摄像</a>
-                                                <ul>
-                                                    <li><a href="#">数码相机</a></li>
-                                                    <li><a href="#">单反相机</a></li>
-                                                    <li><a href="#">微单\单电相机</a></li>
-                                                    <li><a href="#">单反镜头</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-pad.html">家用电器</a>
-                                                <ul>
-                                                    <li><a href="#">电视机</a></li>
-                                                    <li><a href="#">洗衣机</a></li>
-                                                    <li><a href="#">空调</a></li>
-                                                    <li><a href="#">电冰箱</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="#">手机</a></li>
+                                            <li><a href="#">移动电源</a></li>
+                                            <li><a href="#">耳机</a></li>
+                                            <li><a href="#">存储卡</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="portfolio.html">近期热卖</a></li>
-                                    <li><a href="product-list.html">最省钱</a></li>
-                                    <li><a href="contact.aspx">联系我们</a></li>
-                                </ul><!-- topnav -->
-                            </nav><!-- nav -->
-                        </div>
+                                    <li><a href="product-laptop.aspx">电脑、配件</a>
+                                        <ul>
+                                            <li><a href="#">平板电脑</a></li>
+                                            <li><a href="#">笔记本电脑</a></li>
+                                            <li><a href="#">键盘</a></li>
+                                            <li><a href="#">鼠标</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="product-camera.aspx">摄影、摄像</a>
+                                        <ul>
+                                            <li><a href="#">数码相机</a></li>
+                                            <li><a href="#">单反相机</a></li>
+                                            <li><a href="#">微单\单电相机</a></li>
+                                            <li><a href="#">单反镜头</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="product-pad.aspx">家用电器</a>
+                                        <ul>
+                                            <li><a href="#">电视机</a></li>
+                                            <li><a href="#">洗衣机</a></li>
+                                            <li><a href="#">空调</a></li>
+                                            <li><a href="#">电冰箱</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="product-list.aspx">最省钱</a></li>
+                            <li><a href="contact.aspx">联系我们</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->	
+                    </div>
                     </div>
                 </section>
 
@@ -195,11 +191,11 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.html">Home</a> / Product List </div>
+                                <div class="breadcrumb"><a href="index.aspx">Home</a> / Product List </div>
                    				<h1 class="pagetitle">Product List</h1>
                                 
                                 <div class="sortPagiBar">
-                                <form action="index.html" class="productsSortForm">
+                                <form action="index.aspx" class="productsSortForm">
                                     <p class="select">
                                         <label>Sort by</label>
                                         <select>
@@ -213,7 +209,7 @@
                                     </p>
                                 </form>
                                 
-                                <form action="index.html" class="productsShowForm">
+                                <form action="index.aspx" class="productsShowForm">
                                     <p class="select">
                                         <label>Show:</label>
                                         <select>
@@ -235,23 +231,23 @@
                                 
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Woman's Dress Flower" href="product-details.html"><img src="images/content/products/p-1.jpg" alt=""/></a>
+                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.html">Woman's Dress Flower</a></h3>
+                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
                                                 <div class="price">$120.00</div>
-                                                <form action="index.html" class="compare">
+                                                <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">Add to cart</a>
-                                                    <a href="product-details.html"  class="more-link">Read more</a>  
+                                                    <a href="product-details.aspx"  class="more-link">Read more</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -261,23 +257,23 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Gold Dress" href="product-details.html"><img src="images/content/products/p-2.jpg" alt=""/></a>
+                                            <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Gold Dress" href="product-details.html">Gold Dress</a></h3>
+                                            <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
                                                 <div class="price">$120.00</div>
-                                                <form action="index.html" class="compare">
+                                                <form action="index.aspx" class="compare">
                                                 <input type="checkbox" class="comparator"> 
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">Add to cart</a>
-                                                    <a href="product-details.html"  class="more-link">Read more</a>  
+                                                    <a href="product-details.aspx"  class="more-link">Read more</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -287,23 +283,23 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Blue &amp; White" href="product-details.html"><img src="images/content/products/p-3.jpg" alt=""/></a>
+                                            <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Blue &amp; White" href="product-details.html">Blue &amp; White</a></h3>
+                                            <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
                                                 <div class="price">$120.00</div>
-                                                <form action="index.html" class="compare">
+                                                <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">Add to cart</a>
-                                                    <a href="product-details.html"  class="more-link">Read more</a>  
+                                                    <a href="product-details.aspx"  class="more-link">Read more</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -313,23 +309,23 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Brown Dress" href="product-details.html"><img src="images/content/products/p-4.jpg" alt=""/></a>
+                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Brown Dress" href="product-details.html">Brown Dress</a></h3>
+                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
                                                 <div class="price">$120.00</div>
-                                                <form action="index.html" class="compare">
+                                                <form action="index.aspx" class="compare">
                                                 <input type="checkbox"  class="comparator" > 
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">Add to cart</a>
-                                                    <a href="product-details.html"  class="more-link">Read more</a>  
+                                                    <a href="product-details.aspx"  class="more-link">Read more</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
