@@ -14,7 +14,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>Lastore</title>
+	<title>新用户注册 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -82,7 +82,7 @@
                     <div class="container">
                         <div class="row">
                             <div id="logo" class="six columns">
-                                <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                                <a href="index.aspx"><img src="images/logo.png" alt="" /></a>
                                 <span class="desc">Best Solution for your business</span>
                             </div>
                             <div class="right six columns">
@@ -127,60 +127,56 @@
                     </div>
                 </div>
 
-                <section id="navigation">
+            <section id="navigation">
                     <div class="container">
-                        <div class="row">
-                            <nav id="nav-wrap" class="twelve columns">
-                                <ul id="sf-nav" class="sf-menu">
-                                    <li class="current"><a href="index.html">首页</a></li>
-                                    <li><a href="about.html">关于我们</a></li>
+                    <div class="row">
+                    <nav id="nav-wrap" class="twelve columns">
+                        <ul id="sf-nav" class="sf-menu">
+                            <li class="current"><a href="index.aspx">首页</a></li>
+                            <li><a href="about.aspx">关于我们</a></li>
+                            <li><a href="catalogue.aspx">商品目录</a>
+                                <ul>
                                     <li>
-                                        <a href="catalogue.html">商品分类</a>
+                                        <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li>
-                                                <a href="product-phone.html">手机数码</a>
-                                                <ul>
-                                                    <li><a href="#">手机</a></li>
-                                                    <li><a href="#">移动电源</a></li>
-                                                    <li><a href="#">耳机</a></li>
-                                                    <li><a href="#">存储卡</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-laptop.html">电脑、配件</a>
-                                                <ul>
-                                                    <li><a href="#">平板电脑</a></li>
-                                                    <li><a href="#">笔记本电脑</a></li>
-                                                    <li><a href="#">键盘</a></li>
-                                                    <li><a href="#">鼠标</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-camera.html">摄影、摄像</a>
-                                                <ul>
-                                                    <li><a href="#">数码相机</a></li>
-                                                    <li><a href="#">单反相机</a></li>
-                                                    <li><a href="#">微单\单电相机</a></li>
-                                                    <li><a href="#">单反镜头</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-pad.html">家用电器</a>
-                                                <ul>
-                                                    <li><a href="#">电视机</a></li>
-                                                    <li><a href="#">洗衣机</a></li>
-                                                    <li><a href="#">空调</a></li>
-                                                    <li><a href="#">电冰箱</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="#">手机</a></li>
+                                            <li><a href="#">移动电源</a></li>
+                                            <li><a href="#">耳机</a></li>
+                                            <li><a href="#">存储卡</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="portfolio.html">近期热卖</a></li>
-                                    <li><a href="product-list.html">最省钱</a></li>
-                                    <li><a href="contact.aspx">联系我们</a></li>
-                                </ul><!-- topnav -->
-                            </nav><!-- nav -->
-                        </div>
+                                    <li><a href="product-laptop.aspx">电脑、配件</a>
+                                        <ul>
+                                            <li><a href="#">平板电脑</a></li>
+                                            <li><a href="#">笔记本电脑</a></li>
+                                            <li><a href="#">键盘</a></li>
+                                            <li><a href="#">鼠标</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="product-camera.aspx">摄影、摄像</a>
+                                        <ul>
+                                            <li><a href="#">数码相机</a></li>
+                                            <li><a href="#">单反相机</a></li>
+                                            <li><a href="#">微单\单电相机</a></li>
+                                            <li><a href="#">单反镜头</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="product-pad.aspx">家用电器</a>
+                                        <ul>
+                                            <li><a href="#">电视机</a></li>
+                                            <li><a href="#">洗衣机</a></li>
+                                            <li><a href="#">空调</a></li>
+                                            <li><a href="#">电冰箱</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="product-list.aspx">最省钱</a></li>
+                            <li><a href="contact.aspx">联系我们</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->	
+                    </div>
                     </div>
                 </section>
 
@@ -200,7 +196,7 @@
                     
                         	<section class="content" id="register">
                             <form runat="server">
-                                <div class="breadcrumb"><a href="index.html">首页</a> / 注册</div>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 注册</div>
                                 <h1 class="pagetitle">注册新账户</h1>
                                 
 								<div class="alert">已注册? <a href="login.aspx">点此登录</a></div>

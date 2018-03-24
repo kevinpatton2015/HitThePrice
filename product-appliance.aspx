@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>Lastore</title>
+	<title>家用电器 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -120,60 +120,56 @@
                     </div>
                 </div>
 
-                <section id="navigation">
+               <section id="navigation">
                     <div class="container">
-                        <div class="row">
-                            <nav id="nav-wrap" class="twelve columns">
-                                <ul id="sf-nav" class="sf-menu">
-                                    <li class="current"><a href="index.html">首页</a></li>
-                                    <li><a href="about.html">关于我们</a></li>
+                    <div class="row">
+                    <nav id="nav-wrap" class="twelve columns">
+                        <ul id="sf-nav" class="sf-menu">
+                            <li class="current"><a href="index.aspx">首页</a></li>
+                            <li><a href="about.aspx">关于我们</a></li>
+                            <li><a href="catalogue.aspx">商品目录</a>
+                                <ul>
                                     <li>
-                                        <a href="catalogue.html">商品分类</a>
+                                        <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li>
-                                                <a href="product-phone.html">手机数码</a>
-                                                <ul>
-                                                    <li><a href="#">手机</a></li>
-                                                    <li><a href="#">移动电源</a></li>
-                                                    <li><a href="#">耳机</a></li>
-                                                    <li><a href="#">存储卡</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-laptop.html">电脑、配件</a>
-                                                <ul>
-                                                    <li><a href="#">平板电脑</a></li>
-                                                    <li><a href="#">笔记本电脑</a></li>
-                                                    <li><a href="#">键盘</a></li>
-                                                    <li><a href="#">鼠标</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-camera.html">摄影、摄像</a>
-                                                <ul>
-                                                    <li><a href="#">数码相机</a></li>
-                                                    <li><a href="#">单反相机</a></li>
-                                                    <li><a href="#">微单\单电相机</a></li>
-                                                    <li><a href="#">单反镜头</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-pad.html">家用电器</a>
-                                                <ul>
-                                                    <li><a href="#">电视机</a></li>
-                                                    <li><a href="#">洗衣机</a></li>
-                                                    <li><a href="#">空调</a></li>
-                                                    <li><a href="#">电冰箱</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="#">手机</a></li>
+                                            <li><a href="#">移动电源</a></li>
+                                            <li><a href="#">耳机</a></li>
+                                            <li><a href="#">存储卡</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="portfolio.html">近期热卖</a></li>
-                                    <li><a href="product-list.html">最省钱</a></li>
-                                    <li><a href="contact.aspx">联系我们</a></li>
-                                </ul><!-- topnav -->
-                            </nav><!-- nav -->
-                        </div>
+                                    <li><a href="product-laptop.aspx">电脑、配件</a>
+                                        <ul>
+                                            <li><a href="#">平板电脑</a></li>
+                                            <li><a href="#">笔记本电脑</a></li>
+                                            <li><a href="#">键盘</a></li>
+                                            <li><a href="#">鼠标</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="product-camera.aspx">摄影、摄像</a>
+                                        <ul>
+                                            <li><a href="#">数码相机</a></li>
+                                            <li><a href="#">单反相机</a></li>
+                                            <li><a href="#">微单\单电相机</a></li>
+                                            <li><a href="#">单反镜头</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="product-pad.aspx">家用电器</a>
+                                        <ul>
+                                            <li><a href="#">电视机</a></li>
+                                            <li><a href="#">洗衣机</a></li>
+                                            <li><a href="#">空调</a></li>
+                                            <li><a href="#">电冰箱</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="product-list.aspx">最省钱</a></li>
+                            <li><a href="contact.aspx">联系我们</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->	
+                    </div>
                     </div>
                 </section>
 
@@ -195,11 +191,11 @@
                     
                         	<section class="content" id="product-container">
                             
-                                <div class="breadcrumb"><a href="index.html">Home</a> / Product Grid </div>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / Product Grid </div>
                    				<img src="images/content/clothing.jpg" alt=""/>
                                 
                                 <div class="sortPagiBar">
-                                <form action="index.html" class="productsSortForm">
+                                <form action="index.aspx" class="productsSortForm">
                                     <p class="select">
                                         <label for="selectPrductSort">Sort by</label>
                                         <select class="selectProductSort">
@@ -213,7 +209,7 @@
                                     </p>
                                 </form>
                                 
-                                <form action="index.html" class="productsShowForm">
+                                <form action="index.aspx" class="productsShowForm">
                                     <p class="select">
                                         <label for="selectPrductSort">Show:</label>
                                         <select class="selectProductSort">
@@ -234,14 +230,14 @@
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
                                         	<span class="new"></span>
-                                            <a title="Woman's Dress Flower" href="product-details.html"><img src="images/content/products/p-1.jpg" alt=""/></a>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.html">Woman's Dress Flower</a></h3>
+                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
+                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.html"  class="more">more</a> | <a href="checkout.html" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -249,14 +245,14 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Gold Dress" href="product-details.html"><img src="images/content/products/p-2.jpg" alt=""/></a>
-                                            <h3><a title="Gold Dress" href="product-details.html">Gold Dress</a></h3>
+                                            <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
+                                            <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.html"  class="more">more</a> | <a href="checkout.html" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -264,14 +260,14 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Blue &amp; White" href="product-details.html"><img src="images/content/products/p-3.jpg" alt=""/></a>
-                                            <h3><a title="Blue &amp; White" href="product-details.html">Blue &amp; White</a></h3>
+                                            <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
+                                            <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.html"  class="more">more</a> | <a href="checkout.html" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -279,14 +275,14 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Brown Dress" href="product-details.html"><img src="images/content/products/p-4.jpg" alt=""/></a>
-                                            <h3><a title="Brown Dress" href="product-details.html">Brown Dress</a></h3>
+                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
+                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.html"  class="more">more</a> | <a href="checkout.html" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -294,14 +290,14 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Brown Dress" href="product-details.html"><img src="images/content/products/p-5.jpg" alt=""/></a>
-                                            <h3><a title="Brown Dress" href="product-details.html">Brown Dress</a></h3>
+                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-5.jpg" alt=""/></a>
+                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.html"  class="more">more</a> | <a href="checkout.html" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -309,14 +305,14 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="White Dress" href="product-details.html"><img src="images/content/products/p-6.jpg" alt=""/></a>
-                                            <h3><a title="White Dress" href="product-details.html">White Dress</a></h3>
+                                            <a title="White Dress" href="product-details.aspx"><img src="images/content/products/p-6.jpg" alt=""/></a>
+                                            <h3><a title="White Dress" href="product-details.aspx">White Dress</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.html"  class="more">more</a> | <a href="checkout.html" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -324,14 +320,14 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Unique Dress" href="product-details.html"><img src="images/content/products/p-7.jpg" alt=""/></a>
-                                            <h3><a title="Unique Dress" href="product-details.html">Unique Dress</a></h3>
+                                            <a title="Unique Dress" href="product-details.aspx"><img src="images/content/products/p-7.jpg" alt=""/></a>
+                                            <h3><a title="Unique Dress" href="product-details.aspx">Unique Dress</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.html"  class="more">more</a> | <a href="checkout.html" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -339,14 +335,14 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Flower Dress" href="product-details.html"><img src="images/content/products/p-8.jpg" alt=""/></a>
-                                            <h3><a title="Flower Dress" href="product-details.html">Flower Dress</a></h3>
+                                            <a title="Flower Dress" href="product-details.aspx"><img src="images/content/products/p-8.jpg" alt=""/></a>
+                                            <h3><a title="Flower Dress" href="product-details.aspx">Flower Dress</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.html"  class="more">more</a> | <a href="checkout.html" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>

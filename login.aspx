@@ -9,7 +9,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>Lastore</title>
+	<title>登录 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -96,17 +96,17 @@
                     </div>
                 </div>
                 
-              <section id="navigation">
+            <section id="navigation">
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
                         <ul id="sf-nav" class="sf-menu">
-                            <li class="current"><a href="index.html">首页</a></li>
-                            <li><a href="about.html">关于我们</a></li>
-                            <li><a href="catalogue.html">商品分类</a>
+                            <li class="current"><a href="index.aspx">首页</a></li>
+                            <li><a href="about.aspx">关于我们</a></li>
+                            <li><a href="catalogue.aspx">商品目录</a>
                                 <ul>
                                     <li>
-                                        <a href="product-phone.html">手机数码</a>
+                                        <a href="product-phone.aspx">手机数码</a>
                                         <ul>
                                             <li><a href="#">手机</a></li>
                                             <li><a href="#">移动电源</a></li>
@@ -114,7 +114,7 @@
                                             <li><a href="#">存储卡</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-laptop.html">电脑、配件</a>
+                                    <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
                                             <li><a href="#">平板电脑</a></li>
                                             <li><a href="#">笔记本电脑</a></li>
@@ -122,7 +122,7 @@
                                             <li><a href="#">鼠标</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-camera.html">摄影、摄像</a>
+                                    <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
                                             <li><a href="#">数码相机</a></li>
                                             <li><a href="#">单反相机</a></li>
@@ -130,7 +130,7 @@
                                             <li><a href="#">单反镜头</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-pad.html">家用电器</a>
+                                    <li><a href="product-pad.aspx">家用电器</a>
                                         <ul>
                                             <li><a href="#">电视机</a></li>
                                             <li><a href="#">洗衣机</a></li>
@@ -140,8 +140,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.html">近期热卖</a></li>
-                            <li><a href="product-list.html">最省钱</a></li>
+                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="product-list.aspx">最省钱</a></li>
                             <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
                     </nav><!-- nav -->	
@@ -167,7 +167,7 @@
                     
                         	<section class="content" id="login">
                             
-                                <div class="breadcrumb"><a href="index.html">首页</a> / 登录</div>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 登录</div>
                                 <h1 class="pagetitle">登录</h1>
                                 
                                 <div id="login-process">
@@ -221,14 +221,14 @@
                                 <div class="row">
                                     <div class="one_fourth columns">
 										<div class="product-wrapper">
-                                        	<a title="Men's Watch" href="product-details.html"><img src="images/content/products/p-31.jpg" alt=""/></a>
-                                            <h3><a title="Men's Watch" href="product-details.html">Men's Watch</a></h3>
+                                        	<a title="Men's Watch" href="product-details.aspx"><img src="images/content/products/p-31.jpg" alt=""/></a>
+                                            <h3><a title="Men's Watch" href="product-details.aspx">Men's Watch</a></h3>
                                             <div class="price-cart-wrapper">
                                             	<div class="price">
                                                 	$120.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.html" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -236,14 +236,14 @@
                                     </div>
                                     <div class="one_fourth columns">
 										<div class="product-wrapper">
-                                        	<a title="White Dress" href="product-details.html"><img src="images/content/products/p-6.jpg" alt=""/></a>
-                                            <h3><a title="White Dress" href="product-details.html">White Dress</a></h3>
+                                        	<a title="White Dress" href="product-details.aspx"><img src="images/content/products/p-6.jpg" alt=""/></a>
+                                            <h3><a title="White Dress" href="product-details.aspx">White Dress</a></h3>
                                             <div class="price-cart-wrapper">
                                             	<div class="price">
                                                 	$120.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.html" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -251,14 +251,14 @@
                                     </div>
                                     <div class="one_fourth columns">
 										<div class="product-wrapper">
-                                        	<a title="Flower Handbag" href="product-details.html"><img src="images/content/products/p-32.jpg" alt=""/></a>
-                                            <h3><a title="Flower Handbag" href="product-details.html">Flower Handbag</a></h3>
+                                        	<a title="Flower Handbag" href="product-details.aspx"><img src="images/content/products/p-32.jpg" alt=""/></a>
+                                            <h3><a title="Flower Handbag" href="product-details.aspx">Flower Handbag</a></h3>
                                             <div class="price-cart-wrapper">
                                             	<div class="price">
                                                 	$120.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.html" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -266,14 +266,14 @@
                                     </div>
                                     <div class="one_fourth columns">
 										<div class="product-wrapper">
-                                        	<a title="Red High Heels" href="product-details.html"><img src="images/content/products/p-25.jpg" alt=""/></a>
-                                            <h3><a title="Red High Heels" href="product-details.html">Red High Heels</a></h3>
+                                        	<a title="Red High Heels" href="product-details.aspx"><img src="images/content/products/p-25.jpg" alt=""/></a>
+                                            <h3><a title="Red High Heels" href="product-details.aspx">Red High Heels</a></h3>
                                             <div class="price-cart-wrapper">
                                             	<div class="price">
                                                 	$120.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.html" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>

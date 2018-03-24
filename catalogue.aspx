@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>Lastore</title>
+	<title>商品目录 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -122,58 +122,54 @@
 
                 <section id="navigation">
                     <div class="container">
-                        <div class="row">
-                            <nav id="nav-wrap" class="twelve columns">
-                                <ul id="sf-nav" class="sf-menu">
-                                    <li class="current"><a href="index.html">首页</a></li>
-                                    <li><a href="about.html">关于我们</a></li>
+                    <div class="row">
+                    <nav id="nav-wrap" class="twelve columns">
+                        <ul id="sf-nav" class="sf-menu">
+                            <li class="current"><a href="index.aspx">首页</a></li>
+                            <li><a href="about.aspx">关于我们</a></li>
+                            <li><a href="catalogue.aspx">商品目录</a>
+                                <ul>
                                     <li>
-                                        <a href="catalogue.html">商品分类</a>
+                                        <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li>
-                                                <a href="product-phone.html">手机数码</a>
-                                                <ul>
-                                                    <li><a href="#">手机</a></li>
-                                                    <li><a href="#">移动电源</a></li>
-                                                    <li><a href="#">耳机</a></li>
-                                                    <li><a href="#">存储卡</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-laptop.html">电脑、配件</a>
-                                                <ul>
-                                                    <li><a href="#">平板电脑</a></li>
-                                                    <li><a href="#">笔记本电脑</a></li>
-                                                    <li><a href="#">键盘</a></li>
-                                                    <li><a href="#">鼠标</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-camera.html">摄影、摄像</a>
-                                                <ul>
-                                                    <li><a href="#">数码相机</a></li>
-                                                    <li><a href="#">单反相机</a></li>
-                                                    <li><a href="#">微单\单电相机</a></li>
-                                                    <li><a href="#">单反镜头</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="product-pad.html">家用电器</a>
-                                                <ul>
-                                                    <li><a href="#">电视机</a></li>
-                                                    <li><a href="#">洗衣机</a></li>
-                                                    <li><a href="#">空调</a></li>
-                                                    <li><a href="#">电冰箱</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="#">手机</a></li>
+                                            <li><a href="#">移动电源</a></li>
+                                            <li><a href="#">耳机</a></li>
+                                            <li><a href="#">存储卡</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="portfolio.html">近期热卖</a></li>
-                                    <li><a href="product-list.html">最省钱</a></li>
-                                    <li><a href="contact.aspx">联系我们</a></li>
-                                </ul><!-- topnav -->
-                            </nav><!-- nav -->
-                        </div>
+                                    <li><a href="product-laptop.aspx">电脑、配件</a>
+                                        <ul>
+                                            <li><a href="#">平板电脑</a></li>
+                                            <li><a href="#">笔记本电脑</a></li>
+                                            <li><a href="#">键盘</a></li>
+                                            <li><a href="#">鼠标</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="product-camera.aspx">摄影、摄像</a>
+                                        <ul>
+                                            <li><a href="#">数码相机</a></li>
+                                            <li><a href="#">单反相机</a></li>
+                                            <li><a href="#">微单\单电相机</a></li>
+                                            <li><a href="#">单反镜头</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="product-pad.aspx">家用电器</a>
+                                        <ul>
+                                            <li><a href="#">电视机</a></li>
+                                            <li><a href="#">洗衣机</a></li>
+                                            <li><a href="#">空调</a></li>
+                                            <li><a href="#">电冰箱</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="product-list.aspx">最省钱</a></li>
+                            <li><a href="contact.aspx">联系我们</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->	
+                    </div>
                     </div>
                 </section>
 
@@ -195,7 +191,7 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.html">首页</a> / 商品分类</div>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 商品目录</div>
                                 <h1 class="pagetitle">Our Blog</h1>
                                 
                                 <article class="post">
@@ -209,11 +205,11 @@
                                                 <div class="entry-utility">
                                                     February 01, 2013 / <a href="#">Articles</a> / <a href="#">0 Comment</a>
                                                 </div>
-                                                <h2 class="posttitle"><a href="single.html">手机数码</a></h2>
+                                                <h2 class="posttitle"><a href="single.aspx">手机数码</a></h2>
                                                 
                                                 <p>Donec ornare aliquam augue vitae ornare. Sed vitae ligula in sem feugiat vehicula. Donec nec urna nec felis volutpat feugiat ut ut magna. Morbi vel ante ligula, at mollis est. Integer ornare cursus enim sed facilisis</p>
                                                 
-                                                <a class="button" href="product-phone.html">点击进入</a>
+                                                <a class="button" href="product-phone.aspx">点击进入</a>
                                             </div>
                                         </div>
                                     </div>    
@@ -231,11 +227,11 @@
                                                 <div class="entry-utility">
                                                     February 01, 2013 / <a href="#">Articles</a> / <a href="#">0 Comment</a>
                                                 </div>
-                                                <h2 class="posttitle"><a href="single.html">电脑、配件</a></h2>
+                                                <h2 class="posttitle"><a href="single.aspx">电脑、配件</a></h2>
                                                 
                                                 <p>Suspendisse a nunc magna, sit amet tempus sem. Pellentesque sit amet lectus mi, et imperdiet ante. Sed vitae hendrerit mauris. Proin vel tellus nec arcu congue vehicula nec sed nulla. </p>
                                                 
-                                                <a class="button" href="product-laptop.html">点击进入</a>
+                                                <a class="button" href="product-laptop.aspx">点击进入</a>
                                             </div>
                                         </div>
                                     </div>
@@ -253,11 +249,11 @@
                                                 <div class="entry-utility">
                                                     February 01, 2013 / <a href="#">Articles</a> / <a href="#">0 Comment</a>
                                                 </div>
-                                                <h2 class="posttitle"><a href="single.html">摄影、摄像</a></h2>
+                                                <h2 class="posttitle"><a href="single.aspx">摄影、摄像</a></h2>
                                                 
                                                 <p>Suspendisse a nunc magna, sit amet tempus sem. Pellentesque sit amet lectus mi, et imperdiet ante. Sed vitae hendrerit mauris. Proin vel tellus nec arcu congue vehicula nec sed nulla. </p>
                                                 
-                                                <a class="button" href="product-camera.html">点击进入</a>
+                                                <a class="button" href="product-camera.aspx">点击进入</a>
                                             </div>
                                         </div>
                                     </div>
@@ -275,11 +271,11 @@
                                                 <div class="entry-utility">
                                                     February 01, 2013 / <a href="#">Articles</a> / <a href="#">0 Comment</a>
                                                 </div>
-                                                <h2 class="posttitle"><a href="single.html">家用电器</a></h2>
+                                                <h2 class="posttitle"><a href="single.aspx">家用电器</a></h2>
                                                 
                                                 <p>Donec ornare aliquam augue vitae ornare. Sed vitae ligula in sem feugiat vehicula. Donec nec urna nec felis volutpat feugiat ut ut magna. Morbi vel ante ligula, at mollis est. Integer ornare cursus enim sed facilisis</p>
                                                 
-                                                <a class="button" href="product-appliance.html">点击进入</a>
+                                                <a class="button" href="product-appliance.aspx">点击进入</a>
                                             </div>
                                         </div>
                                     </div>
