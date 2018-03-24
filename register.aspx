@@ -218,6 +218,10 @@
                                         <label for="billing_email" class="">邮箱地址 <span class="required">*</span></label>
                                         <input type="text" class="input-text" name="billing_email" id="billing_email" value="" runat="server"/>
                                     </div>
+                                     <div class="clear"></div>
+                                    <br />
+                                    <br />
+                                    <h3>&nbsp;&nbsp;收货地址</h3>
                                     <div class="clear"></div>
                                     <div class="five columns ">
                                         <label for="billing_city" class="">城市 <span class="required">*</span></label>
@@ -239,19 +243,13 @@
                                     </div>
                                         <div class="five columns check-account">
                                             <input type="checkbox"  class="comparator" /> 
-                                            <label>创建账户</label>
+                                            <label>设为默认地址？</label>
                                         </div>
                                 	</div>
-                                    <div class="clear"></div>
                                     
-                                    <div id="shiptobilling">
-                                    <input class="input-checkbox"  checked='checked' type="checkbox" name="shiptobilling" value="1" runat="server"/> 
-                                    <label for="shiptobilling" class="checkbox">Ship to same address?</label>
-                                    </div>
-                                    <h3 class="margin_bottom_middle">Shipping Address</h3>
-                                    <label for="order_comments" class="">Order Notes</label>
+                                    <label for="order_comments" class="">备注信息</label>
                                     <textarea name="order_comments" class="input-text" id="order_comments"  rows="6" runat="server"></textarea>
-                                    <input type="Button" name="submit" id="submit_btn" class="button mini" value="Submit" onserverclick="Submit2Back" runat="server"/>
+                                    <input type="Button" name="submit" id="submit_btn" class="button mini" value="注册账户" onserverclick="Submit2Back" runat="server"/>
                                </form>
 							</section>
                          
