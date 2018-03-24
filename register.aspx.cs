@@ -39,28 +39,31 @@ public partial class re : System.Web.UI.Page
 
         string strConnection = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("userchec.mdb");
         OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
-        objConnection.Open();
-        //打开连接 
-        OleDbCommand
-        sqlcmd = new OleDbCommand("select * from user_infor where txtUserID='" + Name + "'", objConnection);
-        //sql语句 
-        OleDbDataReader reader = sqlcmd.ExecuteReader();
-        if (reader.HasRows)
-        {
-            if (Name.Trim() == reader["txtUserID"].ToString().Trim())
-            {
-                Response.Write("<script language='javascript'>alert('该用户id已注册');</script>");
+        objConnection.Open();//打开连接 
 
+        //写入用户信息到数据库
+        bool IsSuccess=true;
+        try
+        {
+            string sqlstr = "insert into user_infor" + "(txtUserID,txtLoginName,txtPwd,txtEmail,txtSecPwd)" + "values('" + Name + "','" + Name + "','" + Password + "','" + EmailAddress + "','" + Password + "')";
+            objConnection.Open();
+            OleDbCommand cmd = new OleDbCommand(sqlstr, objConnection);
+            cmd.ExecuteNonQuery();
+            objConnection.Close();
+        }
+        catch
+        {
+            Response.Write("<script>alert('用户已注册');</script>");
+            IsSuccess = false;
+        }
+        finally
+        {
+            if (IsSuccess == true)
+            {
+                Response.Write("<script>alert('注册成功');window.location.href='login.aspx';</script>");
             }
         }
-        objConnection.Close();
-        string sqlstr = "insert into user_infor" + "(txtUserID,txtLoginName,txtPwd,txtEmail,txtSecPwd)" + "values('" + Name + "','" + Name + "','" + Password + "','" + EmailAddress + "','" + Password + "')";
-        objConnection.Open();
-        OleDbCommand cm2 = new OleDbCommand(sqlstr, objConnection);
-        new OleDbCommand(sqlstr, objConnection);
-        cm2.ExecuteNonQuery();
-        objConnection.Close();
-        Response.Write("<script>alert('注册成功');window.location.href='login.aspx';</script>");
+        //写入结束
         return;
 
     }

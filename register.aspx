@@ -1,5 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="register.aspx.cs" Inherits="re" %>
 <!DOCTYPE html>
+<style type="text/css">
+    #billing_password {
+        width: 286px;
+    }
+</style>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -198,8 +203,8 @@
                                 <h3>基本信息</h3>
                                 <div class="row">
                                     <div class="five columns ">
-                                        <label for="billing_first_name" class="">用户名 <span class="required">*</span></label>                          
-                                        <input type="text" class="input-text" name="billing_name" id="billing_name"  value="" runat="server"/>
+                                        <label for="billing_first_name" class="">用户名 <span class="required">*</span><p id="check"></p></label>                          
+                                        <input type="text" class="input-text" name="billing_name" id="billing_name"  value=""  onpropertychange="<%=CheckIsRegistered %>" runat="server"/>
                                     </div>
                                     <div class="five columns ">
                                         <label for="billing_last_name" class="">密码 <span class="required">*</span></label>
