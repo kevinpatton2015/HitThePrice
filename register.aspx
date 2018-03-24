@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <style type="text/css">
     #billing_password {
-        width: 286px;
+        width: 289px;
+        height: 20px;
     }
 </style>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -206,9 +207,10 @@
                                         <label for="billing_first_name" class="">用户名 <span class="required">*</span><p id="check"></p></label>                          
                                         <input type="text" class="input-text" name="billing_name" id="billing_name"  value=""  onpropertychange="<%=CheckIsRegistered %>" runat="server"/>
                                     </div>
+                                    <p style = "margin:15px" ></p >
                                     <div class="five columns ">
                                         <label for="billing_last_name" class="">密码 <span class="required">*</span></label>
-                                        <input type="text" class="input-text" name="billing_password" id="billing_password" value="" runat="server"/>
+                                        <input type="password" class="input-text" name="billing_password" id="billing_password" value="" runat="server"/>
                                     </div>
                                     <div class="clear"></div>
                                     <div class="five columns ">

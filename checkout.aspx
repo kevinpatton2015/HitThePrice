@@ -192,7 +192,7 @@
                         	<section class="content">
                             
                                 <div class="breadcrumb"><a href="index.aspx">首页</a> / 购物车</div>
-                                <h1 class="pagetitle">Checkout</h1>
+                                <h1 class="pagetitle">我的购物车</h1>
   
                                 <div class="table_block" id="order-detail-content">
                                     <table id="cart_summary">
