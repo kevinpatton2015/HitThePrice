@@ -75,11 +75,7 @@
                     <div class="container">
                         <div class="row">
                             <div id="logo" class="six columns">
-<<<<<<< HEAD
-                                <a href="index.html"><img src="images/logo.png" alt="" /></a>
-=======
                                 <a href="index.aspx"><img src="images/logo.png" alt="" /></a>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                 <span class="desc">Best Solution for your business</span>
                             </div>
                             <div class="right six columns">
@@ -123,11 +119,7 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-             <section id="navigation">
-=======
            <section id="navigation">
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
@@ -139,50 +131,22 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-<<<<<<< HEAD
-                                            <li><a href="#">手机</a></li>
-                                            <li><a href="#">移动电源</a></li>
-                                            <li><a href="#">耳机</a></li>
-                                            <li><a href="#">存储卡</a></li>
-=======
                                             <li><a href="product-list-phone.aspx">手机</a></li>
                                             <li><a href="product-list-powerbank.aspx">移动电源</a></li>
                                             <li><a href="product-list-headset.aspx">耳机</a></li>
                                             <li><a href="product-list-SDcard.aspx">存储卡</a></li>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-<<<<<<< HEAD
-                                            <li><a href="#">平板电脑</a></li>
-                                            <li><a href="#">笔记本电脑</a></li>
-                                            <li><a href="#">键盘</a></li>
-                                            <li><a href="#">鼠标</a></li>
-=======
                                             <li><a href="product-list-tablet.aspx">平板电脑</a></li>
                                             <li><a href="product-list-laptop.aspx">笔记本电脑</a></li>
                                             <li><a href="product-list-keyboard.aspx">键盘</a></li>
                                             <li><a href="product-list-mouse.aspx">鼠标</a></li>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-<<<<<<< HEAD
-                                            <li><a href="#">数码相机</a></li>
-                                            <li><a href="#">单反相机</a></li>
-                                            <li><a href="#">微单\单电相机</a></li>
-                                            <li><a href="#">单反镜头</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="product-pad.aspx">家用电器</a>
-                                        <ul>
-                                            <li><a href="#">电视机</a></li>
-                                            <li><a href="#">洗衣机</a></li>
-                                            <li><a href="#">空调</a></li>
-                                            <li><a href="#">电冰箱</a></li>
-=======
                                             <li><a href="product-list-digitalcamera.aspx">数码相机</a></li>
                                             <li><a href="product-list-SLR.aspx">单反相机</a></li>
                                             <li><a href="product-list-mmcamera.aspx">微单\单电相机</a></li>
@@ -195,7 +159,6 @@
                                             <li><a href="product-list-washingmachine.aspx">洗衣机</a></li>
                                             <li><a href="product-list-airconditioner.aspx">空调</a></li>
                                             <li><a href="product-list-refrigerator.aspx">电冰箱</a></li>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                         </ul>
                                     </li>
                                 </ul>
@@ -225,13 +188,8 @@
                     <section id="maincontent" class="ten columns positionleft">
                     	<div class="padcontent">
                     
-                        	<section class="content" id="product-detail">
-                            
-<<<<<<< HEAD
-                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 手机 / iPhone X</div>
-=======
+                        	<section class="content" id="product-detail">                          
                                 <div class="breadcrumb"><a href="index.aspx">首页</a> / 手机数码 / 手机 / iPhone X</div>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                 <h1 class="pagetitle">苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机</h1>
                                 
                                 <div class="row">
@@ -241,45 +199,6 @@
                                                     <div id="imageitems" class="flexslider">
                                                         <ul class="slides">
                                                             <li>
-<<<<<<< HEAD
-                                                            <a class="image" href="images/content/products/p-1.jpg" data-rel="prettyPhoto[mixed]" >
-                                                           		<img src="images/content/products/p-1.jpg" alt="" />
-                                                            </a>
-                                                            </li>
-                                                            <li>
-                                                            <a class="image" href="images/content/products/p-2.jpg" data-rel="prettyPhoto[mixed]" >
-                                                            <img src="images/content/products/p-2.jpg" alt="" />
-                                                            </a>
-                                                            </li>
-                                                            <li>
-                                                            <a class="image" href="images/content/products/p-3.jpg" data-rel="prettyPhoto[mixed]" >
-                                                           		<img src="images/content/products/p-3.jpg" alt="" />
-                                                            </a>
-                                                            </li>
-                                                            <li>
-                                                            <a class="image" href="images/content/products/p-4.jpg" data-rel="prettyPhoto[mixed]" >
-                                                            <img src="images/content/products/p-4.jpg" alt="" />
-                                                            </a>
-                                                            </li>
-                                                            <li>
-                                                            <a class="image" href="images/content/products/p-5.jpg" data-rel="prettyPhoto[mixed]" >
-                                                           		<img src="images/content/products/p-5.jpg" alt="" />
-                                                            </a>
-                                                            </li>
-                                                            <li>
-                                                            <a class="image" href="images/content/products/p-6.jpg" data-rel="prettyPhoto[mixed]" >
-                                                            <img src="images/content/products/p-6.jpg" alt="" />
-                                                            </a>
-                                                            </li>
-                                                            <li>
-                                                            <a class="image" href="images/content/products/p-7.jpg" data-rel="prettyPhoto[mixed]" >
-                                                           		<img src="images/content/products/p-7.jpg" alt="" />
-                                                            </a>
-                                                            </li>
-                                                            <li>
-                                                            <a class="image" href="images/content/products/p-8.jpg" data-rel="prettyPhoto[mixed]" >
-                                                            <img src="images/content/products/p-8.jpg" alt="" />
-=======
                                                             <a class="image" href="images/content/products/iphonex-1.jpg" data-rel="prettyPhoto[mixed]" >
                                                            		<img src="images/content/products/iphonex-1.jpg" alt="" />
                                                             </a>
@@ -302,7 +221,6 @@
                                                             <li>
                                                             <a class="image" href="images/content/products/iphonex-5.jpg" data-rel="prettyPhoto[mixed]" >
                                                            		<img src="images/content/products/iphonex-5.jpg" alt="" />
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                                             </a>
                                                             </li>
                                                         </ul>
@@ -312,22 +230,11 @@
                                             <div id="thumbslider">
                                                     <div id="carouselslider" class="flexslider">
                                                         <ul class="slides">
-<<<<<<< HEAD
-                                                            <li><img src="images/content/products/p-1.jpg" alt="" /></li>
-                                                            <li><img src="images/content/products/p-2.jpg" alt="" /></li>
-                                                            <li><img src="images/content/products/p-3.jpg" alt="" /></li>
-                                                            <li><img src="images/content/products/p-4.jpg" alt="" /></li>
-                                                            <li><img src="images/content/products/p-5.jpg" alt="" /></li>
-                                                            <li><img src="images/content/products/p-6.jpg" alt="" /></li>
-                                                            <li><img src="images/content/products/p-7.jpg" alt="" /></li>
-                                                            <li><img src="images/content/products/p-8.jpg" alt="" /></li>
-=======
                                                             <li><img src="images/content/products/iphonex-1.jpg" alt="" /></li>
                                                             <li><img src="images/content/products/iphonex-2.jpg" alt="" /></li>
                                                             <li><img src="images/content/products/iphonex-3.jpg" alt="" /></li>
                                                             <li><img src="images/content/products/iphonex-4.jpg" alt="" /></li>
                                                             <li><img src="images/content/products/iphonex-5.jpg" alt="" /></li>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                                         </ul>
                                                     </div>
                                             </div>
@@ -344,12 +251,7 @@
                                     
                                 	<div class="three_fourth columns">
                                     
-<<<<<<< HEAD
-                                  <p>全网最低价格：<span class="price">$120.00</span></p>
-=======
                                   <p>全网最低价格：<span class="price">￥7749.00</span></p>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
-
                                     <div class="cs"><ul>
                                         <li><span class='cs-name'>品牌：</span><span class='cs-param'>苹果手机</span></li>
                                         <li><span class='cs-name'>上市时间：</span><span class='cs-param'>2017年10月</span></li>
@@ -358,28 +260,14 @@
                                         <li><span class='cs-name'>屏幕尺寸：</span><span class='cs-param'>5.1英寸-5.9英寸</span></li>
                                         <li><span class='cs-name'>主摄像头：</span><span class='cs-param'>1200万像素</span></li>
                                         <li><span class='cs-name'>存储内存：</span><span class='cs-param'>64GB</span></li>
-<<<<<<< HEAD
-                                        <li><span class='cs-name'>运行内存：</span><span class='cs-param'>2GB</span></li></ul><a class="morecs" href="pm_571602.aspx" >详细参数&gt;&gt;</a>
-=======
                                         <li><span class='cs-name'>运行内存：</span><span class='cs-param'>2GB</span></li></ul><a class="morecs" href="#tab2" >详细参数&gt;&gt;</a>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                         <br />
 									    <a href="checkout.aspx" class="cart">加入收藏</a>
                                     </div>
                                 </div>
                                 
                                 <div class="separator"></div>
-                                
-                                
-<<<<<<< HEAD
-                                <div class="tabcontainer">
-                                    <ul class="tabs">
-                                        <li><a href="#tab0">More Info</a></li>
-                                        <li><a href="#tab1">Data Sheet</a></li>
-                                    </ul>
-                                    <div class="tab-body">
-                                        <div id="tab0" class="tab-content"> 
-=======
+                                                               
                            </div>
                                 
                                 
@@ -392,23 +280,10 @@
                                     <div class="tab-body">
                                         <div id="tab0" class="tab-content"> 
                                              <div style="float:left;width:750px;">
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                              <div class="table_block" id="order-detail-content">
                                     <table id="cart_summary">
                                         <tbody>
                                             <tr class="cart_item" >
-<<<<<<< HEAD
-                                                <td class="cart_product">
-                                                    <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                    iPhone X for Gift    	
-                                                </td>
-                                                <td class="cart_ref">--</td>
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-                                                <td class="cart_total">
-                                                    <span class="price">$120.00</span>
-=======
                                                 <td width="70px" class="cart_product">
                                                     <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
                                                 </td>
@@ -437,28 +312,15 @@
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_total">
                                                     <span class="price">￥7888.00</span>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                                 </td>
                                                 <td class="cart_description"> 包邮 </td>
                                                 <td>
                                                 <a class="button" href="product-phone.aspx">去购买</a></td>
-<<<<<<< HEAD
-=======
 
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                             </tr>
                                             
                                             <tr class="cart_item" >
                                                 <td class="cart_product">
-<<<<<<< HEAD
-                                                    <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                    iPhone 8 Plus for Gift    	
-                                                </td>
-                                                <td class="cart_ref">--</td>
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-=======
                                                     <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1"><img alt="" src="http://img12.360buyimg.com/n8/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg"></a>
                                                 </td>
                                                 <td class="cart_description">
@@ -482,101 +344,47 @@
                                                     iPhone 6S for Gift    	
                                                 </td>
                                                 <td class="cart_ref">--</td>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                                 <td class="cart_total">
                                                     <span class="price">$120.00</span>
                                                 </td>
                                                 <td class="cart_description"> 包邮 </td>
                                                 <td>
                                                 <a class="button" href="product-phone.aspx">去购买</a></td>
-<<<<<<< HEAD
-                                            </tr>
-                                            
-=======
 
                                             </tr>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                             <tr class="cart_item" >
                                                 <td class="cart_product">
                                                     <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
                                                 </td>
                                                 <td class="cart_description">
-<<<<<<< HEAD
-                                                    iPhone 7 for Gift    	
-                                                </td>
-                                                <td class="cart_ref">--</td>
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-=======
                                                     iPhone 4S for Gift    	
                                                 </td>
                                                 <td class="cart_ref">--</td>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                                 <td class="cart_total">
                                                     <span class="price">$120.00</span>
                                                 </td>
                                                 <td class="cart_description"> 包邮 </td>
                                                 <td>
                                                 <a class="button" href="product-phone.aspx">去购买</a></td>
-<<<<<<< HEAD
-                                            </tr>
-                                            <tr class="cart_item" >
-=======
 
                                             </tr>
                                              <tr class="cart_item" >
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                                 <td class="cart_product">
                                                     <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
                                                 </td>
                                                 <td class="cart_description">
-<<<<<<< HEAD
-                                                    iPhone 6S for Gift    	
-                                                </td>
-                                                <td class="cart_ref">--</td>
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-=======
                                                     iPhone 4S for Gift    	
                                                 </td>
                                                 <td class="cart_ref">--</td>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                                 <td class="cart_total">
                                                     <span class="price">$120.00</span>
                                                 </td>
                                                 <td class="cart_description"> 包邮 </td>
-<<<<<<< HEAD
-                                                <td>
-                                                <a class="button" href="product-phone.aspx">去购买</a></td>
-                                            </tr>
-                                            <tr class="cart_item" >
-=======
                                                  <td>
                                                 <a class="button" href="product-phone.aspx">去购买</a></td>
 
                                             </tr>
                                              <tr class="cart_item" >
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
-                                                <td class="cart_product">
-                                                    <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                    iPhone 4S for Gift    	
-                                                </td>
-                                                <td class="cart_ref">--</td>
-<<<<<<< HEAD
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-=======
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
-                                                <td class="cart_total">
-                                                    <span class="price">$120.00</span>
-                                                </td>
-                                                <td class="cart_description"> 包邮 </td>
-<<<<<<< HEAD
-                                                <td>
-=======
-                                                 <td>
-                                                <a class="button" href="product-phone.aspx">去购买</a></td>
-                                            </tr>
-                                             <tr class="cart_item" >
                                                 <td class="cart_product">
                                                     <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
                                                 </td>
@@ -604,20 +412,26 @@
                                                 </td>
                                                 <td class="cart_description"> 包邮 </td>
                                                  <td>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
+                                                <a class="button" href="product-phone.aspx">去购买</a></td>
+                                            </tr>
+                                             <tr class="cart_item" >
+                                                <td class="cart_product">
+                                                    <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
+                                                </td>
+                                                <td class="cart_description">
+                                                    iPhone 4S for Gift    	
+                                                </td>
+                                                <td class="cart_ref">--</td>
+                                                <td class="cart_total">
+                                                    <span class="price">$120.00</span>
+                                                </td>
+                                                <td class="cart_description"> 包邮 </td>
+                                                 <td>
                                                 <a class="button" href="product-phone.aspx">去购买</a></td>
                                             </tr>
                                         </tbody>
                                         </table>
                                 </div>
-<<<<<<< HEAD
-                               
-                                        </div>
-                                        <div id="tab1" class="tab-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat rutrum luctus. Proin nisl augue, tempus quis lacinia at, ultrices eget sapien. Vestibulum at orci a eros molestie rutrum. Fusce interdum erat vel eros elementum vitae interdum massa varius. Morbi fermentum commodo nisi, id interdum mauris suscipit pellentesque. Morbi velit eros, accumsan ut faucibus at, viverra id mi. Nunc augue nisl, rutrum vitae luctus nec, lobortis sit amet diam. Proin porttitor semper sollicitudin. Donec mollis rhoncus turpis et rhoncus. In elit nisl, ultrices id mollis ut, dapibus eget nulla. Fusce laoreet neque ut purus faucibus ut condimentum purus condimentum. Vestibulum vel magna ligula, in tincidunt augue. Fusce sit amet neque ut neque vestibulum rhoncus in eu nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer interdum sapien facilisis odio fermentum tincidunt. Nullam a ante augue.</p>
-                                        </div>
-
-=======
                               </div>
                                
                                         </div>
@@ -840,7 +654,6 @@
                                               </p>
                                                </div>
                                             </div>
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                                     </div>
                                 </div>
                                
@@ -854,38 +667,6 @@
                     	<div class="sidebar">
                         <ul>
                             <li class="widget-container">
-<<<<<<< HEAD
-                                <h2 class="widget-title">Categories</h2>
-                                <ul>
-                                    <li><a href="#">Clothing (8)</a>
-                                    	<ul>
-                                            <li><a href="#">Woman Dress (4)</a></li>
-                                            <li><a href="#">Man Suit (4)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Furniture (4)</a></li>
-                                    <li><a href="#">Electronics (4)</a></li>
-                                    <li><a href="#">Accessories (4)</a></li>
-                                    <li><a href="#">Shoes (4)</a></li>
-                                </ul>
-                            </li>
-                            <li class="widget-container">
-                                <h2 class="widget-title">Special Offers</h2>
-                                <ul class="sp-widget">
-                                    <li>
-                                        <img src="images/content/products/p-28.jpg" alt="" />
-                                        <h3><a href="#">Woman's Couple Shoes</a></h3>
-										<div class="price">$120.00</div>
-                                    </li>
-                                    <li>
-                                        <img src="images/content/products/p-20.jpg" alt="" />
-                                        <h3><a href="#">Modern Chair</a></h3>
-                                        <div class="price">$120.00</div>
-                                    </li>
-                                </ul>
-                            </li>
-
-=======
                                 <h2 class="widget-title">商品目录</h2>
                                 <ul>
                                     <li><a href="product-phone.aspx">手机数码 (8)</a>
@@ -898,9 +679,7 @@
                                     <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
                                     <li><a href="product-appliance.aspx">家用电器 (4)</a></li>
                                 </ul>
-                            </li>
-                           
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
+                            </li>                          
                         </ul>
                         </div>
                         
@@ -1011,11 +790,7 @@
             <div id="outercopyright">
                 <div class="container">
                     <div id="copyright">
-<<<<<<< HEAD
-                        Copyright &copy;2012. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作</a>
-=======
                         Copyright &copy;2018. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
                     </div>
                     <ul class="sn">
                         <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>

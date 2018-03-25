@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="product-list.aspx.cs" Inherits="product_list" %>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -192,7 +193,7 @@
                         	<section class="content">
                             
                                 <div class="breadcrumb"><a href="index.aspx">Home</a> / Product List </div>
-                   				<h1 class="pagetitle">Product List</h1>
+                   				<h1 class="pagetitle" id="pagetitle">Product List</h1>
                                 
                                 <div class="sortPagiBar">
                                 <form action="index.aspx" class="productsSortForm">
@@ -227,26 +228,27 @@
                                 </div>
                                 
                                 <div class="row">
+                                <form  id="product"  runat="server">
                                 <div id="product-list-container">
                                 
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
+                                            <a id="imghref1" title="Woman's Dress Flower" href="product-details.aspx" runat="server"><img id="img1" src="images/content/products/p-1.jpg" alt="" runat="server"/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
+                                            <h3><a id="title1" title="Woman's Dress Flower" href="product-details.aspx" runat="server">Woman's Dress Flower</a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div id="price1" class="price" runat="server">$120.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">Add to cart</a>
+                                                	<a href="checkout.aspx" class="cart">Add to cart</a>
                                                     <a href="product-details.aspx"  class="more-link">Read more</a>  
                                                 </div>
                                                 <div class="clear"></div>
@@ -257,22 +259,22 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
+                                            <a id="imghref2" title="Gold Dress" href="product-details.aspx" runat="server"><img id="img2" src="images/content/products/p-2.jpg" alt="" runat="server"/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
+                                            <h3><a id="title2" title="Gold Dress" href="product-details.aspx" runat="server">Gold Dress</a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div id="price2" class="price" runat="server">$120.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" class="comparator"> 
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">Add to cart</a>
+                                                	<a href="checkout.aspx" class="cart">Add to cart</a>
                                                     <a href="product-details.aspx"  class="more-link">Read more</a>  
                                                 </div>
                                                 <div class="clear"></div>
@@ -283,22 +285,22 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
+                                            <a id="imghref3" title="Blue &amp; White" href="product-details.aspx" runat="server"><img id="img3" src="images/content/products/p-3.jpg" alt="" runat="server"/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
+                                            <h3><a id="title3" title="Blue &amp; White" href="product-details.aspx" runat="server">Blue &amp; White</a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div id="price3" class="price" runat="server">$120.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">Add to cart</a>
+                                                	<a href="checkout.aspx" class="cart">Add to cart</a>
                                                     <a href="product-details.aspx"  class="more-link">Read more</a>  
                                                 </div>
                                                 <div class="clear"></div>
@@ -309,22 +311,22 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
+                                            <a id="imghref4" title="Brown Dress" href="product-details.aspx" runat="server"><img id="img4" src="images/content/products/p-4.jpg" alt="" runat="server"/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
+                                            <h3><a id="title4" title="Brown Dress" href="product-details.aspx" runat="server">Brown Dress</a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div id="price4" class="price" runat="server">$120.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox"  class="comparator" > 
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">Add to cart</a>
+                                                	<a href="checkout.aspx" class="cart">Add to cart</a>
                                                     <a href="product-details.aspx"  class="more-link">Read more</a>  
                                                 </div>
                                                 <div class="clear"></div>
@@ -333,7 +335,8 @@
 										<div class="clear"></div>
                                 	</div>
                                     
-                                </div>    
+                                </div> 
+                                </form>    
                                 </div>
 								<div class="wp-pagenavi">
                                 	<a href="#" class="page">1</a><span class="current"><span>2</span></span><a href="#" class="page">3</a> &nbsp;&nbsp;Showing 4 to 4 of 12 (3 Pages)
@@ -349,33 +352,28 @@
                     	<div class="sidebar">
                         <ul>
                             <li class="widget-container">
-                                <h2 class="widget-title">Categories</h2>
+                                <h2 class="widget-title">商品目录</h2>
                                 <ul>
-                                    <li><a href="#">Clothing (8)</a>
-                                    	<ul>
-                                            <li><a href="#">Woman Dress (4)</a></li>
-                                            <li><a href="#">Man Suit (4)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Furniture (4)</a></li>
-                                    <li><a href="#">Electronics (4)</a></li>
-                                    <li><a href="#">Accessories (4)</a></li>
-                                    <li><a href="#">Shoes (4)</a></li>
+                                    <li><a href="product-phone.aspx">手机数码 (8)</a></li>
+                                    <li><a href="product-laptop.aspx">电脑、配件 (4)</a></li>
+                                    <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
+                                    <li><a href="product-appliance.aspx">家用电器 (4)</a></li>
                                 </ul>
                             </li>
                             <li class="widget-container">
-                                <h2 class="widget-title">Special Offers</h2>
+                                <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
-                                        <img src="images/content/products/p-28.jpg" alt="" />
-                                        <h3><a href="#">Woman's Couple Shoes</a></h3>
-										<div class="price">$120.00</div>
+                                        <img id="recommendimg1" src="images/content/products/p-28.jpg" alt=""  runat="server"/>
+                                        <h3><a id="recommendtitle1" href="#" runat="server">Woman's Couple Shoes</a></h3>
+										<div id="recommendprice1" class="price" runat="server">$120.00</div>
                                     </li>
                                     <li>
-                                        <img src="images/content/products/p-20.jpg" alt="" />
-                                        <h3><a href="#">Modern Chair</a></h3>
-                                        <div class="price">$120.00</div>
+                                        <img id="recommendimg2" src="images/content/products/p-20.jpg" alt="" runat="server"/>
+                                        <h3><a id="recommendtitle2" href="#" runat="server">Modern Chair</a></h3>
+                                        <div id="recommendprice2" class="price" runat="server">$120.00</div>
                                     </li>
+                                
                                 </ul>
                             </li>
                             <li class="widget-container">

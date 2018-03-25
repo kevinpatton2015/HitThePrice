@@ -205,7 +205,7 @@
                                 <div class="row">
                                     <div class="five columns ">
                                         <label for="billing_first_name" class="">用户名 <span class="required">*</span><p id="check"></p></label>                          
-                                        <input type="text" class="input-text" name="billing_name" id="billing_name"  value=""  onpropertychange="<%=CheckIsRegistered %>" runat="server"/>
+                                        <input type="text" class="input-text" name="billing_name" id="billing_name"  value="" runat="server"/>
                                     </div>
                                     <p style = "margin:15px" ></p >
                                     <div class="five columns ">

@@ -23,17 +23,22 @@ public partial class index : System.Web.UI.Page
     {
         if (Session["UserId"] != null)
         { userId = Session["UserId"].ToString(); }
-
+        
     }
 
     protected void Search(object sender, EventArgs e)
     {
         string keyword = s.Value;
         TBcrawl(keyword, "utf8");
-        Response.Write(titleList[0]);
+        Session["titleList"] = titleList;
+        Session["priceList"] = priceList;
+        Session["picUrList"] = picUrList;
+        Session["detailUrList"] = detailUrList;
+        Session["locList"] = locList;
+        Response.Redirect("product-list.aspx");
     }
 
-    public void TBcrawl(string keyword,string ie)
+    public void TBcrawl(string keyword, string ie)
     {
         string page_num = "1";
 
@@ -50,24 +55,18 @@ public partial class index : System.Web.UI.Page
 
         string url = String.Format("https://s.taobao.com/search?q={0}&ie={1}&s={2}", keyword, ie, page_num);
         string TBhtml = GetHtml(url);
-        //string res= "";
+
         foreach (Match match in Regex.Matches(TBhtml, title))
             titleList.Add(match.ToString().Remove(0, 12).Replace("\"", ""));
-            //res += match.ToString().Remove(0, 12).Replace("\"", "");
         foreach (Match match in Regex.Matches(TBhtml, price))
             priceList.Add(match.ToString().Remove(0, 13).Replace("\"", ""));
-            //res += match.ToString().Remove(0, 13).Replace("\"", "");
         foreach (Match match in Regex.Matches(TBhtml, picUrl))
             picUrList.Add(match.ToString().Remove(0, 10).Replace("\"", ""));
-            //res += match.ToString().Remove(0, 10).Replace("\"", "");
         foreach (Match match in Regex.Matches(TBhtml, detailUrl))
             detailUrList.Add(match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "="));
-            //res += match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "=");
         foreach (Match match in Regex.Matches(TBhtml, loc))
             locList.Add(match.ToString().Remove(0, 11).Replace("\"", ""));
-            //res += match.ToString().Remove(0, 11).Replace("\"", "");
-
-        //return res;
+       
     }
 
     //获取网页源码

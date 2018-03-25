@@ -52,12 +52,8 @@ public partial class re : System.Web.UI.Page
         catch(System.Data.OleDb.OleDbException)
         {
             IsSuccess = false;
-<<<<<<< HEAD
             Response.Write("<script>alert('用户已注册');</script>");            
-=======
             Response.Write("<script>alert('用户已注册');window.location.href='register.aspx';</script>");                     
-
->>>>>>> ec567129e5618560ce4f383d1f2c3522bc448deb
         }
         finally
         {

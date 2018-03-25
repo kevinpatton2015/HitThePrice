@@ -22,7 +22,7 @@
 
 	<!-- CSS
   ================================================== -->
-  	<link href='http://fonts.useso.com/css?family=Ubuntu:400,700,500,300,400italic,300italic' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.useso.com/css?family=Ubuntu:400,700,500,300,400italic,300italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/inner.css" />
     <link rel="stylesheet" href="styles/layout.css" />
@@ -58,7 +58,7 @@
                     <div class="row">
                     	<div id="topmenu" class=" six columns">
                             <%if (userId!= null){%>
-                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>我的收藏</strong></a></div>
+                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx" ><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>我的收藏</strong></a></div>
                             <%}else{%>
                                 <div class="clear"></div>
                                 <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
@@ -86,7 +86,7 @@
                             <form  id="searchform"  runat="server">
                                 
                                 <input type="text" onBlur="if (this.value == '')this.value = 'Search keywords here';" onFocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field" runat="server">
-                                <input type="button" value="" class="searchbutton" onserverclick="Search" runat="server" aria-hidden="False"/>
+                                <input type="button" value="" class="searchbutton" onserverclick="Search" runat="server"/>
                                
                             </form>
                                
@@ -183,7 +183,7 @@
         	<div class="container">
                 <div class="row">
                 	<div class="twelve columns">
-               			<h1> 我们是一个专业的电子产品导购比价网站，为您提供最有性价比的选择。 <br>欢迎在此任意选购您喜爱的产品。</h1>
+               			<h1> 我们是一个专业的电子产品导购比价网站，为您提供最有性价比的选择。 <br/>欢迎在此任意选购您喜爱的产品。</h1>
                     </div>
                 </div>
             </div>    
@@ -424,18 +424,18 @@
             <div id="carousel"  class="es-carousel-wrapper">
                 <div class="es-carousel">
                     <ul>
-                        <li><a title="Audio Jungle"  href="#"><img alt="Audio Jungle" src="images/content/audiojungle.png"></a></li>
-                        <li><a title="Active Den"  href="#"><img alt="Active Den" src="images/content/activeden.png"></a></li>
-                        <li><a title="Graphic River"  href="#"><img alt="Graphic River" src="images/content/graphicriver.png"></a></li>
-                        <li><a title="Photo Dune"  href="#"><img alt="Photo Dune" src="images/content/photodune.png"></a></li>
-                        <li><a title="Theme Forest"  href="#"><img alt="Theme Forest" src="images/content/themeforest.png"></a></li>
-                        <li><a title="Video Hive"  href="#"><img alt="Video Hive" src="images/content/videohive.png"></a></li>
-                        <li><a title="Audio Jungle"  href="#"><img alt="Audio Jungle" src="images/content/audiojungle.png"></a></li>
-                        <li><a title="Active Den"  href="#"><img alt="Active Den" src="images/content/activeden.png"></a></li>
-                        <li><a title="Graphic River"  href="#"><img alt="Graphic River" src="images/content/graphicriver.png"></a></li>
-                        <li><a title="Photo Dune"  href="#"><img alt="Photo Dune" src="images/content/photodune.png"></a></li>
-                        <li><a title="Theme Forest"  href="#"><img alt="Theme Forest" src="images/content/themeforest.png"></a></li>
-                        <li><a title="Video Hive"  href="#"><img alt="Video Hive" src="images/content/videohive.png"></a></li>
+                        <li><a title="Audio Jungle"  href="#"><img alt="Audio Jungle" src="images/content/audiojungle.png" /></a></li>
+                        <li><a title="Active Den"  href="#"><img alt="Active Den" src="images/content/activeden.png" /></a></li>
+                        <li><a title="Graphic River"  href="#"><img alt="Graphic River" src="images/content/graphicriver.png" /></a></li>
+                        <li><a title="Photo Dune"  href="#"><img alt="Photo Dune" src="images/content/photodune.png" /></a></li>
+                        <li><a title="Theme Forest"  href="#"><img alt="Theme Forest" src="images/content/themeforest.png" /></a></li>
+                        <li><a title="Video Hive"  href="#"><img alt="Video Hive" src="images/content/videohive.png" /></a></li>
+                        <li><a title="Audio Jungle"  href="#"><img alt="Audio Jungle" src="images/content/audiojungle.png" /></a></li>
+                        <li><a title="Active Den"  href="#"><img alt="Active Den" src="images/content/activeden.png" /></a></li>
+                        <li><a title="Graphic River"  href="#"><img alt="Graphic River" src="images/content/graphicriver.png" /></a></li>
+                        <li><a title="Photo Dune"  href="#"><img alt="Photo Dune" src="images/content/photodune.png" /></a></li>
+                        <li><a title="Theme Forest"  href="#"><img alt="Theme Forest" src="images/content/themeforest.png" /></a></li>
+                        <li><a title="Video Hive"  href="#"><img alt="Video Hive" src="images/content/videohive.png" /></a></li>
                     </ul>
                 </div>
                 <div class="clear"></div>
@@ -501,8 +501,8 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">Contact Us</h2>
 									<div class="textwidget">
-                                        Telp: +62 500 800 123<br>
-                                        Fax: +62 500 800 112<br>
+                                        Telp: +62 500 800 123<br/>
+                                        Fax: +62 500 800 112<br/>
                                         <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
                                     </div>
                               </li>

@@ -246,7 +246,7 @@
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">加入收藏</a>
+                                                	<a href="checkout.aspx" class="cart">加入收藏</a>
                                                     <a href="product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
@@ -272,7 +272,7 @@
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">加入收藏</a>
+                                                	<a href="checkout.aspx" class="cart">加入收藏</a>
                                                     <a href="product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
@@ -298,7 +298,7 @@
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">加入收藏</a>
+                                                	<a href="checkout.aspx" class="cart">加入收藏</a>
                                                     <a href="product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
@@ -324,7 +324,7 @@
                                                 <label>Add to Compare</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">加入收藏</a>
+                                                	<a href="checkout.aspx" class="cart">加入收藏</a>
                                                     <a href="product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
