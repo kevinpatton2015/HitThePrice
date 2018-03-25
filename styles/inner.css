@@ -95,11 +95,16 @@ USE THIS STYLE SHEET FOR INNER PAGE
 
 
 /* PRODUCTS */
-#product-container .columns{ margin-bottom:50px;}
+#product-container .columns{ margin-bottom:50px;
+    top: 0px;
+    left: 0px;
+    height: 249px;
+}
 .sortPagiBar{ margin:20px 0 0;  clear:both;}
 .sortPagiBar form{ display:inline-block; margin-right:20px;}
 .productsShowForm{ width:90px;}
-.productsShowForm select{ width:50%;}
+.productsShowForm select{ width:50%;
+}
 .sortPagiBar .button{ padding:7px 17px;}
 
 #product-list-container{ margin:0 10px 30px;}

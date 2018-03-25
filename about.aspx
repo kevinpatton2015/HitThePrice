@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -57,10 +58,12 @@
                     <div class="container">
                         <div class="row">
                             <div id="topmenu" class=" six columns">
-                                <ul id="topnav">
-                                    <div class="clear"></div>
-                                    <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
-                                </ul>
+                                 <%if (userId!= null){%>
+                                   <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>我的收藏</strong></a></div>
+                                 <%}else{%>
+                                  <div class="clear"></div>
+                                  <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
+                                  <%} %>
                             </div>
                             <div id="topright" class="six columns">
                                 <div class="language">
@@ -121,7 +124,7 @@
                     </div>
                 </div>
 
-                <section id="navigation">
+                      <section id="navigation">
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
@@ -133,34 +136,34 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li><a href="#">手机</a></li>
-                                            <li><a href="#">移动电源</a></li>
-                                            <li><a href="#">耳机</a></li>
-                                            <li><a href="#">存储卡</a></li>
+                                            <li><a href="product-list-phone.aspx">手机</a></li>
+                                            <li><a href="product-list-powerbank.aspx">移动电源</a></li>
+                                            <li><a href="product-list-headset.aspx">耳机</a></li>
+                                            <li><a href="product-list-SDcard.aspx">存储卡</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-                                            <li><a href="#">平板电脑</a></li>
-                                            <li><a href="#">笔记本电脑</a></li>
-                                            <li><a href="#">键盘</a></li>
-                                            <li><a href="#">鼠标</a></li>
+                                            <li><a href="product-list-tablet.aspx">平板电脑</a></li>
+                                            <li><a href="product-list-laptop.aspx">笔记本电脑</a></li>
+                                            <li><a href="product-list-keyboard.aspx">键盘</a></li>
+                                            <li><a href="product-list-mouse.aspx">鼠标</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-                                            <li><a href="#">数码相机</a></li>
-                                            <li><a href="#">单反相机</a></li>
-                                            <li><a href="#">微单\单电相机</a></li>
-                                            <li><a href="#">单反镜头</a></li>
+                                            <li><a href="product-list-digitalcamera.aspx">数码相机</a></li>
+                                            <li><a href="product-list-SLR.aspx">单反相机</a></li>
+                                            <li><a href="product-list-mmcamera.aspx">微单\单电相机</a></li>
+                                            <li><a href="product-list-lensofSLR.aspx">单反镜头</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-pad.aspx">家用电器</a>
+                                    <li><a href="product-appliance.aspx">家用电器</a>
                                         <ul>
-                                            <li><a href="#">电视机</a></li>
-                                            <li><a href="#">洗衣机</a></li>
-                                            <li><a href="#">空调</a></li>
-                                            <li><a href="#">电冰箱</a></li>
+                                            <li><a href="product-list-tv.aspx">电视机</a></li>
+                                            <li><a href="product-list-washingmachine.aspx">洗衣机</a></li>
+                                            <li><a href="product-list-airconditioner.aspx">空调</a></li>
+                                            <li><a href="product-list-refrigerator.aspx">电冰箱</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -188,11 +191,9 @@
                         <section class="content">
                         	
                             <div class="breadcrumb"><a href="index.aspx">首页</a>  /  关于我们</div>
-                            <h1 class="pagetitle">About Our Company</h1>
+                            <h1 class="pagetitle">Hit The Price公司</h1>
                             
-                            <p><img src="images/content/pic.jpg" alt="" class="frame alignleft"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum. </p>
-
-<p>Cras sed tortor a tortor malesuada tempus eget non ante. Pellentesque cursus, elit nec semper porttitor, nisi magna adipiscing quam, nec convallis leo erat a nunc. Nulla libero urna, faucibus eget fermentum tempus, porttitor ac urna. In tempus lacinia neque id auctor. </p>
+                            <p><img src="images/content/pic.jpg" alt="" class="frame alignleft"/>Hit the Price 是新时期电商网站迅速发展的产物。现今各种类型各种形式的电商网站都已经成型，上线。也正是因为电商网络的繁杂，使得消费者们很难选择到价格最合适的商品。我们网站旨在为消费者们搜索全网进行比价，将最优价格的商品带给消费者们。</p>
 
 
                             
@@ -200,20 +201,21 @@
                             
                             <div class="row">
                             	<div class="one_third columns">
-                                	<h3>Our Philosophy</h3>
-                                    <p>Aliquam luctus rhoncus eros, non malesuada nunc consectetur a. Donec tristique rhoncus libero vitae cursus. Morbi commodo, massa non lobortis rutrum, tortor risus viverra augue, et vehicula quam quam molestie ante. Donec ac eleifend turpis.</p>
+                                	<h3>我们的政策</h3>
+                                    <p>首先我们提供所有原网站的售后服务，并以公司的身份出面申请售后。力争为顾客争取到最优的权益。其次我们网站自营商品提供7天内不满意退换的售后服务。让你买的放心，用的省心。</p>
                                 </div>
                                 <div class="one_third columns">
-                                	<h3>Our Vision</h3>
-                                    <p>Aliquam luctus rhoncus eros, non malesuada nunc consectetur a. Donec tristique rhoncus libero vitae cursus. Morbi commodo, massa non lobortis rutrum, tortor risus viverra augue, et vehicula quam quam molestie ante. Donec ac eleifend turpis.</p>
+                                	<h3>我们的未来</h3>
+                                    <p>
+                                        我们力争尽快引入跨境电商部分的服务，将全世界最好最优的商品带给我们的用户们。</p>
                                 </div>
                                 <div class="one_third columns">
-                                	<h3>Our Mission</h3>
+                                	<h3>我们的目标</h3>
                                     <ul class="list">
-                                        <li>Well Documented</li>
-                                        <li>Awesome Shortcodes</li>
-                                        <li>Ready Translation</li>
-                                        <li>Good Photoshop</li>
+                                        <li>最优的价格</li>
+                                        <li>最全的商品</li>
+                                        <li>最体贴的服务</li>
+                                        <li>最快的速度</li>
                                     </ul>
                                 </div>
                             </div> 
@@ -333,7 +335,7 @@
             <div id="outercopyright">
                 <div class="container">
                     <div id="copyright">
-                        Copyright &copy;2012. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作</a>
+                        Copyright &copy;2018. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作
                     </div>
                     <ul class="sn">
                         <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>

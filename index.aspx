@@ -58,7 +58,7 @@
                     <div class="row">
                     	<div id="topmenu" class=" six columns">
                             <%if (userId!= null){%>
-                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>购物车</strong></a></div>
+                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>我的收藏</strong></a></div>
                             <%}else{%>
                                 <div class="clear"></div>
                                 <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
@@ -78,7 +78,7 @@
                     <div class="container">
                     <div class="row">
                         <div id="logo" class="six columns">
-                            <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                            <a href="index.aspx"><img src="images/logo.png" alt=""/></a>
                             <span class="desc">Best Solution for your business</span>
                         </div>
                         <div class="right six columns">
@@ -135,34 +135,34 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li><a href="#">手机</a></li>
-                                            <li><a href="#">移动电源</a></li>
-                                            <li><a href="#">耳机</a></li>
-                                            <li><a href="#">存储卡</a></li>
+                                            <li><a href="product-list-phone.aspx">手机</a></li>
+                                            <li><a href="product-list-powerbank.aspx">移动电源</a></li>
+                                            <li><a href="product-list-headset.aspx">耳机</a></li>
+                                            <li><a href="product-list-SDcard.aspx">存储卡</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-                                            <li><a href="#">平板电脑</a></li>
-                                            <li><a href="#">笔记本电脑</a></li>
-                                            <li><a href="#">键盘</a></li>
-                                            <li><a href="#">鼠标</a></li>
+                                            <li><a href="product-list-tablet.aspx">平板电脑</a></li>
+                                            <li><a href="product-list-laptop.aspx">笔记本电脑</a></li>
+                                            <li><a href="product-list-keyboard.aspx">键盘</a></li>
+                                            <li><a href="product-list-mouse.aspx">鼠标</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-                                            <li><a href="#">数码相机</a></li>
-                                            <li><a href="#">单反相机</a></li>
-                                            <li><a href="#">微单\单电相机</a></li>
-                                            <li><a href="#">单反镜头</a></li>
+                                            <li><a href="product-list-digitalcamera.aspx">数码相机</a></li>
+                                            <li><a href="product-list-SLR.aspx">单反相机</a></li>
+                                            <li><a href="product-list-mmcamera.aspx">微单\单电相机</a></li>
+                                            <li><a href="product-list-lensofSLR.aspx">单反镜头</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-pad.aspx">家用电器</a>
+                                    <li><a href="product-appliance.aspx">家用电器</a>
                                         <ul>
-                                            <li><a href="#">电视机</a></li>
-                                            <li><a href="#">洗衣机</a></li>
-                                            <li><a href="#">空调</a></li>
-                                            <li><a href="#">电冰箱</a></li>
+                                            <li><a href="product-list-tv.aspx">电视机</a></li>
+                                            <li><a href="product-list-washingmachine.aspx">洗衣机</a></li>
+                                            <li><a href="product-list-airconditioner.aspx">空调</a></li>
+                                            <li><a href="product-list-refrigerator.aspx">电冰箱</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -240,19 +240,14 @@
                                 <div class="row">
                                     <div class="one_fifth columns">
 										<div class="product-wrapper">
-<<<<<<< HEAD
-                                        	<a title="Men's Watch" href="//detail.tmall.com/item.htm?id=564287370630&ns=1&abbucket=0"><img src="//g-search3.alicdn.com/img/bao/uploaded/i4/i4/2311860585/TB12xqEcMaTBuNjSszfXXXgfpXa_!!0-item_pic.jpg" alt=""/></a>
-                                            <h3><a title="Men's Watch" href="//detail.tmall.com/item.htm?id=564287370630&ns=1&abbucket=0">Men's Watch</a></h3>
-=======
-                                        	<a title="Men's Watch" href="product-details.aspx"><img src="images/content/products/p-31.jpg" alt=""/></a>
-                                            <h3><a title="Men's Watch" href="product-details.aspx">Men's Watch</a></h3>
->>>>>>> ecc7acf942a159b77e6a8675a724faed7883d0d6
+                                        	<a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx"><img src="images/content/products/iphonex-1.jpg" alt=""/></a>
+                                            <h3><a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx">苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机</a></h3>
                                             <div class="price-cart-wrapper">
                                             	<div class="price">
-                                                	$120.00
+                                                	￥7749.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                	<a href="product-details-iPhone X.aspx" class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -524,7 +519,7 @@
             <div id="outercopyright">
                 <div class="container">
                     <div id="copyright">
-                        Copyright &copy;2012. All Rights Reserved. &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作</a>
+                        Copyright &copy;2018. All Rights Reserved. &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作
                     </div>
                     <ul class="sn">
                         <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>
