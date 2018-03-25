@@ -75,7 +75,7 @@
                     <div class="container">
                         <div class="row">
                             <div id="logo" class="six columns">
-                                <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                                <a href="index.aspx"><img src="images/logo.png" alt="" /></a>
                                 <span class="desc">Best Solution for your business</span>
                             </div>
                             <div class="right six columns">

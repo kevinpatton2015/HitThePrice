@@ -78,7 +78,7 @@
                     <div class="container">
                     <div class="row">
                         <div id="logo" class="six columns">
-                            <a href="index.html"><img src="images/logo.png" alt=""/></a>
+                            <a href="index.aspx"><img src="images/logo.png" alt=""/></a>
                             <span class="desc">Best Solution for your business</span>
                         </div>
                         <div class="right six columns">
@@ -240,14 +240,14 @@
                                 <div class="row">
                                     <div class="one_fifth columns">
 										<div class="product-wrapper">
-                                        	<a title="Men's Watch" href="product-details.html"><img src="images/content/products/p-31.jpg" alt=""/></a>
-                                            <h3><a title="Men's Watch" href="product-details.html">Men's Watch</a></h3>
+                                        	<a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx"><img src="images/content/products/iphonex-1.jpg" alt=""/></a>
+                                            <h3><a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx">苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机</a></h3>
                                             <div class="price-cart-wrapper">
                                             	<div class="price">
-                                                	$120.00
+                                                	￥7749.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.html" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                	<a href="product-details-iPhone X.aspx" class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
