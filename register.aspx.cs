@@ -45,24 +45,14 @@ public partial class re : System.Web.UI.Page
         try
         {
             string sqlstr = "insert into user_infor" + "(txtUserID,txtLoginName,txtPwd,txtEmail,txtSecPwd)" + "values('" + Name + "','" + Name + "','" + Password + "','" + EmailAddress + "','" + Password + "')";
-<<<<<<< HEAD
-            objConnection.Open();//打开连接 
-            OleDbCommand cmd = new OleDbCommand(sqlstr, objConnection);
-            cmd.ExecuteNonQuery();          
-=======
             objConnection.Open();//打开连接
             OleDbCommand cmd = new OleDbCommand(sqlstr, objConnection);
             cmd.ExecuteNonQuery();
->>>>>>> a4bd1edc62472f39432d610ebbfad89877a5c42c
         }
         catch(System.Data.OleDb.OleDbException)
         {
             IsSuccess = false;
-<<<<<<< HEAD
             Response.Write("<script>alert('用户已注册');</script>");            
-=======
-            Response.Write("<script>alert('用户已注册');</script>");           
->>>>>>> a4bd1edc62472f39432d610ebbfad89877a5c42c
         }
         finally
         {

@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>购物车 - HitThePrice - 价格再低一点</title>
+	<title>我的收藏 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -120,7 +120,7 @@
                     </div>
                 </div>
 
-               <section id="navigation">
+                  <section id="navigation">
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
@@ -132,34 +132,34 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li><a href="#">手机</a></li>
-                                            <li><a href="#">移动电源</a></li>
-                                            <li><a href="#">耳机</a></li>
-                                            <li><a href="#">存储卡</a></li>
+                                            <li><a href="product-list-phone.aspx">手机</a></li>
+                                            <li><a href="product-list-powerbank.aspx">移动电源</a></li>
+                                            <li><a href="product-list-headset.aspx">耳机</a></li>
+                                            <li><a href="product-list-SDcard.aspx">存储卡</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-                                            <li><a href="#">平板电脑</a></li>
-                                            <li><a href="#">笔记本电脑</a></li>
-                                            <li><a href="#">键盘</a></li>
-                                            <li><a href="#">鼠标</a></li>
+                                            <li><a href="product-list-tablet.aspx">平板电脑</a></li>
+                                            <li><a href="product-list-laptop.aspx">笔记本电脑</a></li>
+                                            <li><a href="product-list-keyboard.aspx">键盘</a></li>
+                                            <li><a href="product-list-mouse.aspx">鼠标</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-                                            <li><a href="#">数码相机</a></li>
-                                            <li><a href="#">单反相机</a></li>
-                                            <li><a href="#">微单\单电相机</a></li>
-                                            <li><a href="#">单反镜头</a></li>
+                                            <li><a href="product-list-digitalcamera.aspx">数码相机</a></li>
+                                            <li><a href="product-list-SLR.aspx">单反相机</a></li>
+                                            <li><a href="product-list-mmcamera.aspx">微单\单电相机</a></li>
+                                            <li><a href="product-list-lensofSLR.aspx">单反镜头</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="product-pad.aspx">家用电器</a>
+                                    <li><a href="product-appliance.aspx">家用电器</a>
                                         <ul>
-                                            <li><a href="#">电视机</a></li>
-                                            <li><a href="#">洗衣机</a></li>
-                                            <li><a href="#">空调</a></li>
-                                            <li><a href="#">电冰箱</a></li>
+                                            <li><a href="product-list-tv.aspx">电视机</a></li>
+                                            <li><a href="product-list-washingmachine.aspx">洗衣机</a></li>
+                                            <li><a href="product-list-airconditioner.aspx">空调</a></li>
+                                            <li><a href="product-list-refrigerator.aspx">电冰箱</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -191,38 +191,32 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 购物车</div>
-                                <h1 class="pagetitle">我的购物车</h1>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 我的收藏</div>
+                                <h1 class="pagetitle">我的收藏</h1>
   
                                 <div class="table_block" id="order-detail-content">
                                     <table id="cart_summary">
                                         <thead>
                                             <tr>
-                                                <th class="cart_product first_item">Product</th>
-                                                <th class="cart_description item">Description</th>
-                                                <th class="cart_ref item">Ref.</th>
-                                                <th class="cart_avail item">Avail.</th>
-                                                <th class="cart_unit item">Unit price</th>
-                                                <th class="cart_quantity item">Qty</th>
-                                                <th class="cart_total item">Total</th>
+                                                <th class="cart_product first_item">产品图片</th>
+                                                <th class="cart_description item">产品名称</th>
+                                                <th class="cart_ref item">商城</th>
+                                                <th class="cart_ref item">库存</th>
+                                                <th class="cart_price" colspan="2">价格</th>
                                             </tr>
                                         </thead>
 
                                         <tbody>
                                             <tr class="cart_item" >
                                                 <td class="cart_product">
-                                                    <a href="#"><img alt="" src="images/content/products/p-small1.jpg"></a>
+                                                    <a href="product-details-iPhone X.aspx"><img alt="" src="images/content/products/iphonex-1.jpg"></a>
                                                 </td>
                                                 <td class="cart_description">
-                                                    iPhone 4S for Gift    	
+                                                    <a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx">苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机</a>    	
                                                 </td>
-                                                <td class="cart_ref">--</td>
-                                                <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-                                                <td class="cart_unit"> $120.00 </td>
-                                                <td class="cart_quantity"> 1 </td>
-                                                <td class="cart_total">
-                                                    <span class="price">$120.00</span>
-                                                </td>
+                                                <td class="cart_ref">京东</td>
+                                                <td class="cart_ref">4726</td>
+                                                <td class="cart_price" colspan="2"> $120.00 </td>
                                             </tr>
                                             
                                             <tr class="cart_item" >
@@ -234,11 +228,7 @@
                                                 </td>
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-                                                <td class="cart_unit"> $250.00   </td>
-                                                <td class="cart_quantity"> 1 </td>
-                                                <td class="cart_total">
-                                                    <span class="price">$250.00  </span>
-                                                </td>
+                                                <td class="cart_unit" colspan="2"> $250.00 </td>
                                             </tr>
                                             
                                             <tr class="cart_item" >
@@ -250,11 +240,7 @@
                                                 </td>
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_avail"><img alt="" src="images/check.gif"></td>
-                                                <td class="cart_unit"> $120.00 </td>
-                                                <td class="cart_quantity"> 1 </td>
-                                                <td class="cart_total">
-                                                    <span class="price">$120.00</span>
-                                                </td>
+                                                <td class="cart_unit" colspan="2"> $120.00 </td>
                                             </tr>
                                         </tbody>
                                         
@@ -263,39 +249,39 @@
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">Total products (tax incl.):</td>
+                                                <td><nobr>Total products (tax incl.):</nobr></td>
                                                 <td id="total_product" class="price">$490.00</td>
                                             </tr>
                                             <tr class="cart_total delivery">
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">Total shipping (tax incl.):</td>
+                                                <td><nobr>Total shipping (tax incl.):</nobr></td>
                                                 <td id="total_shipping" class="price">$ 10.00</td>
                                             </tr>								
                                             <tr class="cart_total excl">
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">Total (tax excl.):</td>
+                                                <td>Total (tax excl.):</td>
                                                 <td id="total_price_without_tax" class="price">$500.00</td>
                                             </tr>
                                             <tr class="cart_total tax">
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">Total tax:</td>
+                                                <td>Total tax:</td>
                                                 <td id="total_tax" class="price">0</td>
                                             </tr>
                                             <tr class="cart_total total">
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">Total:</td>
+                                                <td>Total:</td>
                                                 <td id="total_price_container" class="price total_price_container"><span id="total_price">$500.00</span></td>
                                             </tr>
                                             <tr class="cart_total_price">
-                                                <td class="cart_voucher" id="cart_voucher" colspan="7">
+                                                <td class="cart_voucher" id="cart_voucher" colspan="6">
                                                 <form id="voucher" method="post" action="#">
                                                   <fieldset>
                                                       <h3><label>Vouchers</label></h3>
@@ -495,7 +481,7 @@
             <div id="outercopyright">
                 <div class="container">
                     <div id="copyright">
-                        Copyright &copy;2012. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作</a>
+                        Copyright &copy;2018. All Rights Reserved.  &copy;信管152高俊健、电信151贺一凡、电信151张悦程制作
                     </div>
                     <ul class="sn">
                         <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>
@@ -527,10 +513,10 @@
 <!-- jQuery Carosel Slider -->
 <script type="text/javascript" src="js/jquery.elastislide.js"></script>
 <script type="text/javascript">
-	jQuery('#carousel').elastislide({
-		imageW 	: 135,
-		margin      : 12
-	});
+    jQuery('#carousel').elastislide({
+        imageW: 135,
+        margin: 12
+    });
 </script>
 
 <!-- jQuery Dropdown Mobile -->

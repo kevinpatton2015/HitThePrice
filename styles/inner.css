@@ -172,7 +172,8 @@ USE THIS STYLE SHEET FOR INNER PAGE
 
 /* Chart */
 .cart_total td{ text-align:right;}
-.cart_unit{ width:18%;}
+.cart_unit{
+}
 .cart_item td{ border-bottom:0px; padding-top:10px; padding-bottom:10px;}
 #order-detail-content thead th{ border-right:0px; text-transform:uppercase}
 #order-detail-content tr td{ border-width:0 0 1px 0; vertical-align:middle;}
