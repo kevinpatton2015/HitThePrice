@@ -262,14 +262,16 @@
                                         <li><span class='cs-name'>屏幕尺寸：</span><span class='cs-param'>5.1英寸-5.9英寸</span></li>
                                         <li><span class='cs-name'>主摄像头：</span><span class='cs-param'>1200万像素</span></li>
                                         <li><span class='cs-name'>存储内存：</span><span class='cs-param'>64GB</span></li>
-                                        <li><span class='cs-name'>运行内存：</span><span class='cs-param'>2GB</span></li></ul><a class="morecs" href="pm_571602.aspx" >详细参数&gt;&gt;</a>
+                                        <li><span class='cs-name'>运行内存：</span><span class='cs-param'>2GB</span></li></ul><a class="morecs" href="#tab2" >详细参数&gt;&gt;</a>
                                         <br />
 									    <a href="checkout.aspx" class="cart">加入收藏</a>
                                     </div>
                                 </div>
-                           </div>
                                 
                                 <div class="separator"></div>
+                                
+                                
+                           </div>
                                 
                                 
                                 <div class="tabcontainer">
@@ -437,10 +439,7 @@
                                
                                         </div>
                                         <div id="tab1" class="tab-content">
-
                                             <div style="float:left;width:750px;">
-
-
 <div class="clear"></div>
 </div><div  class="hp">
 <div style="float:left;width:580px;">
@@ -646,15 +645,18 @@
  <p  class="title1"> </p>
 
 </div>
+                                        
+                                        </div>
+                                        </div>
                                         <div id="tab2" class="tab-content"> 
                                              <div style="float:left;width:750px;">
-                            
+                                              <p>上市日期：2017年11月<br />手机类型：4G手机，3G手机，智能手机，平板手机，拍照手机，快充手机，游戏手机<br/>操作系统：iOS 11<br/>
+                                                  触摸屏类型：电容屏，多点触控<br />主屏尺寸：5.8英寸<br />主屏材质：OLED，Multi-Touch显示屏<br />主屏分辨率：2436x1125像素<br />屏幕像素密度：463ppi<br />窄边框：4.57mm<br />屏幕占比：81.15%<br />其他屏幕参数：全面屏，HDR显示，1，000，000:1 对比度(标准)，原彩显示，广色域显示(P3)，3D Touch，625cd/m2 最大亮度 (标准)，采用防油渍防指纹涂层，支持多种语言文字同时显示<br />
+                                                  CPU型号：苹果 A11+M11协处理器<br />CPU频率：2.4GHz<br />核心数：六核<br />RAM容量：3GB<br />ROM容量：64GB/256GB<br />电池类型：不可拆卸式电池<br />电池容量：2716mAh<br />续航时间&使用无线外设时的通话时间：最长可达21小时<br />互联网使用：最长可达12小时<br />视频无线播放：最长可达13小时<br />音频无线播放：最长可达60小时<br />充电时间：可快速充电30分钟，最多可充至50%电量，内置锂离子充电电池，无线充电(适配各类 Qi 充电器10)，通过电脑的USB端口或电源适配器充电<br />
 
-
+                                              </p>
                                                </div>
                                             </div>
-                                        </div>
-                                        </div>
                                     </div>
                                 </div>
                                

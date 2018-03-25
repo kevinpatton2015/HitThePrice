@@ -222,7 +222,7 @@
                                        	</select>
                                     </p>
                                 </form>
-                                <a href="#" class="button">Compare</a>
+                                <a href="#" class="button">筛选</a>
                                 
                                 </div>
                                 
@@ -349,22 +349,20 @@
                     	<div class="sidebar">
                         <ul>
                             <li class="widget-container">
-                                <h2 class="widget-title">Categories</h2>
+                                <h2 class="widget-title">商品目录</h2>
                                 <ul>
-                                    <li><a href="#">Clothing (8)</a>
+                                    <li><a href="product-phone.aspx">手机数码 (8)</a>
                                     	<ul>
-                                            <li><a href="#">Woman Dress (4)</a></li>
-                                            <li><a href="#">Man Suit (4)</a></li>
+                                            <li><a href="product-list-phone.aspx">手机 (4)</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Furniture (4)</a></li>
-                                    <li><a href="#">Electronics (4)</a></li>
-                                    <li><a href="#">Accessories (4)</a></li>
-                                    <li><a href="#">Shoes (4)</a></li>
+                                    <li><a href="product-laptop.aspx">电脑、配件 (4)</a></li>
+                                    <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
+                                    <li><a href="product-appliance.aspx">家用电器 (4)</a></li>
                                 </ul>
                             </li>
                             <li class="widget-container">
-                                <h2 class="widget-title">Special Offers</h2>
+                                <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="images/content/products/p-28.jpg" alt="" />

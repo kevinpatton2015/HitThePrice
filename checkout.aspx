@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -56,10 +57,12 @@
                     <div class="container">
                         <div class="row">
                             <div id="topmenu" class=" six columns">
-                                <ul id="topnav">
-                                    <div class="clear"></div>
-                                    <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
-                                </ul>
+                                 <%if (userId!= null){%>
+                                     <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>我的收藏</strong></a></div>
+                                 <%}else{%>
+                                <div class="clear"></div>
+                                <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
+                                 <%} %>
                             </div>
                             <div id="topright" class="six columns">
                                 <div class="language">
@@ -198,13 +201,13 @@
                                     <table id="cart_summary">
                                         <thead>
                                             <tr>
-                                                <th class="cart_product first_item">Product</th>
-                                                <th class="cart_description item">Description</th>
-                                                <th class="cart_ref item">Ref.</th>
-                                                <th class="cart_avail item">Avail.</th>
-                                                <th class="cart_unit item">Unit price</th>
-                                                <th class="cart_quantity item">Qty</th>
-                                                <th class="cart_total item">Total</th>
+                                                <th class="cart_product first_item">图片</th>
+                                                <th class="cart_description item">产品名称</th>
+                                                <th class="cart_ref item">&emsp;</th>
+                                                <th class="cart_avail item">&emsp;</th>
+                                                <th class="cart_unit item">&emsp;</th>
+                                                <th class="cart_quantity item">运费</th>
+                                                <th class="cart_total item">价格</th>
                                             </tr>
                                         </thead>
 
@@ -217,14 +220,13 @@
                                                     <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
                                                    【华东爽购】Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机  </a>   	
                                                 </td>
-                                                <td width="10px"class="cart_ref">--</td>
-                                                <td width="10px"class="cart_avail">&nbsp;</td>
+                                                <td width="10px"class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
                                                 <td width="100px" class="cart_unit item">
-                                                <a class="button" href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">GO</a>
-                                                </td>
+                                                <a class="button" href="checkout.aspx">删除</a></td>
                                                 <td width="70px"class="cart_description"> 包邮 </td>
                                                 <td width="40px"class="cart_total">
-                                                    <span class="price"><font color = ＂#FF0000＂ >￥7749.00</span>
+                                                    <span class="price"><font color = "#FF0000">￥7749.00</span>
                                                 </td>
                                             </tr>
                                             
@@ -236,13 +238,13 @@
                                                      <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
                                                     Apple iPhone X 64G 深空灰 全网通4G手机 </a>   	
                                                 </td>
-                                                <td class="cart_ref">--</td>
-                                                <td width="10px"class="cart_avail">&nbsp;</td>
+                                                <td class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
                                                 <td class="cart_unit item">
-                                                <a class="button" href="product-phone.aspx">GO</a></td>
+                                                <a class="button" href="checkout.aspx">删除</a></td>
                                                 <td class="cart_description"> 包邮 </td>
                                                  <td class="cart_total">
-                                                    <span class="price"><font color = ＂#FF0000＂ >￥7888.00</span>
+                                                    <span class="price"><font color = "#FF0000" >￥7888.00</span>
                                                 </td>
 
                                             </tr>
@@ -255,13 +257,13 @@
                                                      <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
                                                     Apple 苹果 手机 iPhone X 深空灰色 64G</a>    	
                                                 </td>
-                                                <td class="cart_ref">--</td>
-                                                <td width="10px"class="cart_avail">&nbsp;</td>
+                                                <td class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
                                                 <td class="cart_unit item">
-                                                <a class="button" href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">GO</a></td>
+                                                <a class="button" href="checkout.aspx">删除</a></td>                                                
                                                 <td class="cart_description"> 包邮 </td>
                                                 <td class="cart_total">
-                                                    <span class="price"><font color = ＂#FF0000＂ >￥7947.00</span>
+                                                    <span class="price"><font color = "#FF0000" >￥7947.00</span>
                                                 </td>
                                                 
                                             </tr>
@@ -362,22 +364,16 @@
                     	<div class="sidebar">
                         <ul>
                             <li class="widget-container">
-                                <h2 class="widget-title">Categories</h2>
+                                <h2 class="widget-title">商品目录</h2>
                                 <ul>
-                                    <li><a href="#">Clothing (8)</a>
-                                    	<ul>
-                                            <li><a href="#">Woman Dress (4)</a></li>
-                                            <li><a href="#">Man Suit (4)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Furniture (4)</a></li>
-                                    <li><a href="#">Electronics (4)</a></li>
-                                    <li><a href="#">Accessories (4)</a></li>
-                                    <li><a href="#">Shoes (4)</a></li>
+                                    <li><a href="product-phone.aspx">手机数码 (8)</a></li>
+                                    <li><a href="product-laptop.aspx">电脑、配件 (4)</a></li>
+                                    <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
+                                    <li><a href="product-appliance.aspx">家用电器 (4)</a></li>
                                 </ul>
                             </li>
                             <li class="widget-container">
-                                <h2 class="widget-title">Special Offers</h2>
+                                <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="images/content/products/p-28.jpg" alt="" />

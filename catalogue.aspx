@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -56,10 +57,12 @@
                     <div class="container">
                         <div class="row">
                             <div id="topmenu" class=" six columns">
-                                <ul id="topnav">
-                                    <div class="clear"></div>
-                                    <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
-                                </ul>
+                            <%if (userId!= null){%>
+                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>我的收藏</strong></a></div>
+                            <%}else{%>
+                                <div class="clear"></div>
+                                <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
+                            <%} %>
                             </div>
                             <div id="topright" class="six columns">
                                 <div class="language">
@@ -297,22 +300,16 @@
                     	<div class="sidebar">
                         <ul>
                             <li class="widget-container">
-                                <h2 class="widget-title">Categories</h2>
+                                <h2 class="widget-title">商品目录</h2>
                                 <ul>
-                                    <li><a href="#">Clothing (8)</a>
-                                    	<ul>
-                                            <li><a href="#">Woman Dress (4)</a></li>
-                                            <li><a href="#">Man Suit (4)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Furniture (4)</a></li>
-                                    <li><a href="#">Electronics (4)</a></li>
-                                    <li><a href="#">Accessories (4)</a></li>
-                                    <li><a href="#">Shoes (4)</a></li>
+                                    <li><a href="product-phone.aspx">手机数码 (8)</a></li>
+                                    <li><a href="product-laptop.aspx">电脑、配件 (4)</a></li>
+                                    <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
+                                    <li><a href="product-appliance.aspx">家用电器 (4)</a></li>
                                 </ul>
                             </li>
                             <li class="widget-container">
-                                <h2 class="widget-title">Special Offers</h2>
+                                <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="images/content/products/p-28.jpg" alt="" />
