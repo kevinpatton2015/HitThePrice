@@ -191,7 +191,7 @@
                         	<section class="content" id="product-container">
                             
                                 <div class="breadcrumb"><a href="index.aspx">首页</a> / Product Grid </div>
-                   				<img src="images/content/手机.jpg" alt=""/>
+                   				<img src="images/content/clothing.jpg" alt=""/>
                                 
                                 <div class="sortPagiBar">
                                 <form action="index.aspx" class="productsSortForm">
