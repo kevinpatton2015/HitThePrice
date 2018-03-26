@@ -23,6 +23,12 @@ public partial class index : System.Web.UI.Page
     {
         if (Session["UserId"] != null)
         { userId = Session["UserId"].ToString(); }
+
+        if (Session["logoutFlag"] != null)
+        {
+            Session["UserId"] = null;
+            Session.Remove("UserId");
+        }
     }
 
     protected void Search(object sender, EventArgs e)
@@ -40,13 +46,16 @@ public partial class index : System.Web.UI.Page
 
     protected void Logout(object sender, EventArgs e)
     {
-        logut();
-    }
+        Session["logoutFlag"] = "true";
 
-    public void logut()
-    {
-        Session["UserId"] = null;
-        Session.Remove("UserId");
+        try
+        {
+            Session["UserId"] = null;
+            Session.Remove("UserId");
+        }
+        catch { }
+
+        Response.Redirect("index.aspx");
     }
 
     public void TBcrawl(string keyword, string ie)
@@ -77,7 +86,7 @@ public partial class index : System.Web.UI.Page
             detailUrList.Add(match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "="));
         foreach (Match match in Regex.Matches(TBhtml, loc))
             locList.Add(match.ToString().Remove(0, 11).Replace("\"", ""));
-       
+
     }
 
     //获取网页源码

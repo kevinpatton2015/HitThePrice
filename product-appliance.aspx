@@ -237,7 +237,7 @@
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -252,7 +252,7 @@
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -267,7 +267,7 @@
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -282,7 +282,7 @@
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -297,7 +297,7 @@
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -312,7 +312,7 @@
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -327,7 +327,7 @@
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -342,7 +342,7 @@
                                                     $120.00
                                                 </div>
                                                 <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="checkout.aspx" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -426,7 +426,7 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <!-- FOOTER SIDEBAR -->
+         <!-- FOOTER SIDEBAR -->
             <div id="outerfootersidebar">
                 <div class="container">
                     <div id="footersidebar" class="row"> 

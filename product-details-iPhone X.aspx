@@ -262,7 +262,7 @@
                                         <li><span class='cs-name'>存储内存：</span><span class='cs-param'>64GB</span></li>
                                         <li><span class='cs-name'>运行内存：</span><span class='cs-param'>2GB</span></li></ul><a class="morecs" href="#tab2" >详细参数&gt;&gt;</a>
                                         <br />
-									    <a href="checkout.aspx" class="cart">加入收藏</a>
+									    <a href="favorite.aspx" class="cart">加入收藏</a>
                                     </div>
                                 </div>
                                 
@@ -711,7 +711,7 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <!-- FOOTER SIDEBAR -->
+         <!-- FOOTER SIDEBAR -->
             <div id="outerfootersidebar">
                 <div class="container">
                     <div id="footersidebar" class="row"> 

@@ -420,12 +420,12 @@
                         <div id="footcol1"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Information</h2>
+                                    <h2 class="widget-title">联系信息</h2>
                                     <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Delivery Information</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms &amp; Condition</a></li>
+                                        <li><a href="#">关于我们</a></li>
+                                        <li><a href="#">送货信息</a></li>
+                                        <li><a href="#">隐私信息</a></li>
+                                        
                                     </ul>
                                 </li>
                             </ul>
@@ -433,11 +433,11 @@
                         <div id="footcol2"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Customer Services</h2>
+                                    <h2 class="widget-title">客户服务</h2>
                                     <ul>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Returns</a></li>
-                                        <li><a href="#">Site Map</a></li>
+                                        <li><a href="#">联系我们</a></li>
+                                        <li><a href="#">返修货品</a></li>
+                                        <li><a href="#">网站地图</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -445,12 +445,12 @@
                         <div id="footcol3"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">My Account</h2>
+                                    <h2 class="widget-title">我的账户</h2>
                                     <ul>
-                                        <li><a href="#">Order History</a></li>
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Wish List</a></li>
-                                        <li><a href="#">Newsletter</a></li>
+                                        <li><a href="#">订单历史</a></li>
+                                        <li><a href="#">我的账户</a></li>
+                                        <li><a href="#">愿望单</a></li>
+                                        <li><a href="#">新信息</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -460,10 +460,10 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">Extras</h2>
                                     <ul>
-                                        <li><a href="#">Brands</a></li>
-                                        <li><a href="#">Affiliates</a></li>
-                                        <li><a href="#">Gift Vouchers</a></li>
-                                        <li><a href="#">Specials</a></li>
+                                        <li><a href="#">品牌</a></li>
+                                        <li><a href="#">附件</a></li>
+                                        <li><a href="#">礼品包装</a></li>
+                                        <li><a href="#">特供</a></li>
                                     </ul>
                               </li>
                             </ul>
@@ -473,9 +473,9 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">Contact Us</h2>
 									<div class="textwidget">
-                                        Telp: +62 500 800 123<br>
-                                        Fax: +62 500 800 112<br>
-                                        <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                                        Telp: 86-21-64870020 <br/>
+                                        Fax: 86-21-64870020 <br/>
+                                        <a href="mailto:kevinpatton2015@icloud.com">kevinpatton2015@icloud.com</a>
                                     </div>
                               </li>
                             </ul>

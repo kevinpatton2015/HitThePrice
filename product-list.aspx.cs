@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -22,10 +26,17 @@ public partial class product_list : System.Web.UI.Page
         if (Session["UserId"] != null)
         { userId = Session["UserId"].ToString(); }
 
+        if (Session["logoutFlag"] != null)
+        {
+            Session["UserId"] = null;
+            Session.Remove("UserId");
+        }
+
         try
         {
             keyword = Session["keyword"].ToString();
             pagetitle.InnerText = keyword + "信息";
+            proList.InnerText = keyword;
 
             titleList = (ArrayList)Session["titleList"];
             priceList = (ArrayList)Session["priceList"];
@@ -71,5 +82,19 @@ public partial class product_list : System.Web.UI.Page
         {
 
         }
+    }
+
+    protected void Logout(object sender, EventArgs e)
+    {
+        Session["logoutFlag"] = "true";
+
+        try
+        {
+            Session["UserId"] = null;
+            Session.Remove("UserId");
+        }
+        catch { }
+
+        Response.Redirect("index.aspx");
     }
 }

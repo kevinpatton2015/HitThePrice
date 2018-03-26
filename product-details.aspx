@@ -298,7 +298,7 @@
                                         </fieldset>
                                     </form>
                                     
-									<a href="checkout.aspx" class="cart">Add to cart</a>
+									<a href="favorite.aspx" class="cart">Add to cart</a>
                                     <form action="index.aspx" class="compare">
                                     <input type="checkbox" class="comparator"> 
                                     <label>Add to Compare</label>
@@ -495,7 +495,7 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <!-- FOOTER SIDEBAR -->
+         <!-- FOOTER SIDEBAR -->
             <div id="outerfootersidebar">
                 <div class="container">
                     <div id="footersidebar" class="row"> 

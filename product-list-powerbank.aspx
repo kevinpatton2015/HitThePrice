@@ -412,7 +412,7 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <!-- FOOTER SIDEBAR -->
+         <!-- FOOTER SIDEBAR -->
             <div id="outerfootersidebar">
                 <div class="container">
                     <div id="footersidebar" class="row"> 

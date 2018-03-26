@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ali.aspx.cs" Inherits="checkout" %>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -8,7 +9,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>电脑、配件 - HitThePrice - 价格再低一点</title>
+	<title>购物车 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -56,10 +57,12 @@
                     <div class="container">
                         <div class="row">
                             <div id="topmenu" class=" six columns">
-                                <ul id="topnav">
-                                    <div class="clear"></div>
-                                    <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
-                                </ul>
+                                 <%if (userId!= null){%>
+                                     <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="favorite.aspx"><strong>购物车</strong></a></div>
+                                 <%}else{%>
+                                <div class="clear"></div>
+                                <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
+                                 <%} %>
                             </div>
                             <div id="topright" class="six columns">
                                 <div class="language">
@@ -120,7 +123,7 @@
                     </div>
                 </div>
 
-               <section id="navigation">
+                  <section id="navigation">
                     <div class="container">
                     <div class="row">
                     <nav id="nav-wrap" class="twelve columns">
@@ -189,169 +192,47 @@
                     <section id="maincontent" class="ten columns positionleft">
                     	<div class="padcontent">
                     
-                        	<section class="content" id="product-container">
+                        	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">Home</a> / Product Grid </div>
-                   				<img src="images/content/clothing.jpg" alt=""/>
-                                
-                                <div class="sortPagiBar">
-                                <form action="index.aspx" class="productsSortForm">
-                                    <p class="select">
-                                        <label for="selectPrductSort">Sort by</label>
-                                        <select class="selectProductSort">
-                                            <option selected="selected" value="position:asc">Default</option>
-                                            <option value="price:asc">Price: lowest first</option>
-                                            <option value="price:desc">Price: highest first</option>
-                                            <option value="name:asc">Product Name: A to Z</option>
-                                            <option value="name:desc">Product Name: Z to A</option>
-                                            <option value="quantity:desc">In-stock first</option>
-                                       	</select>
-                                    </p>
-                                </form>
-                                
-                                <form action="index.aspx" class="productsShowForm">
-                                    <p class="select">
-                                        <label for="selectPrductSort">Show:</label>
-                                        <select class="selectProductSort">
-                                            <option selected="selected"> 4 </option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                       	</select>
-                                    </p>
-                                </form>
-                                <a href="#" class="button">Compare</a>
-                                
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> /  支付
+
+
                                 </div>
                                 
-                                <div class="row">
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                        	<span class="new"></span>
-                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
-                                            <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
-                                            <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-5.jpg" alt=""/></a>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="White Dress" href="product-details.aspx"><img src="images/content/products/p-6.jpg" alt=""/></a>
-                                            <h3><a title="White Dress" href="product-details.aspx">White Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Unique Dress" href="product-details.aspx"><img src="images/content/products/p-7.jpg" alt=""/></a>
-                                            <h3><a title="Unique Dress" href="product-details.aspx">Unique Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="one_fourth columns">
-                                        <div class="product-wrapper">
-                                            <a title="Flower Dress" href="product-details.aspx"><img src="images/content/products/p-8.jpg" alt=""/></a>
-                                            <h3><a title="Flower Dress" href="product-details.aspx">Flower Dress</a></h3>
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">
-                                                    $120.00
-                                                </div>
-                                                <div class="cart">
-                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="table_block" id="order-detail-content">
+                                    
                                 </div>
-								<div class="wp-pagenavi">
-                                	<a href="#" class="page">1</a><span class="current"><span>2</span></span><a href="#" class="page">3</a> &nbsp;&nbsp;Showing 4 to 4 of 12 (3 Pages)
-                            	</div>
+								<div style = "text-align:right;">
+                                  
+                                  <br>
+                                    </div>
+
+                                <div id="payment">
+                                    <ul class="payment_methods">
+                                        <li>
+                                        <input type="radio" id="payment_method_paypal" class="input-radio" name="payment_method" value="支付宝" checked="checked"  />
+                                        <label for="payment_method_paypal">支付宝 <img src="images/alipay.png" alt="支付宝" /></label> 					
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="payment_method_bacs" class="input-radio" name="payment_method" value="bacs"  />
+                                            <label for="payment_method_bacs">Direct Bank Transfer </label> 
+                                            <div class="payment_box">
+                                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. 
+                                            Your order wont be shipped until the funds have cleared in our account.</p>
+                                            </div>						
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="payment_method_cheque" class="input-radio" name="payment_method" value="cheque"  />
+                                            <label for="payment_method_cheque">Cheque Payment </label> 					
+                                        </li>
+                                    </ul>
+                                
+                                    <div class="form-row">		
+                                        <a href="#" class="button">去支付</a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+
 
 							</section>
                          
@@ -363,22 +244,16 @@
                     	<div class="sidebar">
                         <ul>
                             <li class="widget-container">
-                                <h2 class="widget-title">Categories</h2>
+                                <h2 class="widget-title">商品目录</h2>
                                 <ul>
-                                    <li><a href="#">Clothing (8)</a>
-                                    	<ul>
-                                            <li><a href="#">Woman Dress (4)</a></li>
-                                            <li><a href="#">Man Suit (4)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Furniture (4)</a></li>
-                                    <li><a href="#">Electronics (4)</a></li>
-                                    <li><a href="#">Accessories (4)</a></li>
-                                    <li><a href="#">Shoes (4)</a></li>
+                                    <li><a href="product-phone.aspx">手机数码 (8)</a></li>
+                                    <li><a href="product-laptop.aspx">电脑、配件 (4)</a></li>
+                                    <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
+                                    <li><a href="product-appliance.aspx">家用电器 (4)</a></li>
                                 </ul>
                             </li>
                             <li class="widget-container">
-                                <h2 class="widget-title">Special Offers</h2>
+                                <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="images/content/products/p-28.jpg" alt="" />
@@ -426,7 +301,7 @@
                 </div>
                 <div class="clear"></div>
             </div>
-         <!-- FOOTER SIDEBAR -->
+            <!-- FOOTER SIDEBAR -->
             <div id="outerfootersidebar">
                 <div class="container">
                     <div id="footersidebar" class="row"> 
@@ -434,12 +309,12 @@
                         <div id="footcol1"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Information</h2>
+                                    <h2 class="widget-title">联系信息</h2>
                                     <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Delivery Information</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms &amp; Condition</a></li>
+                                        <li><a href="#">关于我们</a></li>
+                                        <li><a href="#">送货信息</a></li>
+                                        <li><a href="#">隐私信息</a></li>
+                                        
                                     </ul>
                                 </li>
                             </ul>
@@ -447,11 +322,11 @@
                         <div id="footcol2"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Customer Services</h2>
+                                    <h2 class="widget-title">客户服务</h2>
                                     <ul>
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Returns</a></li>
-                                        <li><a href="#">Site Map</a></li>
+                                        <li><a href="#">联系我们</a></li>
+                                        <li><a href="#">返修货品</a></li>
+                                        <li><a href="#">网站地图</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -459,12 +334,12 @@
                         <div id="footcol3"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">My Account</h2>
+                                    <h2 class="widget-title">我的账户</h2>
                                     <ul>
-                                        <li><a href="#">Order History</a></li>
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Wish List</a></li>
-                                        <li><a href="#">Newsletter</a></li>
+                                        <li><a href="#">订单历史</a></li>
+                                        <li><a href="#">我的账户</a></li>
+                                        <li><a href="#">愿望单</a></li>
+                                        <li><a href="#">新信息</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -474,10 +349,10 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">Extras</h2>
                                     <ul>
-                                        <li><a href="#">Brands</a></li>
-                                        <li><a href="#">Affiliates</a></li>
-                                        <li><a href="#">Gift Vouchers</a></li>
-                                        <li><a href="#">Specials</a></li>
+                                        <li><a href="#">品牌</a></li>
+                                        <li><a href="#">附件</a></li>
+                                        <li><a href="#">礼品包装</a></li>
+                                        <li><a href="#">特供</a></li>
                                     </ul>
                               </li>
                             </ul>
@@ -487,9 +362,9 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">Contact Us</h2>
 									<div class="textwidget">
-                                        Telp: +62 500 800 123<br>
-                                        Fax: +62 500 800 112<br>
-                                        <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                                        Telp: 86-21-64870020 <br/>
+                                        Fax: 86-21-64870020 <br/>
+                                        <a href="mailto:kevinpatton2015@icloud.com">kevinpatton2015@icloud.com</a>
                                     </div>
                               </li>
                             </ul>
@@ -534,7 +409,6 @@
 <script type="text/javascript" src="js/superfish.js"></script> 
 <script type="text/javascript" src="js/supersubs.js"></script>
 
-
 <!-- jQuery Carosel Slider -->
 <script type="text/javascript" src="js/jquery.elastislide.js"></script>
 <script type="text/javascript">
@@ -549,7 +423,6 @@
 
 <!-- Custom Script -->
 <script type="text/javascript" src="js/custom.js"></script>
-
 
 
 </body>
