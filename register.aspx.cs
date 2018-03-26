@@ -37,11 +37,24 @@ public partial class re : System.Web.UI.Page
         string EmailAddress = billing_email.ToString();
         string Phone = billing_phone.ToString();
 
+        if (login(Name,Password,Address,City,Postcode,EmailAddress,Phone))
+        {
+            Response.Write("<script>alert('注册成功');window.location.href='login.aspx';</script>");
+        }
+        else
+        {
+            Response.Write("<script>alert('用户已注册');window.location.href='register.aspx';</script>");
+        };
+               
+    }
+
+    public bool login(string Name,string Password,string Address,string City,string Postcode,string EmailAddress,string Phone)
+    {
         string strConnection = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("userchec.mdb");
         OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
 
         //写入用户信息到数据库
-        bool IsSuccess=true;
+        bool IsSuccess = true;
         try
         {
             string sqlstr = "insert into user_infor" + "(txtUserID,txtLoginName,txtPwd,txtEmail,txtSecPwd)" + "values('" + Name + "','" + Name + "','" + Password + "','" + EmailAddress + "','" + Password + "')";
@@ -49,24 +62,21 @@ public partial class re : System.Web.UI.Page
             OleDbCommand cmd = new OleDbCommand(sqlstr, objConnection);
             cmd.ExecuteNonQuery();
         }
-        catch(System.Data.OleDb.OleDbException)
+        catch (System.Data.OleDb.OleDbException)
         {
             IsSuccess = false;
-            Response.Write("<script>alert('用户已注册');</script>");            
-            Response.Write("<script>alert('用户已注册');window.location.href='register.aspx';</script>");                     
+            Response.Write("<script>alert('用户已注册');window.location.href='register.aspx';</script>");
         }
         finally
         {
             objConnection.Close();
             if (IsSuccess == true)
             {
-                objConnection.Close();
                 Response.Write("<script>alert('注册成功');window.location.href='login.aspx';</script>");
             }
         }
         //写入结束
-        return;
-
+        return IsSuccess;
     }
 
     protected void CheckIsRegistered(object sender, EventArgs e)

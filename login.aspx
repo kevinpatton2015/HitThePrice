@@ -81,12 +81,10 @@
                         </div>
                         <div class="right six columns">
 
-                            <form action="#" id="searchform" method="get">
                                 
                                 <input type="text" onBlur="if (this.value == '')this.value = 'Search keywords here';" onFocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field">
                                 <input type="submit" value="" class="searchbutton">
                                
-                            </form>
                            
 
                            
@@ -179,21 +177,19 @@
                                     <span class="last"> 收货</span>
                                     <div class="clear"></div>
                                 </div>
-                                
+                                <form runat="server">                               
                                <div class="one_half columns">
                                     <h3>创建新账户</h3>
                                     <h5>请输入您的手机号进行注册</h5>
-                                    <form method="post" action="" id="loginform1">
                                     <fieldset>
                                     <label>手机号：</label><br />
+                                    
                                     <input type="text" name="phone_number" id="phone_number" runat="server"/><br />
                                     <input type="button" class="button" value="注册" onserverclick="Direct2Register" runat="server"/>
                                     </fieldset>
-                                    </form>
                                 </div>
                                 <div class="one_half columns">
                                     <h3>已有账户登录</h3>
-                                    <form id="form1" runat="server">
 
                                         <asp:Panel ID="Panel1" runat="server" Height="207px" >
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,9 +204,10 @@
                                             &nbsp;
                                             <asp:Button ID="Button2" runat="server" Text="清空" />
                                          </fieldset></asp:Panel>
-                                    </form>
+                                   
                                     <a href="#">忘记密码?</a>
                                 </div>
+                                 </form>
                                 
 
 								<div class="featured-products">  

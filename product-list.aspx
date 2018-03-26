@@ -81,9 +81,9 @@
                             </div>
                             <div class="right six columns">
 
-                                <form action="#" id="searchform" method="get">
+                                <form action="product-list.aspx" id="searchform" method="get">
 
-                                    <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field">
+                                    <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field" runat="server">
                                     <input type="submit" value="" class="searchbutton">
 
                                 </form>
@@ -192,8 +192,8 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">Home</a> / Product List </div>
-                   				<h1 class="pagetitle" id="pagetitle">Product List</h1>
+                                <div class="breadcrumb" id="breadcrumb"><a href="index.aspx">首页</a> / Product List </div>
+                   				<h1 class="pagetitle" id="pagetitle" runat="server">Product List</h1>
                                 
                                 <div class="sortPagiBar">
                                 <form action="index.aspx" class="productsSortForm">
