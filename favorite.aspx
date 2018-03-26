@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="checkout.aspx.cs" Inherits="checkout" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="favorite.aspx.cs" Inherits="favorite" %>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -9,7 +9,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>购物车 - HitThePrice - 价格再低一点</title>
+	<title>我的收藏 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -58,7 +58,7 @@
                         <div class="row">
                             <div id="topmenu" class=" six columns">
                                  <%if (userId!= null){%>
-                                     <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>购物车</strong></a></div>
+                                     <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"><strong>退出</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>我的收藏</strong></a></div>
                                  <%}else{%>
                                 <div class="clear"></div>
                                 <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
@@ -194,50 +194,43 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 购物车
-
-                                </div>
-                                <h1 class="pagetitle">购物车</h1>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 我的收藏</div>
+                                <h1 class="pagetitle">我的收藏</h1>
   
                                 <div class="table_block" id="order-detail-content">
                                     <table id="cart_summary">
                                         <thead>
                                             <tr>
-                                                <th class="cart_avail item" width="100px">&emsp;</th>
-                                                <th class="cart_product first_item" width="500px">图片</th>
-                                                <th class="cart_description item" width="800px">产品名称</th>
-                                                <th class="cart_ref item" width="5px">&emsp;</th> 
-                                                <th class="cart_unit item" width="200px">&emsp;</th>
-                                                <th class="cart_quantity item" width="100px">运费</th>
+                                                <th class="cart_product first_item">图片</th>
+                                                <th class="cart_description item">产品名称</th>
+                                                <th class="cart_ref item">&emsp;</th>
+                                                <th class="cart_avail item">&emsp;</th>
+                                                <th class="cart_unit item">&emsp;</th>
+                                                <th class="cart_quantity item">运费</th>
                                                 <th class="cart_total item">价格</th>
                                             </tr>
                                         </thead>
 
                                         <tbody>
                                             <tr class="cart_item" >
-                                                <td class="cart_avail">
-                                                     <input type="checkbox"  class="comparator" /> 
-                                                </td>
-                                                <td  class="cart_product">
+                                                <td width="70px" class="cart_product">
                                                     <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
                                                 </td>
-                                                <td class="cart_description">
+                                                <td width="250px"class="cart_description">
                                                     <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
                                                    【华东爽购】Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机  </a>   	
                                                 </td>
-                                                <td class="cart_ref">&emsp;</td>
-                                                <td class="cart_unit item">
+                                                <td width="10px"class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
+                                                <td width="100px" class="cart_unit item">
                                                 <a class="button" href="checkout.aspx">删除</a></td>
-                                                <td class="cart_description"> 包邮 </td>
-                                                <td class="cart_total">
+                                                <td width="70px"class="cart_description"> 包邮 </td>
+                                                <td width="40px"class="cart_total">
                                                     <span class="price"><font color = "#FF0000">￥7749.00</span>
                                                 </td>
                                             </tr>
                                             
                                             <tr class="cart_item" >
-                                                <td class="cart_avail">
-                                                     <input type="checkbox"  class="comparator" /> 
-                                                </td>
                                                 <td class="cart_product">
                                                     <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434"><img alt="" src="http://gfs10.gomein.net.cn/T1agbvBCKj1RCvBVdK_60.jpg"></a>
                                                 </td>
@@ -246,6 +239,7 @@
                                                     Apple iPhone X 64G 深空灰 全网通4G手机 </a>   	
                                                 </td>
                                                 <td class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
                                                 <td class="cart_unit item">
                                                 <a class="button" href="checkout.aspx">删除</a></td>
                                                 <td class="cart_description"> 包邮 </td>
@@ -256,9 +250,6 @@
                                             </tr>
                                             
                                             <tr class="cart_item" >
-                                                <td class="cart_avail">
-                                                     <input type="checkbox"  class="comparator" /> 
-                                                </td>
                                                 <td class="cart_product">
                                                     <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1"><img alt="" src="http://img12.360buyimg.com/n8/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg"></a>
                                                 </td>
@@ -267,6 +258,7 @@
                                                     Apple 苹果 手机 iPhone X 深空灰色 64G</a>    	
                                                 </td>
                                                 <td class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
                                                 <td class="cart_unit item">
                                                 <a class="button" href="checkout.aspx">删除</a></td>                                                
                                                 <td class="cart_description"> 包邮 </td>
@@ -282,45 +274,47 @@
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">总价（不含运费）：</td>
+                                                <td colspan="2">Total products (tax incl.):</td>
                                                 <td id="total_product" class="price">$490.00</td>
                                             </tr>
                                             <tr class="cart_total delivery">
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">运费：</td>
+                                                <td colspan="2">Total shipping (tax incl.):</td>
                                                 <td id="total_shipping" class="price">$ 10.00</td>
                                             </tr>								
                                             <tr class="cart_total excl">
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">总价（含运费）：</td>
+                                                <td colspan="2">Total (tax excl.):</td>
                                                 <td id="total_price_without_tax" class="price">$500.00</td>
                                             </tr>
                                             <tr class="cart_total tax">
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">折扣：</td>
+                                                <td colspan="2">Total tax:</td>
                                                 <td id="total_tax" class="price">0</td>
                                             </tr>
                                             <tr class="cart_total total">
                                             	<td colspan="2" class="none1"> </td>
                                                 <td class="none2"> </td>
                                                 <td class="none3"> </td>
-                                                <td colspan="2">总价：</td>
+                                                <td colspan="2">Total:</td>
                                                 <td id="total_price_container" class="price total_price_container"><span id="total_price">$500.00</span></td>
                                             </tr>
                                             <tr class="cart_total_price">
                                                 <td class="cart_voucher" id="cart_voucher" colspan="7">
                                                 <form id="voucher" method="post" action="#">
                                                   <fieldset>
-                                                      <h3><label>电子发票</label></h3>
+                                                      <h3><label>Vouchers</label></h3>
                                                       <p>
-                                                      <label>发票抬头：</label>
-                                                      <input type="text" value="" name="discount_name" class="discount_name">                                                      </p>
+                                                      <label>code: </label>
+                                                      <input type="text" value="" name="discount_name" class="discount_name">
+                                                      <input type="hidden" name="submitDiscount"><input type="submit" class="button" value="Add Code" name="submitAddDiscount">
+                                                      </p>
                                                   </fieldset>
                                                 </form>
                                                 </td>
@@ -328,20 +322,15 @@
                                         </tfoot>
                                         </table>
                                 </div>
-								<div style = "text-align:right;">
-                                  <a href="#" class="button">再逛逛</a>&nbsp;
-                                  <a href="#" class="button exclusive">去结算</a>
-                                  <br>
-                                    </div>
+								
+                                <a href="#" class="button">Continue  Shopping</a>&nbsp;
+                                <a href="#" class="button exclusive">Next</a>
+                                <br>
 
                                 <div id="payment">
                                     <ul class="payment_methods">
                                         <li>
-                                        <input type="radio" id="payment_method_paypal" class="input-radio" name="payment_method" value="支付宝" checked="checked"  />
-                                        <label for="payment_method_paypal">支付宝 <img src="images/alipay.png" alt="支付宝" /></label> 					
-                                        </li>
-                                        <li>
-                                            <input type="radio" id="payment_method_bacs" class="input-radio" name="payment_method" value="bacs"  />
+                                            <input type="radio" id="payment_method_bacs" class="input-radio" name="payment_method" value="bacs" checked="checked" />
                                             <label for="payment_method_bacs">Direct Bank Transfer </label> 
                                             <div class="payment_box">
                                             <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. 
@@ -352,10 +341,14 @@
                                             <input type="radio" id="payment_method_cheque" class="input-radio" name="payment_method" value="cheque"  />
                                             <label for="payment_method_cheque">Cheque Payment </label> 					
                                         </li>
+                                        <li>
+                                        <input type="radio" id="payment_method_paypal" class="input-radio" name="payment_method" value="paypal"  />
+                                        <label for="payment_method_paypal">PayPal <img src="images/paypal.png" alt="PayPal" /></label> 					
+                                        </li>
                                     </ul>
                                 
                                     <div class="form-row">		
-                                        <a href="#" class="button">去支付</a>
+                                        <a href="#" class="button">Place order</a>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
