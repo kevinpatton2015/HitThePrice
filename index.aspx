@@ -551,10 +551,10 @@
 <!-- jQuery Carosel Slider -->
 <script type="text/javascript" src="js/jquery.elastislide.js"></script>
 <script type="text/javascript">
-	jQuery('#carousel').elastislide({
-		imageW 	: 135,
-		margin      : 12
-	});
+    jQuery('#carousel').elastislide({
+        imageW: 135,
+        margin: 12
+    });
 </script>
 
 <!-- jQuery Dropdown Mobile -->
@@ -567,23 +567,23 @@
 <script type="text/javascript" src="js/jquery-easing-1.3.js"></script>
 <script type="text/javascript" src="js/layerslider.js"></script>
 <script type="text/javascript">
-jQuery(window).load(function() {
-    jQuery('#layerslider.slideritems').layerSlider({
-		skinsPath : 'images/layerslider-skins/',
-		skin : 'lastore',
-		autoStart : true
-	});
-	jQuery('.ls-nav-prev').fadeOut();
-	jQuery('.ls-nav-next').fadeOut();
-	jQuery('#layerslider.slideritems').mouseleave(function(){
-		jQuery('.ls-nav-prev').fadeOut();
-		jQuery('.ls-nav-next').fadeOut();
-	});
-	jQuery('#layerslider.slideritems').mouseenter(function(){
-		jQuery('.ls-nav-prev').fadeIn();
-		jQuery('.ls-nav-next').fadeIn();
-	});
-});
+    jQuery(window).load(function () {
+        jQuery('#layerslider.slideritems').layerSlider({
+            skinsPath: 'images/layerslider-skins/',
+            skin: 'lastore',
+            autoStart: true
+        });
+        jQuery('.ls-nav-prev').fadeOut();
+        jQuery('.ls-nav-next').fadeOut();
+        jQuery('#layerslider.slideritems').mouseleave(function () {
+            jQuery('.ls-nav-prev').fadeOut();
+            jQuery('.ls-nav-next').fadeOut();
+        });
+        jQuery('#layerslider.slideritems').mouseenter(function () {
+            jQuery('.ls-nav-prev').fadeIn();
+            jQuery('.ls-nav-next').fadeIn();
+        });
+    });
 </script>	
 
 

@@ -18,7 +18,7 @@ public partial class re : System.Web.UI.Page
     SqlConnection conn;
     protected void Page_Load(object sender, EventArgs e)
     {
-        Session["Phone"] = phone_number.Value;
+        
     }
 
     protected void Button1_Click(object sender, EventArgs e)
@@ -75,7 +75,7 @@ public partial class re : System.Web.UI.Page
 
     protected void Direct2Register(object sender, EventArgs e)
     {
-        
+        Session["Phone"] = phone_number.Value;
         if (Session["Phone"].ToString()!= null)
         {
             Response.Write("<script>alert('即将跳转到注册页');window.location.href='register.aspx';</script>");

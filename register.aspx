@@ -252,7 +252,7 @@
                                     
                                     <label for="order_comments" class="">备注信息</label>
                                     <textarea name="order_comments" class="input-text" id="order_comments"  rows="6" runat="server"></textarea>
-                                    <input type="Button" name="submit" id="submit_btn" class="button mini" value="注册账户" onserverclick="Submit2Back" runat="server"/>
+                                    <input type="Button" name="button" id="submit_btn" class="button mini" value="注册账户" onserverclick="Submit2Back" runat="server"/>
                                </form>
 							</section>
                          

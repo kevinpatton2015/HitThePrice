@@ -23,19 +23,30 @@ public partial class index : System.Web.UI.Page
     {
         if (Session["UserId"] != null)
         { userId = Session["UserId"].ToString(); }
-        
     }
 
     protected void Search(object sender, EventArgs e)
     {
         string keyword = s.Value;
         TBcrawl(keyword, "utf8");
+        Session["keyword"] = keyword;
         Session["titleList"] = titleList;
         Session["priceList"] = priceList;
         Session["picUrList"] = picUrList;
         Session["detailUrList"] = detailUrList;
         Session["locList"] = locList;
         Response.Redirect("product-list.aspx");
+    }
+
+    protected void Logout(object sender, EventArgs e)
+    {
+        logut();
+    }
+
+    public void logut()
+    {
+        Session["UserId"] = null;
+        Session.Remove("UserId");
     }
 
     public void TBcrawl(string keyword, string ie)
