@@ -159,7 +159,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="portfolio.aspx">自营商城</a></li>
                             <li><a href="product-list.aspx">最省钱</a></li>
                             <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
@@ -234,7 +234,7 @@
                                 <p>上海市 奉贤区</p>
                                     <p>奉浦大道123号</p>
                                     <p>上海商学院</p>
-                                    <p>Telp: +86 64870020
+                                    <p>电话: +86 64870020
                                     </p>
                                 
                                   <a href="mailto:kevinpatton2015@icloud.com"> kevinpatton2015@icloud.com</a>
@@ -320,7 +320,7 @@
                         <div id="footcol4"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Extras</h2>
+                                    <h2 class="widget-title">关于产品</h2>
                                     <ul>
                                         <li><a href="#">品牌</a></li>
                                         <li><a href="#">附件</a></li>
@@ -333,10 +333,10 @@
                         <div id="footcol5"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Contact Us</h2>
+                                    <h2 class="widget-title">联系我们</h2>
 									<div class="textwidget">
-                                        Telp: 86-21-64870020 <br/>
-                                        Fax: 86-21-64870020 <br/>
+                                        电话: 86-21-64870020 <br/>
+                                        传真: 86-21-64870020 <br/>
                                         <a href="mailto:kevinpatton2015@icloud.com">kevinpatton2015@icloud.com</a>
                                     </div>
                               </li>

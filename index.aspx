@@ -58,7 +58,7 @@
                     <div class="row">
                     	<div id="topmenu" class=" six columns">
                             <%if (userId!= null){%>
-                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"  onserverclick="Logout" runat="server"><strong>退出</strong></a>&emsp;|&emsp;<a href="favorite.aspx"><strong>我的收藏</strong></a></div>
+                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"  onserverclick="Logout" runat="server"><strong>退出</strong></a>&emsp;|&emsp;<a href="favorite.aspx"><strong>我的收藏</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>购物车</strong></a></div>
                             <%}else{%>
                                 <div class="clear"></div>
                                 <div class="login">您好！请 <a href="login.aspx"><strong>登录</strong></a>&emsp;<a href="register.aspx" style="color: #FF003B"><strong>免费注册</strong></a></div>
@@ -167,7 +167,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="portfolio.aspx">自营商城</a></li>
                             <li><a href="product-list.aspx">最省钱</a></li>
                             <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
@@ -196,7 +196,7 @@
         <!-- SLIDER -->
         <div id="outerslider">
         	<div id="slidercontainer">            
-                <iframe name="index" src="default.aspx" frameborder="0" scrolling="no" width="100%" height="100%"></iframe> 
+                <iframe name="index" src="default.aspx" frameborder="0" scrolling="no" width="100%" height="300px"></iframe> 
             </div>
         </div>
 
@@ -463,7 +463,7 @@
                         <div id="footcol4"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Extras</h2>
+                                    <h2 class="widget-title">关于产品</h2>
                                     <ul>
                                         <li><a href="#">品牌</a></li>
                                         <li><a href="#">附件</a></li>
@@ -476,10 +476,10 @@
                         <div id="footcol5"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Contact Us</h2>
+                                    <h2 class="widget-title">联系我们</h2>
 									<div class="textwidget">
-                                        Telp: 86-21-64870020 <br/>
-                                        Fax: 86-21-64870020 <br/>
+                                        电话: 86-21-64870020 <br/>
+                                        传真: 86-21-64870020 <br/>
                                         <a href="mailto:kevinpatton2015@icloud.com">kevinpatton2015@icloud.com</a>
                                     </div>
                               </li>

@@ -4,7 +4,7 @@
 .bx-wrapper {
 	margin-bottom:20px;
 	height:349px;
-	background:url(homeslider_bg.jpg) repeat;
+	background:url(Ê×Ò³slider_bg.jpg) repeat;
 } */
 
 .ls-inner {
@@ -96,7 +96,7 @@
 #layerslider.slideritems {
 	width:100%;
 	height:349px;
-	background:url(../images/layerslider-skins/lastore/homeslider_bg.jpg) repeat;
+	background:url(../images/layerslider-skins/lastore/Ê×Ò³slider_bg.jpg) repeat;
 	margin: 0px auto 0px auto;
 }
 .ls-lastore a.ls-nav-prev, .ls-lastore a.ls-nav-next {width: 31px; height: 72px; display: block; position: absolute; margin-top:-36px; cursor: pointer; text-indent: -999em;}

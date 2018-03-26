@@ -167,7 +167,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="portfolio.aspx">自营商城</a></li>
                             <li><a href="product-list.aspx">最省钱</a></li>
                             <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
@@ -267,93 +267,122 @@
                                                 </td>
                                                 
                                             </tr>
-                                        </tbody>
-                                        
-                                        <tfoot>
-                                            <tr class="cart_total price">
-                                            	<td colspan="2" class="none1"> </td>
-                                                <td class="none2"> </td>
-                                                <td class="none3"> </td>
-                                                <td colspan="2">Total products (tax incl.):</td>
-                                                <td id="total_product" class="price">$490.00</td>
-                                            </tr>
-                                            <tr class="cart_total delivery">
-                                            	<td colspan="2" class="none1"> </td>
-                                                <td class="none2"> </td>
-                                                <td class="none3"> </td>
-                                                <td colspan="2">Total shipping (tax incl.):</td>
-                                                <td id="total_shipping" class="price">$ 10.00</td>
-                                            </tr>								
-                                            <tr class="cart_total excl">
-                                            	<td colspan="2" class="none1"> </td>
-                                                <td class="none2"> </td>
-                                                <td class="none3"> </td>
-                                                <td colspan="2">Total (tax excl.):</td>
-                                                <td id="total_price_without_tax" class="price">$500.00</td>
-                                            </tr>
-                                            <tr class="cart_total tax">
-                                            	<td colspan="2" class="none1"> </td>
-                                                <td class="none2"> </td>
-                                                <td class="none3"> </td>
-                                                <td colspan="2">Total tax:</td>
-                                                <td id="total_tax" class="price">0</td>
-                                            </tr>
-                                            <tr class="cart_total total">
-                                            	<td colspan="2" class="none1"> </td>
-                                                <td class="none2"> </td>
-                                                <td class="none3"> </td>
-                                                <td colspan="2">Total:</td>
-                                                <td id="total_price_container" class="price total_price_container"><span id="total_price">$500.00</span></td>
-                                            </tr>
-                                            <tr class="cart_total_price">
-                                                <td class="cart_voucher" id="cart_voucher" colspan="7">
-                                                <form id="voucher" method="post" action="#">
-                                                  <fieldset>
-                                                      <h3><label>Vouchers</label></h3>
-                                                      <p>
-                                                      <label>code: </label>
-                                                      <input type="text" value="" name="discount_name" class="discount_name">
-                                                      <input type="hidden" name="submitDiscount"><input type="submit" class="button" value="Add Code" name="submitAddDiscount">
-                                                      </p>
-                                                  </fieldset>
-                                                </form>
+
+                                            <tr class="cart_item" >
+                                                <td width="70px" class="cart_product">
+                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
+                                                </td>
+                                                <td width="250px"class="cart_description">
+                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
+                                                   【华东爽购】Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机  </a>   	
+                                                </td>
+                                                <td width="10px"class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
+                                                <td width="100px" class="cart_unit item">
+                                                <a class="button" href="favorite.aspx">删除</a></td>
+                                                <td width="70px"class="cart_description"> 包邮 </td>
+                                                <td width="40px"class="cart_total">
+                                                    <span class="price"><font color = "#FF0000">￥7749.00</span>
                                                 </td>
                                             </tr>
-                                        </tfoot>
+                                            
+                                            <tr class="cart_item" >
+                                                <td class="cart_product">
+                                                    <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434"><img alt="" src="http://gfs10.gomein.net.cn/T1agbvBCKj1RCvBVdK_60.jpg"></a>
+                                                </td>
+                                                <td class="cart_description">
+                                                     <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
+                                                    Apple iPhone X 64G 深空灰 全网通4G手机 </a>   	
+                                                </td>
+                                                <td class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
+                                                <td class="cart_unit item">
+                                                <a class="button" href="favorite.aspx">删除</a></td>
+                                                <td class="cart_description"> 包邮 </td>
+                                                 <td class="cart_total">
+                                                    <span class="price"><font color = "#FF0000" >￥7888.00</span>
+                                                </td>
+
+                                            </tr>
+                                            
+                                            <tr class="cart_item" >
+                                                <td class="cart_product">
+                                                    <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1"><img alt="" src="http://img12.360buyimg.com/n8/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg"></a>
+                                                </td>
+                                                <td class="cart_description">
+                                                     <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
+                                                    Apple 苹果 手机 iPhone X 深空灰色 64G</a>    	
+                                                </td>
+                                                <td class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
+                                                <td class="cart_unit item">
+                                                <a class="button" href="favorite.aspx">删除</a></td>                                                
+                                                <td class="cart_description"> 包邮 </td>
+                                                <td class="cart_total">
+                                                    <span class="price"><font color = "#FF0000" >￥7947.00</span>
+                                                </td>
+                                                
+                                            </tr>
+
+                                            <tr class="cart_item" >
+                                                <td width="70px" class="cart_product">
+                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
+                                                </td>
+                                                <td width="250px"class="cart_description">
+                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
+                                                   【华东爽购】Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机  </a>   	
+                                                </td>
+                                                <td width="10px"class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
+                                                <td width="100px" class="cart_unit item">
+                                                <a class="button" href="favorite.aspx">删除</a></td>
+                                                <td width="70px"class="cart_description"> 包邮 </td>
+                                                <td width="40px"class="cart_total">
+                                                    <span class="price"><font color = "#FF0000">￥7749.00</span>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr class="cart_item" >
+                                                <td class="cart_product">
+                                                    <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434"><img alt="" src="http://gfs10.gomein.net.cn/T1agbvBCKj1RCvBVdK_60.jpg"></a>
+                                                </td>
+                                                <td class="cart_description">
+                                                     <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
+                                                    Apple iPhone X 64G 深空灰 全网通4G手机 </a>   	
+                                                </td>
+                                                <td class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
+                                                <td class="cart_unit item">
+                                                <a class="button" href="favorite.aspx">删除</a></td>
+                                                <td class="cart_description"> 包邮 </td>
+                                                 <td class="cart_total">
+                                                    <span class="price"><font color = "#FF0000" >￥7888.00</span>
+                                                </td>
+
+                                            </tr>
+                                            
+                                            <tr class="cart_item" >
+                                                <td class="cart_product">
+                                                    <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1"><img alt="" src="http://img12.360buyimg.com/n8/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg"></a>
+                                                </td>
+                                                <td class="cart_description">
+                                                     <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
+                                                    Apple 苹果 手机 iPhone X 深空灰色 64G</a>    	
+                                                </td>
+                                                <td class="cart_ref">&emsp;</td>
+                                                <td width="10px"class="cart_avail">&emsp;</td>
+                                                <td class="cart_unit item">
+                                                <a class="button" href="favorite.aspx">删除</a></td>                                                
+                                                <td class="cart_description"> 包邮 </td>
+                                                <td class="cart_total">
+                                                    <span class="price"><font color = "#FF0000" >￥7947.00</span>
+                                                </td>
+                                                
+                                            </tr>
+                                        </tbody>
                                         </table>
                                 </div>
 								
-                                <a href="#" class="button">Continue  Shopping</a>&nbsp;
-                                <a href="#" class="button exclusive">Next</a>
-                                <br>
-
-                                <div id="payment">
-                                    <ul class="payment_methods">
-                                        <li>
-                                            <input type="radio" id="payment_method_bacs" class="input-radio" name="payment_method" value="bacs" checked="checked" />
-                                            <label for="payment_method_bacs">Direct Bank Transfer </label> 
-                                            <div class="payment_box">
-                                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. 
-                                            Your order wont be shipped until the funds have cleared in our account.</p>
-                                            </div>						
-                                        </li>
-                                        <li>
-                                            <input type="radio" id="payment_method_cheque" class="input-radio" name="payment_method" value="cheque"  />
-                                            <label for="payment_method_cheque">Cheque Payment </label> 					
-                                        </li>
-                                        <li>
-                                        <input type="radio" id="payment_method_paypal" class="input-radio" name="payment_method" value="paypal"  />
-                                        <label for="payment_method_paypal">PayPal <img src="images/paypal.png" alt="PayPal" /></label> 					
-                                        </li>
-                                    </ul>
-                                
-                                    <div class="form-row">		
-                                        <a href="#" class="button">Place order</a>
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-
-
 							</section>
                          
                         </div>
@@ -467,7 +496,7 @@
                         <div id="footcol4"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Extras</h2>
+                                    <h2 class="widget-title">关于产品</h2>
                                     <ul>
                                         <li><a href="#">品牌</a></li>
                                         <li><a href="#">附件</a></li>
@@ -480,10 +509,10 @@
                         <div id="footcol5"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Contact Us</h2>
+                                    <h2 class="widget-title">联系我们</h2>
 									<div class="textwidget">
-                                        Telp: 86-21-64870020 <br/>
-                                        Fax: 86-21-64870020 <br/>
+                                        电话: 86-21-64870020 <br/>
+                                        传真: 86-21-64870020 <br/>
                                         <a href="mailto:kevinpatton2015@icloud.com">kevinpatton2015@icloud.com</a>
                                     </div>
                               </li>

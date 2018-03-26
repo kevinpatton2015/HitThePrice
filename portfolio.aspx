@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>近期热卖 - HitThePrice - 价格再低一点</title>
+	<title>自营商城 - HitThePrice - 价格再低一点</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -163,7 +163,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="portfolio.aspx">自营商城</a></li>
                             <li><a href="product-list.aspx">最省钱</a></li>
                             <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
@@ -186,22 +186,22 @@
                     
                         <section class="content">
                         	
-                            <div class="breadcrumb"><a href="index.aspx">Home</a>  /  Portfolio</div>
-                            <h1 class="pagetitle">Portfolio</h1>
+                            <div class="breadcrumb"><a href="index.aspx">首页</a>  /  自营商城</div>
+                            <h1 class="pagetitle">自营商城</h1>
                             
-							<!-- Begin Portfolio Nav -->
+							<!-- Begin 自营商城 Nav -->
                             <ul id="filter">
-                                <li class="current"><a href="#" data-filter="*">All Categories</a></li>
-                                <li><a href="#" data-filter=".clothing">Clothing</a></li>
-                                <li><a href="#" data-filter=".accessories">Accessories</a></li>
-                                <li><a href="#" data-filter=".electronics">Electronics</a></li>
+                                <li class="current"><a href="#" data-filter="*">所有类别</a></li>
+                                <li><a href="#" data-filter=".手机">手机</a></li>
+                                <li><a href="#" data-filter=".电脑">电脑</a></li>
+                                <li><a href="#" data-filter=".相机">相机</a></li>
                             </ul> 
                             <div class="clear"></div>
-                            <!-- End Portfolio Nav -->    
+                            <!-- End 自营商城 Nav -->    
                               
-                            <!-- Begin Portfolio Items -->
+                            <!-- Begin 自营商城 Items -->
                             <div id="ts-display" class="row">
-                                    <div class="one_fifth columns item clothing">
+                                    <div class="one_fifth columns item 手机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf1.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -210,7 +210,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="one_fifth columns item accessories">
+                                    <div class="one_fifth columns item 电脑">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf2.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -218,7 +218,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="one_fifth columns item clothing">
+                                    <div class="one_fifth columns item 手机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf3.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -226,21 +226,21 @@
                                         </div>
                                     </div>
             
-                                    <div class="one_fifth columns item electronics">
+                                    <div class="one_fifth columns item 相机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf4.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
                                             <img src="images/content/pf/pf4.jpg" alt=""/>	</a>					
                                         </div>
                                     </div>
-                                    <div class="one_fifth columns item accessories">
+                                    <div class="one_fifth columns item 电脑">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf5.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
                                             <img src="images/content/pf/pf5.jpg" alt=""/>	</a>					
                                         </div>
                                     </div>
-                                    <div class="one_fifth columns item clothing">
+                                    <div class="one_fifth columns item 手机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf6.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -248,21 +248,21 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="one_fifth columns item electronics">
+                                    <div class="one_fifth columns item 相机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf7.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
                                             <img src="images/content/pf/pf7.jpg" alt=""/>	</a>					
                                         </div>
                                     </div>
-                                    <div class="one_fifth columns item accessories">
+                                    <div class="one_fifth columns item 电脑">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf8.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
                                             <img src="images/content/pf/pf8.jpg" alt=""/>	</a>				
                                         </div>
                                     </div>
-                                    <div class="one_fifth columns item clothing">
+                                    <div class="one_fifth columns item 手机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf9.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -270,7 +270,7 @@
                                         </div>
                                     </div>
                                     
-									<div class="one_fifth columns item clothing">
+									<div class="one_fifth columns item 手机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf10.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -279,7 +279,7 @@
                                         </div>
 
                                     </div>
-                                    <div class="one_fifth columns item accessories">
+                                    <div class="one_fifth columns item 电脑">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf11.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -287,7 +287,7 @@
                                         </div>
                                     </div>
             
-                                    <div class="one_fifth columns item clothing">
+                                    <div class="one_fifth columns item 手机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf12.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -295,21 +295,21 @@
                                         </div>
                                     </div>
             
-                                    <div class="one_fifth columns item electronics">
+                                    <div class="one_fifth columns item 相机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf13.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
                                             <img src="images/content/pf/pf13.jpg" alt=""/>	</a>					
                                         </div>
                                     </div>
-                                    <div class="one_fifth columns item accessories">
+                                    <div class="one_fifth columns item 电脑">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf14.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
                                             <img src="images/content/pf/pf14.jpg" alt=""/>	</a>					
                                         </div>
                                     </div>
-                                    <div class="one_fifth columns item clothing">
+                                    <div class="one_fifth columns item 手机">
                                         <div class="ts-display-pf-img">
                                             <a class="image" href="images/content/pf/pf15.jpg" data-rel="prettyPhoto[mixed]" >
                                             <span class="rollover"></span>
@@ -318,7 +318,7 @@
                                     </div>
 
                             </div>
-                            <!-- End Portfolio Items -->
+                            <!-- End 自营商城 Items -->
                             
                         </section>
                     
@@ -395,7 +395,7 @@
                         <div id="footcol4"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Extras</h2>
+                                    <h2 class="widget-title">关于产品</h2>
                                     <ul>
                                         <li><a href="#">品牌</a></li>
                                         <li><a href="#">附件</a></li>
@@ -408,10 +408,10 @@
                         <div id="footcol5"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Contact Us</h2>
+                                    <h2 class="widget-title">联系我们</h2>
 									<div class="textwidget">
-                                        Telp: 86-21-64870020 <br/>
-                                        Fax: 86-21-64870020 <br/>
+                                        电话: 86-21-64870020 <br/>
+                                        传真: 86-21-64870020 <br/>
                                         <a href="mailto:kevinpatton2015@icloud.com">kevinpatton2015@icloud.com</a>
                                     </div>
                               </li>

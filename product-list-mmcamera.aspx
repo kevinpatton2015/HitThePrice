@@ -164,7 +164,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="portfolio.aspx">自营商城</a></li>
                             <li><a href="product-list.aspx">最省钱</a></li>
                             <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
@@ -191,7 +191,7 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">Home</a> / Product List </div>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / Product List </div>
                    				<h1 class="pagetitle">Product List</h1>
                                 
                                 <div class="sortPagiBar">
@@ -349,17 +349,17 @@
                     	<div class="sidebar">
                         <ul>
                             <li class="widget-container">
-                                <h2 class="widget-title">Categories</h2>
+                                <h2 class="widget-title">商品目录</h2>
                                 <ul>
-                                    <li><a href="#">Clothing (8)</a>
+                                    <li><a href="#">手机 (8)</a>
                                     	<ul>
                                             <li><a href="#">Woman Dress (4)</a></li>
                                             <li><a href="#">Man Suit (4)</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Furniture (4)</a></li>
-                                    <li><a href="#">Electronics (4)</a></li>
-                                    <li><a href="#">Accessories (4)</a></li>
+                                    <li><a href="#">相机 (4)</a></li>
+                                    <li><a href="#">电脑 (4)</a></li>
                                     <li><a href="#">Shoes (4)</a></li>
                                 </ul>
                             </li>
@@ -435,7 +435,7 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">Customer Services</h2>
                                     <ul>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">联系我们</a></li>
                                         <li><a href="#">Returns</a></li>
                                         <li><a href="#">Site Map</a></li>
                                     </ul>
@@ -458,7 +458,7 @@
                         <div id="footcol4"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Extras</h2>
+                                    <h2 class="widget-title">关于产品</h2>
                                     <ul>
                                         <li><a href="#">Brands</a></li>
                                         <li><a href="#">Affiliates</a></li>
@@ -471,10 +471,10 @@
                         <div id="footcol5"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Contact Us</h2>
+                                    <h2 class="widget-title">联系我们</h2>
 									<div class="textwidget">
-                                        Telp: +62 500 800 123<br>
-                                        Fax: +62 500 800 112<br>
+                                        电话: +62 500 800 123<br>
+                                        传真: +62 500 800 112<br>
                                         <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
                                     </div>
                               </li>

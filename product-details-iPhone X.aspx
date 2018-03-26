@@ -163,7 +163,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="portfolio.aspx">自营商城</a></li>
                             <li><a href="product-list.aspx">最省钱</a></li>
                             <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
@@ -734,7 +734,7 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">Customer Services</h2>
                                     <ul>
-                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">联系我们</a></li>
                                         <li><a href="#">Returns</a></li>
                                         <li><a href="#">Site Map</a></li>
                                     </ul>
@@ -757,7 +757,7 @@
                         <div id="footcol4"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Extras</h2>
+                                    <h2 class="widget-title">关于产品</h2>
                                     <ul>
                                         <li><a href="#">Brands</a></li>
                                         <li><a href="#">Affiliates</a></li>
@@ -770,10 +770,10 @@
                         <div id="footcol5"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Contact Us</h2>
+                                    <h2 class="widget-title">联系我们</h2>
 									<div class="textwidget">
-                                        Telp: +62 500 800 123<br>
-                                        Fax: +62 500 800 112<br>
+                                        电话: +62 500 800 123<br>
+                                        传真: +62 500 800 112<br>
                                         <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
                                     </div>
                               </li>

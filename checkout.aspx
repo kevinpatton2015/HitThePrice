@@ -167,7 +167,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="portfolio.aspx">近期热卖</a></li>
+                            <li><a href="portfolio.aspx">自营商城</a></li>
                             <li><a href="product-list.aspx">最省钱</a></li>
                             <li><a href="contact.aspx">联系我们</a></li>
                         </ul><!-- topnav -->
@@ -330,7 +330,7 @@
                                 </div>
 								<div style = "text-align:right;">
                                   <a href="#" class="button">再逛逛</a>&nbsp;
-                                  <a href="ali.aspx" class="button exclusive">去结算</a>
+                                  <a href="pay.aspx" class="button exclusive">去结算</a>
                                   <br>
                                     </div>
 
@@ -452,7 +452,7 @@
                         <div id="footcol4"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Extras</h2>
+                                    <h2 class="widget-title">关于产品</h2>
                                     <ul>
                                         <li><a href="#">品牌</a></li>
                                         <li><a href="#">附件</a></li>
@@ -465,10 +465,10 @@
                         <div id="footcol5"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Contact Us</h2>
+                                    <h2 class="widget-title">联系我们</h2>
 									<div class="textwidget">
-                                        Telp: 86-21-64870020 <br/>
-                                        Fax: 86-21-64870020 <br/>
+                                        电话: 86-21-64870020 <br/>
+                                        传真: 86-21-64870020 <br/>
                                         <a href="mailto:kevinpatton2015@icloud.com">kevinpatton2015@icloud.com</a>
                                     </div>
                               </li>

@@ -226,15 +226,15 @@ USE THIS STYLE SHEET FOR INNER PAGE
 }
 #payment div.form-row { padding: 20px;	text-align:right;}
 
-/* PORTFOLIO */
+/* 自营商城 */
 
-/*======= Portfolio Navigation =======*/
+/*======= 自营商城 Navigation =======*/
 
 #filter{list-style-type:none; padding:0px 0px;	margin:0px; float:right; margin-top:-39px;}
 #filter li{list-style-type:none; display:inline-block; margin-bottom:10px; text-transform:uppercase; padding:0; line-height:normal}
 #filter li a, #filter li a:visited{ padding:0px 10px; }
 #filter li.current{ }
-/*======= End Portfolio Navigation =======*/
+/*======= End 自营商城 Navigation =======*/
 
 .ts-display-pf-img{position:relative;}
 .ts-display-clear{clear:both; height:1px !important; line-height:1px !important; float:none!important}
