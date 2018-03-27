@@ -191,38 +191,38 @@
                     
                         	<section class="content" id="product-container">
                             
-                                <div class="breadcrumb"><a href="index.aspx">首页</a> / Product Grid </div>
-                   				<img src="images/content/clothing.jpg" alt=""/>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 家用电器 </div>
+                   				<img src="images/content/appliance.jpg" alt=""/>
                                 
                                 <div class="sortPagiBar">
                                 <form action="index.aspx" class="productsSortForm">
                                     <p class="select">
-                                        <label for="selectPrductSort">Sort by</label>
+                                        <label for="selectPrductSort">综合排序</label>
                                         <select class="selectProductSort">
-                                            <option selected="selected" value="position:asc">Default</option>
-                                            <option value="price:asc">Price: lowest first</option>
-                                            <option value="price:desc">Price: highest first</option>
-                                            <option value="name:asc">Product Name: A to Z</option>
-                                            <option value="name:desc">Product Name: Z to A</option>
-                                            <option value="quantity:desc">In-stock first</option>
+                                            <option selected="selected" value="position:asc">综合</option>
+                                            <option value="price:asc">价格升序</option>
+                                            <option value="price:desc">价格降序</option>
+                                            <option value="quantity:desc">库存最多</option>
+                                            <option value="name:asc">品名拼音A到Z</option>
+                                            <option value="name:desc">品名拼音Z到A</option>
                                        	</select>
                                     </p>
                                 </form>
                                 
                                 <form action="index.aspx" class="productsShowForm">
                                     <p class="select">
-                                        <label for="selectPrductSort">Show:</label>
+                                        <label for="selectPrductSort">品牌：</label>
                                         <select class="selectProductSort">
-                                            <option selected="selected"> 4 </option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
+                                            <option selected="selected"> … </option>
+                                            <option>美的</option>
+                                            <option>海尔</option>
+                                            <option>松下</option>
+                                            <option>西门子</option>
+                                            <option>TCL</option>
                                        	</select>
                                     </p>
                                 </form>
-                                <a href="#" class="button">Compare</a>
+                                <a href="#" class="button">筛选</a>
                                 
                                 </div>
                                 
@@ -365,20 +365,14 @@
                             <li class="widget-container">
                                 <h2 class="widget-title">商品目录</h2>
                                 <ul>
-                                    <li><a href="#">手机 (8)</a>
-                                    	<ul>
-                                            <li><a href="#">Woman Dress (4)</a></li>
-                                            <li><a href="#">Man Suit (4)</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Furniture (4)</a></li>
-                                    <li><a href="#">相机 (4)</a></li>
-                                    <li><a href="#">电脑 (4)</a></li>
-                                    <li><a href="#">Shoes (4)</a></li>
+                                    <li><a href="product-phone.aspx">手机数码 (8)</a></li>
+                                    <li><a href="product-laptop.aspx">电脑、配件 (4)</a></li>
+                                    <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
+                                    <li><a href="product-appliance.aspx">家用电器 (4)</a></li>
                                 </ul>
                             </li>
                             <li class="widget-container">
-                                <h2 class="widget-title">Special Offers</h2>
+                                <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="images/content/products/p-28.jpg" alt="" />
@@ -434,12 +428,12 @@
                         <div id="footcol1"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Information</h2>
+                                   <h2 class="widget-title">联系信息</h2>
                                     <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Delivery Information</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Terms &amp; Condition</a></li>
+                                        <li><a href="#">关于我们</a></li>
+                                        <li><a href="#">送货信息</a></li>
+                                        <li><a href="#">隐私信息</a></li>
+                                        
                                     </ul>
                                 </li>
                             </ul>
@@ -447,11 +441,11 @@
                         <div id="footcol2"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">Customer Services</h2>
+                                    <h2 class="widget-title">客户服务</h2>
                                     <ul>
                                         <li><a href="#">联系我们</a></li>
-                                        <li><a href="#">Returns</a></li>
-                                        <li><a href="#">Site Map</a></li>
+                                        <li><a href="#">返修货品</a></li>
+                                        <li><a href="#">网站地图</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -459,12 +453,12 @@
                         <div id="footcol3"  class="one_fifth columns">
                             <ul>
                                 <li class="widget-container">
-                                    <h2 class="widget-title">My Account</h2>
+                                    <h2 class="widget-title">我的账户</h2>
                                     <ul>
-                                        <li><a href="#">Order History</a></li>
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Wish List</a></li>
-                                        <li><a href="#">Newsletter</a></li>
+                                        <li><a href="#">订单历史</a></li>
+                                        <li><a href="#">我的账户</a></li>
+                                        <li><a href="#">愿望单</a></li>
+                                        <li><a href="#">新信息</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -474,10 +468,10 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">关于产品</h2>
                                     <ul>
-                                        <li><a href="#">Brands</a></li>
-                                        <li><a href="#">Affiliates</a></li>
-                                        <li><a href="#">Gift Vouchers</a></li>
-                                        <li><a href="#">Specials</a></li>
+                                        <li><a href="#">品牌</a></li>
+                                        <li><a href="#">附件</a></li>
+                                        <li><a href="#">礼品包装</a></li>
+                                        <li><a href="#">特供</a></li>
                                     </ul>
                               </li>
                             </ul>
@@ -487,9 +481,9 @@
                                 <li class="widget-container">
                                     <h2 class="widget-title">联系我们</h2>
 									<div class="textwidget">
-                                        电话: +62 500 800 123<br>
-                                        传真: +62 500 800 112<br>
-                                        <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                                        电话: 86-21-64870020 <br/>
+                                        传真: 86-21-64870020 <br/>
+                                        <a href="mailto:kevinpatton2015@icloud.com">kevinpatton2015@icloud.com</a>
                                     </div>
                               </li>
                             </ul>

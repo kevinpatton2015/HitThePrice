@@ -206,11 +206,11 @@
                                             <div class="entry-content">
                                                 
                                                 <div class="entry-utility">
-                                                    February 01, 2013 / <a href="#">Articles</a> / <a href="#">0 Comment</a>
+                                                    2018. 03. 27 / <a href="#">品牌榜单</a> / <a href="#">92843条评论</a>
                                                 </div>
                                                 <h2 class="posttitle"><a href="single.aspx">手机数码</a></h2>
                                                 
-                                                <p>Donec ornare aliquam augue vitae ornare. Sed vitae ligula in sem feugiat vehicula. Donec nec urna nec felis volutpat feugiat ut ut magna. Morbi vel ante ligula, at mollis est. Integer ornare cursus enim sed facilisis</p>
+                                                <p>手机排行榜 综合排行榜 手机总排行 热门手机排行 手机品牌排行 上升最快的手机 按品牌 苹果手机排行榜  三星手机排行榜 华为手机排行榜 小米手机排行榜 OPPO手机排行榜 vivo手机排行榜…</p>
                                                 
                                                 <a class="button" href="product-phone.aspx">点击进入</a>
                                             </div>
@@ -228,11 +228,13 @@
                                             <div class="entry-content">
                                                 
                                                 <div class="entry-utility">
-                                                    February 01, 2013 / <a href="#">Articles</a> / <a href="#">0 Comment</a>
+                                                    2018. 03. 27 / <a href="#">品牌榜单</a> / <a href="#">29634条评论</a>
                                                 </div>
                                                 <h2 class="posttitle"><a href="single.aspx">电脑、配件</a></h2>
                                                 
-                                                <p>Suspendisse a nunc magna, sit amet tempus sem. Pellentesque sit amet lectus mi, et imperdiet ante. Sed vitae hendrerit mauris. Proin vel tellus nec arcu congue vehicula nec sed nulla. </p>
+                                                <p>台式电脑排行榜综合排行榜 台式电脑总排行 热门台式电脑排行 台式电脑品牌排行 上升最快的台式电脑按品牌联想台式电脑排行榜 华硕台式电脑排行榜… <br />
+                                                    平板电脑排行榜 综合排行榜 平板电脑总排行 热门平板电脑排行 平板电脑品牌排行 上升最快的平板电脑 按品牌 苹果平板电脑排行榜 台电平板电脑排行榜 华为平板电脑排行榜…
+                                                </p>
                                                 
                                                 <a class="button" href="product-laptop.aspx">点击进入</a>
                                             </div>
@@ -250,11 +252,11 @@
                                             <div class="entry-content">
                                                 
                                                 <div class="entry-utility">
-                                                    February 01, 2013 / <a href="#">Articles</a> / <a href="#">0 Comment</a>
+                                                    2018. 03. 27 / <a href="#">品牌榜单</a> / <a href="#">45492条评论</a>
                                                 </div>
                                                 <h2 class="posttitle"><a href="single.aspx">摄影、摄像</a></h2>
                                                 
-                                                <p>Suspendisse a nunc magna, sit amet tempus sem. Pellentesque sit amet lectus mi, et imperdiet ante. Sed vitae hendrerit mauris. Proin vel tellus nec arcu congue vehicula nec sed nulla. </p>
+                                                <p>数码相机排行榜综合排行榜 数码相机总排行 热门数码相机排行 数码相机品牌排行 上升最快的数码相机按品牌佳能数码相机排行榜 尼康数码相机排行榜 索尼数码相机排行榜… </p>
                                                 
                                                 <a class="button" href="product-camera.aspx">点击进入</a>
                                             </div>
@@ -272,11 +274,13 @@
                                             <div class="entry-content">
                                                 
                                                 <div class="entry-utility">
-                                                    February 01, 2013 / <a href="#">Articles</a> / <a href="#">0 Comment</a>
+                                                    2018. 03. 27 / <a href="#">品牌榜单</a> / <a href="#">24322条评论</a>
                                                 </div>
                                                 <h2 class="posttitle"><a href="single.aspx">家用电器</a></h2>
                                                 
-                                                <p>Donec ornare aliquam augue vitae ornare. Sed vitae ligula in sem feugiat vehicula. Donec nec urna nec felis volutpat feugiat ut ut magna. Morbi vel ante ligula, at mollis est. Integer ornare cursus enim sed facilisis</p>
+                                                <p>按品牌榜 按得票量 按分享量 按点赞量 按评论量 按网店数量 注册资本行业榜单 电器十大品牌榜中榜,家电品牌排行榜,家电什么品牌好,名牌电器… 
+                                                    <br />1 美的 (广东美的集团有限公司,十大电器/家电品牌企业,最具全球竞争力中国公司20强,最具市) 2 九阳 (九阳股份有限公司,十大豆浆机品牌...
+                                                </p>
                                                 
                                                 <a class="button" href="product-appliance.aspx">点击进入</a>
                                             </div>

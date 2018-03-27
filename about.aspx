@@ -191,7 +191,7 @@
                         <section class="content">
                         	
                             <div class="breadcrumb"><a href="index.aspx">首页</a>  /  关于我们</div>
-                            <h1 class="pagetitle">Hit The Price公司</h1>
+                            <h1 class="pagetitle">Hit The Price</h1>
                             
                             <p><img src="images/content/pic.jpg" alt="" class="frame alignleft"/>Hit the Price 是新时期电商网站迅速发展的产物。现今各种类型各种形式的电商网站都已经成型，上线。也正是因为电商网络的繁杂，使得消费者们很难选择到价格最合适的商品。我们网站旨在为消费者们搜索全网进行比价，将最优价格的商品带给消费者们。</p>
 

@@ -191,7 +191,7 @@
                         	<section class="content" id="product-container">
                             
                                 <div class="breadcrumb"><a href="index.aspx">首页</a> / 手机数码 </div>
-                   				<img src="images/content/clothing.jpg" alt=""/>
+                   				<img src="images/content/phone.jpg" alt=""/>
                                 
                                 <div class="sortPagiBar">
                                 <form action="index.aspx" class="productsSortForm">
