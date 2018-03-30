@@ -240,9 +240,9 @@
                                             </div>
                                             
                                             <ul id="usefull_link_block">   
-                                            	<li class="print"><a href="#">Print</a></li>  
-                                                <li class="share_fb"><a href="#">Share on Facebook</a> </li>
-                                                <li class="favoriteproducts"><a href="#">my favorites</a></li>			
+                                            	<li class="print"><a href="#">打印该网页</a></li>  
+                                                <li class="share_fb"><a href="#">分享至Facebook</a> </li>
+                                                <li class="favoriteproducts"><a href="favorite.aspx">加入收藏</a></li>			
                                                 
                                             </ul>
                                             
@@ -262,7 +262,8 @@
                                         <li><span class='cs-name'>存储内存：</span><span class='cs-param'>64GB</span></li>
                                         <li><span class='cs-name'>运行内存：</span><span class='cs-param'>2GB</span></li></ul><a class="morecs" href="#tab2" >详细参数&gt;&gt;</a>
                                         <br />
-									    <a href="favorite.aspx" class="cart">加入收藏</a>
+									    <a href="checkout.aspx" class="cart">加入购物车</a>
+                                        <a href="pay.aspx" class="cart">立即购买</a>
                                     </div>
                                 </div>
                                 

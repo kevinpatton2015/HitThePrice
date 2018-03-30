@@ -356,7 +356,7 @@
                                     <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
                                     <li><a href="product-appliance.aspx">家用电器 (4)</a>
                                         <ul>
-                                            <li><a href="product-list-tablet.aspx">电冰箱 (4)</a></li>
+                                            <li><a href="product-list-refrigerator.aspx">电冰箱 (4)</a></li>
                                         </ul>
                                     </li>
                                 </ul>

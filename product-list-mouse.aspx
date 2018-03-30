@@ -354,7 +354,7 @@
                                     <li><a href="product-phone.aspx">手机数码 (8)</a></li>
                                     <li><a href="product-laptop.aspx">电脑、配件 (4)</a>
                                         <ul>
-                                            <li><a href="product-list-tablet.aspx">鼠标 (4)</a></li>
+                                            <li><a href="product-list-mouse.aspx">鼠标 (4)</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>

@@ -329,7 +329,7 @@
                                         </table>
                                 </div>
 								<div style = "text-align:right;">
-                                  <a href="#" class="button">再逛逛</a>&nbsp;
+                                  <a href="portfolio.aspx" class="button">再逛逛</a>&nbsp;
                                   <a href="pay.aspx" class="button exclusive">去结算</a>
                                   <br>
                                     </div>
