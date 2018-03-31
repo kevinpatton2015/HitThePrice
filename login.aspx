@@ -80,15 +80,14 @@
                             <span class="desc">Best Solution for your business</span>
                         </div>
                         <div class="right six columns">
-
                                 
-                                <input type="text" onBlur="if (this.value == '')this.value = 'Search keywords here';" onFocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field">
-                                <input type="submit" value="" class="searchbutton">
-                               
-                           
+                                <form id="searchform" method="post">
 
-                           
-    
+                                    <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field">
+                                     <input type="submit" value="" class="searchbutton" onclick="document.login.submit()">
+
+                                </form>
+                                                                                      
                         </div>
                     </div>
                     </div>

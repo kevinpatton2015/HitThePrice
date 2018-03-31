@@ -11,6 +11,7 @@ using System.Configuration;
 using System.Web.Security;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using CrawlUtils;
 
 public partial class re : System.Web.UI.Page
 {
@@ -24,7 +25,21 @@ public partial class re : System.Web.UI.Page
             string phone = Session["Phone"].ToString();
             billing_phone.Value = phone;
         }
-        
+
+        if (Request["s"] != null)
+        {
+            string keyword = Request.Form["s"];
+            Crawl spider = new Crawl(keyword, "utf8");
+            spider.TBcrawl();
+            Session["keyword"] = keyword;
+            Session["titleList"] = spider.get_titleList();
+            Session["priceList"] = spider.get_priceList();
+            Session["picUrList"] = spider.get_picUrList();
+            Session["detailUrList"] = spider.get_detailUrList();
+            Session["locList"] = spider.get_locList();
+            Response.Redirect("product-list.aspx");
+        }
+
     }
 
     protected void Submit2Back(object sender, EventArgs e)

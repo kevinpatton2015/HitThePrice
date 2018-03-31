@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrawlUtils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,5 +14,18 @@ public partial class checkout : System.Web.UI.Page
         if (Session["UserId"] != null)
         { userId = Session["UserId"].ToString(); }
 
+        if (Request["s"] != null)
+        {
+            string keyword = Request.Form["s"];
+            Crawl spider = new Crawl(keyword, "utf8");
+            spider.TBcrawl();
+            Session["keyword"] = keyword;
+            Session["titleList"] = spider.get_titleList();
+            Session["priceList"] = spider.get_priceList();
+            Session["picUrList"] = spider.get_picUrList();
+            Session["detailUrList"] = spider.get_detailUrList();
+            Session["locList"] = spider.get_locList();
+            Response.Redirect("product-list.aspx");
+        }
     }
 }

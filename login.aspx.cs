@@ -11,6 +11,7 @@ using System.Configuration;
 using System.Web.Security;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using CrawlUtils;
 
 public partial class re : System.Web.UI.Page
 {
@@ -18,7 +19,19 @@ public partial class re : System.Web.UI.Page
     SqlConnection conn;
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        if (Request["s"] != null)
+        {
+            string keyword = Request.Form["s"];
+            Crawl spider = new Crawl(keyword, "utf8");
+            spider.TBcrawl();
+            Session["keyword"] = keyword;
+            Session["titleList"] = spider.get_titleList();
+            Session["priceList"] = spider.get_priceList();
+            Session["picUrList"] = spider.get_picUrList();
+            Session["detailUrList"] = spider.get_detailUrList();
+            Session["locList"] = spider.get_locList();
+            Response.Redirect("product-list.aspx");
+        }
     }
 
     protected void Button1_Click(object sender, EventArgs e)

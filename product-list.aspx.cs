@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrawlUtils;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -14,13 +15,12 @@ public partial class product_list : System.Web.UI.Page
 {
     public string userId;
     public string keyword;
+    public ArrayList titleList;
+    public ArrayList priceList;
+    public ArrayList picUrList;
+    public ArrayList detailUrList;
+    public ArrayList locList;
 
-    public ArrayList titleList = new ArrayList();
-    public ArrayList priceList = new ArrayList();
-    public ArrayList picUrList = new ArrayList();
-    public ArrayList detailUrList = new ArrayList();
-    public ArrayList locList = new ArrayList();
-    
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["UserId"] != null)
@@ -31,7 +31,19 @@ public partial class product_list : System.Web.UI.Page
             Session["UserId"] = null;
             Session.Remove("UserId");
         }
-
+        if (Request["s"] != null)
+        {
+            string keyword = Request.Form["s"];
+            Crawl spider = new Crawl(keyword, "utf8");
+            spider.TBcrawl();
+            Session["keyword"] = keyword;
+            Session["titleList"] = spider.get_titleList();
+            Session["priceList"] = spider.get_priceList();
+            Session["picUrList"] = spider.get_picUrList();
+            Session["detailUrList"] = spider.get_detailUrList();
+            Session["locList"] = spider.get_locList();
+            Response.Redirect("product-list.aspx");
+        }
         try
         {
             keyword = Session["keyword"].ToString();
@@ -44,30 +56,7 @@ public partial class product_list : System.Web.UI.Page
             detailUrList = (ArrayList)Session["detailUrList"];
             locList = (ArrayList)Session["locList"];
 
-            title1.InnerText = titleList[0].ToString();
-            title2.InnerText = titleList[1].ToString();
-            title3.InnerText = titleList[2].ToString();
-            title4.InnerText = titleList[3].ToString();
 
-            price1.InnerText = priceList[0].ToString();
-            price2.InnerText = priceList[1].ToString();
-            price3.InnerText = priceList[2].ToString();
-            price4.InnerText = priceList[3].ToString();
-
-            img1.Src = picUrList[0].ToString();
-            img2.Src = picUrList[1].ToString();
-            img3.Src = picUrList[2].ToString();
-            img4.Src = picUrList[3].ToString();
-
-            imghref1.HRef = detailUrList[0].ToString();
-            imghref2.HRef = detailUrList[1].ToString();
-            imghref3.HRef = detailUrList[2].ToString();
-            imghref4.HRef = detailUrList[3].ToString();
-
-            title1.HRef = detailUrList[0].ToString();
-            title2.HRef = detailUrList[1].ToString();
-            title3.HRef = detailUrList[2].ToString();
-            title4.HRef = detailUrList[3].ToString();
 
             recommendtitle1.InnerText = titleList[6].ToString();
             recommendtitle2.InnerText = titleList[9].ToString();
@@ -97,4 +86,5 @@ public partial class product_list : System.Web.UI.Page
 
         Response.Redirect("index.aspx");
     }
+
 }

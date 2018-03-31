@@ -81,10 +81,10 @@
                             </div>
                             <div class="right six columns">
 
-                                <form action="#" id="searchform" method="get">
+                                <form action="#" id="searchform" method="post">
 
                                     <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field">
-                                    <input type="submit" value="" class="searchbutton">
+                                    <input type="submit" value="" class="searchbutton" onclick="document.login.submit()">
 
                                 </form>
 

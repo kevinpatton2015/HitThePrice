@@ -83,10 +83,10 @@
                             </div>
                             <div class="right six columns">
 
-                                <form action="product-list.aspx" id="searchform" method="get">
+                                <form id="searchform" method="post">
 
                                     <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field" runat="server">
-                                    <input type="submit" value="" class="searchbutton">
+                                    <input type="submit" value="" class="searchbutton" onclick="document.login.submit()">
 
                                 </form>
 
@@ -232,19 +232,19 @@
                                 <div class="row">
                                 <form  id="product"  runat="server">
                                 <div id="product-list-container">
-                                
+                                <%for (int i = 1; i <= 4; i++){ %>                                
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a id="imghref1" title="Woman's Dress Flower" href="product-details.aspx" runat="server"><img id="img1" src="images/content/products/p-1.jpg" alt="" runat="server"/></a>
+                                            <a title="Woman's Dress Flower" href=<%=detailUrList==null?"product-details.aspx":detailUrList[i].ToString() %>><img src=<%=picUrList==null?"images/content/products/p-1.jpg":picUrList[i].ToString() %> alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a id="title1" title="Woman's Dress Flower" href="product-details.aspx" runat="server">Woman's Dress Flower</a></h3>
+                                            <h3><a title=<%=titleList==null?"Woman's Dress Flower":titleList[i].ToString() %> href=<%=detailUrList==null?"product-details.aspx":detailUrList[i].ToString() %>><%=titleList==null?"Woman's Dress Flower":titleList[i].ToString() %></a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div id="price1" class="price" runat="server">$120.00</div>
+                                                <div class="price"><%=priceList==null?"$120.00":priceList[i].ToString() %></div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>Add to Compare</label>
@@ -258,84 +258,7 @@
                                         </div>
 										<div class="clear"></div>
                                 	</div>
-                                    
-                                	<div class="product-list-wrapper">
-                                        <div class="one_fifth columns product-img">
-                                            <a id="imghref2" title="Gold Dress" href="product-details.aspx" runat="server"><img id="img2" src="images/content/products/p-2.jpg" alt="" runat="server"/></a>
-                                        </div>
-                                        <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a id="title2" title="Gold Dress" href="product-details.aspx" runat="server">Gold Dress</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
-                                        </div>
-                                        <div class="one_fifth columns">
-                                            <div class="price-cart-wrapper">
-                                                <div id="price2" class="price" runat="server">$120.00</div>
-                                                <form action="index.aspx" class="compare">
-                                                <input type="checkbox" class="comparator"> 
-                                                <label>Add to Compare</label>
-                                                </form>
-                                                <div class="but-wrapper">
-                                                	<a href="favorite.aspx" class="cart">加入收藏 </a>
-                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-										<div class="clear"></div>
-                                	</div>
-                                    
-                                	<div class="product-list-wrapper">
-                                        <div class="one_fifth columns product-img">
-                                            <a id="imghref3" title="Blue &amp; White" href="product-details.aspx" runat="server"><img id="img3" src="images/content/products/p-3.jpg" alt="" runat="server"/></a>
-                                        </div>
-                                        <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a id="title3" title="Blue &amp; White" href="product-details.aspx" runat="server">Blue &amp; White</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
-                                        </div>
-                                        <div class="one_fifth columns">
-                                            <div class="price-cart-wrapper">
-                                                <div id="price3" class="price" runat="server">$120.00</div>
-                                                <form action="index.aspx" class="compare">
-                                                <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>Add to Compare</label>
-                                                </form>
-                                                <div class="but-wrapper">
-                                                	<a href="favorite.aspx" class="cart">加入收藏 </a>
-                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-										<div class="clear"></div>
-                                	</div>
-                                    
-                                	<div class="product-list-wrapper">
-                                        <div class="one_fifth columns product-img">
-                                            <a id="imghref4" title="Brown Dress" href="product-details.aspx" runat="server"><img id="img4" src="images/content/products/p-4.jpg" alt="" runat="server"/></a>
-                                        </div>
-                                        <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a id="title4" title="Brown Dress" href="product-details.aspx" runat="server">Brown Dress</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
-                                        </div>
-                                        <div class="one_fifth columns">
-                                            <div class="price-cart-wrapper">
-                                                <div id="price4" class="price" runat="server">$120.00</div>
-                                                <form action="index.aspx" class="compare">
-                                                <input type="checkbox"  class="comparator" > 
-                                                <label>Add to Compare</label>
-                                                </form>
-                                                <div class="but-wrapper">
-                                                	<a href="favorite.aspx" class="cart">加入收藏 </a>
-                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-										<div class="clear"></div>
-                                	</div>
+                                <%} %>      
                                     
                                 </div> 
                                 </form>    
