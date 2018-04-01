@@ -12,6 +12,7 @@ using System.Web.Security;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using CrawlUtils;
+using System.Text.RegularExpressions;
 
 public partial class re : System.Web.UI.Page
 {
@@ -51,15 +52,14 @@ public partial class re : System.Web.UI.Page
         string Postcode = billing_postcode.ToString();
         string EmailAddress = billing_email.ToString();
         string Phone = billing_phone.ToString();
-
-        if (login(Name,Password,Address,City,Postcode,EmailAddress,Phone))
+        if (login(Name, Password, Address, City, Postcode, EmailAddress, Phone))
         {
             Response.Write("<script>alert('注册成功');window.location.href='login.aspx';</script>");
         }
         else
         {
             Response.Write("<script>alert('用户已注册');window.location.href='register.aspx';</script>");
-        };
+        }
                
     }
 

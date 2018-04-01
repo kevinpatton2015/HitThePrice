@@ -1,14 +1,15 @@
-﻿using CrawlUtils;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CrawlUtils;
 
-public partial class 自营商城 : System.Web.UI.Page
+public partial class MasterPage : System.Web.UI.MasterPage
 {
     public string userId;
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["UserId"] != null)
@@ -27,5 +28,19 @@ public partial class 自营商城 : System.Web.UI.Page
             Session["locList"] = spider.get_locList();
             Response.Redirect("product-list.aspx");
         }
+    }
+
+    protected void Logout(object sender, EventArgs e)
+    {
+        Session["logoutFlag"] = "true";
+
+        try
+        {
+            Session["UserId"] = null;
+            Session.Remove("UserId");
+        }
+        catch { }
+
+        Response.Redirect("index.aspx");
     }
 }

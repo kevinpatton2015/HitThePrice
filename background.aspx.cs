@@ -1,12 +1,12 @@
-﻿using CrawlUtils;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CrawlUtils;
 
-public partial class 自营商城 : System.Web.UI.Page
+public partial class background : System.Web.UI.Page
 {
     public string userId;
     protected void Page_Load(object sender, EventArgs e)
@@ -27,5 +27,10 @@ public partial class 自营商城 : System.Web.UI.Page
             Session["locList"] = spider.get_locList();
             Response.Redirect("product-list.aspx");
         }
+    }
+
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
     }
 }

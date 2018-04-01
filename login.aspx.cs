@@ -59,7 +59,12 @@ public partial class re : System.Web.UI.Page
                     Session["UserId"] = this.TextBox1.Text.Trim();
                     if (IsPostBack)
                     {
-                        Response.Write("<script>window.location.href='index.aspx';</script>");
+                        if (this.TextBox1.Text.Trim()=="Administrator")
+                        {
+                            Response.Write("<script>window.location.href='background.aspx';</script>");
+                        }else{
+                            Response.Write("<script>window.location.href='index.aspx';</script>");
+                        }
                     }
                     Session["name"] = TextBox1.Text;
                 }
