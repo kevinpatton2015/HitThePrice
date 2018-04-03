@@ -235,16 +235,16 @@
                                 <%for (int i = 1; i <= 4; i++){ %>                                
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Woman's Dress Flower" href=<%=detailUrList.Capacity==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><img src=<%=picUrList.Capacity==0?"images/content/products/p-1.jpg":sortedList[i].picUrl.ToString() %> alt=""/></a>
+                                            <a title="Woman's Dress Flower" href=<%=sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><img src=<%=sortedList.Count==0?"images/content/products/p-1.jpg":sortedList[i].picUrl.ToString() %> alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title=<%=titleList.Capacity==0?"Woman's Dress Flower":sortedList[i].title.ToString() %> href=<%=detailUrList.Capacity==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><%=titleList.Capacity==0?"Woman's Dress Flower":sortedList[i].title.ToString() %></a></h3>
+                                            <h3><a title=<%=sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %> href=<%=sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><%=sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %></a></h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price"><%=priceList.Capacity==0?"$120.00":sortedList[i].price.ToString() %></div>
+                                                <div class="price"><%=sortedList.Count==0?"$120.00":sortedList[i].price.ToString() %></div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>Add to Compare</label>
