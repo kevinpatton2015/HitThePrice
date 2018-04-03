@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CrawlUtils
 {
-    class Sort
+    public class Sort
     {
         private List<Item> array = new List<Item>();
 

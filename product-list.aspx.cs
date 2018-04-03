@@ -20,7 +20,8 @@ public partial class product_list : System.Web.UI.Page
     public ArrayList picUrList;
     public ArrayList detailUrList;
     public ArrayList locList;
-
+    public List<Item> itemList;
+    public List<Item> sortedList;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["UserId"] != null)
@@ -49,14 +50,18 @@ public partial class product_list : System.Web.UI.Page
             keyword = Session["keyword"].ToString();
             pagetitle.InnerText = keyword + "信息";
             proList.InnerText = keyword;
-
+            
             titleList = (ArrayList)Session["titleList"];
             priceList = (ArrayList)Session["priceList"];
             picUrList = (ArrayList)Session["picUrList"];
             detailUrList = (ArrayList)Session["detailUrList"];
             locList = (ArrayList)Session["locList"];
 
-
+            itemList = new List<Item>();
+            for(int i = 0; i < titleList.Count; i++)
+            {itemList.Add(new Item("淘宝", titleList[i].ToString(), priceList[i].ToString(), picUrList[i].ToString(), detailUrList[i].ToString()));}
+           
+            sortedList = new Sort().BubbleSort(itemList);
 
             recommendtitle1.InnerText = titleList[6].ToString();
             recommendtitle2.InnerText = titleList[9].ToString();
