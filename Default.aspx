@@ -12,7 +12,7 @@
     
 	<div class="slide_wrapper">
 		<div class="gallery_slide_wrapper">
-			<a href="surfacebook.aspx" target="_blank" class="gallery_item block" data-idx="0">
+			<a href="index.aspx" target="_blank" class="gallery_item block" data-idx="0">
 				<div class="gallery_item_content">
 					<div class="gallery_item_lockup_wrapper">
 						<span>Macbook Pro 2016</span>
@@ -21,7 +21,7 @@
 				</div>
 				<div class="gallery_image"></div>
 			</a>
-			<a href="surfacebook.aspx" target="_blank" class="gallery_item block" data-idx="1">
+			<a href="index.aspx" target="_blank" class="gallery_item block" data-idx="1">
 				<div class="gallery_item_content">
 					<div class="gallery_item_lockup_wrapper">
 						<span>SurfaceBook</span> <!--主题文本-->
@@ -29,7 +29,7 @@
 				</div>
 				<div class="gallery_image"></div>	
 			</a>
-			<a href="surfacebook.aspx" target="_blank" class="gallery_item block" data-idx="2">
+			<a href="index.aspx" target="_blank" class="gallery_item block" data-idx="2">
 				<div class="gallery_item_content">
 					<div class="gallery_item_lockup_wrapper">
 						<span>SurfacePen</span> <!--主题文本-->
@@ -37,7 +37,7 @@
 				</div>
 				<div class="gallery_image"></div>
 			</a>
-			<a href="surfacebook.aspx" target="_blank" class="gallery_item block" data-idx="3">
+			<a href="index.aspx" target="_blank" class="gallery_item block" data-idx="3">
 				<div class="gallery_item_content">
 					<div class="gallery_item_lockup_wrapper">
 						<span>SurfaceDial</span> <!--主题文本-->
