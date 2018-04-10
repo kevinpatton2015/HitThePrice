@@ -59,7 +59,7 @@ public partial class product_list : System.Web.UI.Page
 
             itemList = new List<Item>();
             for(int i = 0; i < titleList.Count; i++)
-            {itemList.Add(new Item("淘宝", titleList[i].ToString(), priceList[i].ToString(), picUrList[i].ToString(), detailUrList[i].ToString()));}
+            {itemList.Add(new Item("", titleList[i].ToString(), priceList[i].ToString(), picUrList[i].ToString(), detailUrList[i].ToString()));}
            
             sortedList = new Sort().BubbleSort(itemList);
 

@@ -32,6 +32,7 @@ public partial class index : System.Web.UI.Page
         string keyword = s.Value;
         Crawl spider = new Crawl(keyword, "utf8");
         spider.TBcrawl();
+        spider.JDcrawl();
         Session["keyword"] = keyword;
         Session["titleList"] = spider.get_titleList();
         Session["priceList"] = spider.get_priceList();
