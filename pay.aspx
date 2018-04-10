@@ -226,10 +226,11 @@
                                             <label for="payment_method_cheque">Cheque Payment </label> 					
                                         </li>
                                     </ul>
-                                
-                                    <div class="form-row">		
-                                        <a href="#" class="button">去支付</a>
+                                    <form id="payform" runat="server">
+                                    <div class="form-row">	
+                                        <input type="button" class="button" value="去支付" onserverclick="Pay" runat="server"/>
                                     </div>
+                                    </form>
                                     <div class="clear"></div>
                                 </div>
 
