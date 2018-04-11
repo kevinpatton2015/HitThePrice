@@ -228,7 +228,7 @@
                                     </ul>
                                     <form id="payform" runat="server">
                                     <div class="form-row">	
-                                        <input type="button" class="button" value="去支付" onserverclick="Pay" runat="server"/>
+                                        <input type="Button" name="button" id="submit_btn" class="button" value="去支付" onserverclick="Pay" runat="server"/>
                                     </div>
                                     </form>
                                     <div class="clear"></div>
