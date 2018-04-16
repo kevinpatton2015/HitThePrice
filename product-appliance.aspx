@@ -230,11 +230,11 @@
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
                                         	<span class="new"></span>
-                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
+                                            <a title="一级能效变频空调大1.5匹冷暖挂机AUX/奥克斯 KFR-35GW/BpQYQ1+1P" href="product-details.aspx"><img src="images/content/products/p-25.jpg" alt=""/></a>
+                                            <h3><a title="一级能效变频空调大1.5匹冷暖挂机AUX/奥克斯 KFR-35GW/BpQYQ1+1P" href="product-details.aspx">一级能效变频空调大1.5匹冷暖挂机AUX/奥克斯 KFR-35GW/BpQYQ1+1P</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥2799.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
@@ -245,11 +245,11 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
-                                            <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
+                                            <a title="Midea/美的 BCD-535WKZM(E)冰箱双开门对开家用智能节能风冷无霜" href="product-details.aspx"><img src="images/content/products/p-26.jpg" alt=""/></a>
+                                            <h3><a title="Midea/美的 BCD-535WKZM(E)冰箱双开门对开家用智能节能风冷无霜" href="product-details.aspx">Midea/美的 BCD-535WKZM(E)冰箱双开门对开家用智能节能风冷无霜</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥3099.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
@@ -260,11 +260,11 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
-                                            <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
+                                            <a title="Haier/海尔EG10014B39GU1滚筒洗衣机全自动10公斤kg 变频静音节能" href="product-details.aspx"><img src="images/content/products/p-27.jpg" alt=""/></a>
+                                            <h3><a title="Haier/海尔EG10014B39GU1滚筒洗衣机全自动10公斤kg 变频静音节能" href="product-details.aspx">Haier/海尔EG10014B39GU1滚筒洗衣机全自动10公斤kg 变频静音节能</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥2699.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
@@ -275,11 +275,11 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
+                                            <a title="Midea/美的 MD100V71WDX 洗衣机滚筒全自动家用10kg公斤变频烘干" href="product-details.aspx"><img src="images/content/products/p-28.jpg" alt=""/></a>
+                                            <h3><a title="Midea/美的 MD100V71WDX 洗衣机滚筒全自动家用10kg公斤变频烘干" href="product-details.aspx">Midea/美的 MD100V71WDX 洗衣机滚筒全自动家用10kg公斤变频烘干</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥2999.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
@@ -290,11 +290,11 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-5.jpg" alt=""/></a>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
+                                            <a title="Xiaomi/小米 小米电视4A 65英寸 全新4k超高清智能平板液晶电视机" href="product-details.aspx"><img src="images/content/products/p-29.jpg" alt=""/></a>
+                                            <h3><a title="Xiaomi/小米 小米电视4A 65英寸 全新4k超高清智能平板液晶电视机" href="product-details.aspx">Xiaomi/小米 小米电视4A 65英寸 全新4k超高清智能平板液晶电视机</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥3999.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
@@ -305,11 +305,11 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="White Dress" href="product-details.aspx"><img src="images/content/products/p-6.jpg" alt=""/></a>
-                                            <h3><a title="White Dress" href="product-details.aspx">White Dress</a></h3>
+                                            <a title="TCL 65A730U 65英寸30核网络智能4K电视超薄" href="product-details.aspx"><img src="images/content/products/p-30.jpg" alt=""/></a>
+                                            <h3><a title="TCL 65A730U 65英寸30核网络智能4K电视超薄" href="product-details.aspx">TCL 65A730U 65英寸30核网络智能4K电视超薄</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥3999.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
@@ -320,11 +320,11 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Unique Dress" href="product-details.aspx"><img src="images/content/products/p-7.jpg" alt=""/></a>
-                                            <h3><a title="Unique Dress" href="product-details.aspx">Unique Dress</a></h3>
+                                            <a title="Haier/海尔 BCD-470WDPG家用电冰箱四开门十字对开门变频风冷无霜" href="product-details.aspx"><img src="images/content/products/p-31.jpg" alt=""/></a>
+                                            <h3><a title="Haier/海尔 BCD-470WDPG家用电冰箱四开门十字对开门变频风冷无霜" href="product-details.aspx">Haier/海尔 BCD-470WDPG家用电冰箱四开门十字对开门变频风冷无霜</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥4799.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
@@ -335,11 +335,11 @@
                                     </div>
                                     <div class="one_fourth columns">
                                         <div class="product-wrapper">
-                                            <a title="Flower Dress" href="product-details.aspx"><img src="images/content/products/p-8.jpg" alt=""/></a>
-                                            <h3><a title="Flower Dress" href="product-details.aspx">Flower Dress</a></h3>
+                                            <a title="小天鹅10公斤KG全自动变频智能滚筒静音家用洗衣机 TG100V120WDG" href="product-details.aspx"><img src="images/content/products/p-32.jpg" alt=""/></a>
+                                            <h3><a title="小天鹅10公斤KG全自动变频智能滚筒静音家用洗衣机 TG100V120WDG" href="product-details.aspx">小天鹅10公斤KG全自动变频智能滚筒静音家用洗衣机 TG100V120WDG</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥2599.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
@@ -375,14 +375,14 @@
                                 <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
-                                        <img src="images/content/products/p-28.jpg" alt="" />
-                                        <h3><a href="#">Woman's Couple Shoes</a></h3>
-										<div class="price">$120.00</div>
+                                        <img src="images/content/products/p-15.jpg" alt="" />
+                                        <h3><a href="product-laptop.aspx">GreatWall/长城 19-24英寸台式家用办公独显游戏T2001一体机</a></h3>
+										<div class="price">￥2499.00</div>
                                     </li>
                                     <li>
-                                        <img src="images/content/products/p-20.jpg" alt="" />
-                                        <h3><a href="#">Modern Chair</a></h3>
-                                        <div class="price">$120.00</div>
+                                        <img src="images/content/products/p-11.jpg" alt="" />
+                                        <h3><a href="product-laptop.aspx">2017新款Apple/苹果 MacBook Pro MF839CH/A国行笔记本电脑13寸15</a></h3>
+                                        <div class="price">￥12850.00</div>
                                     </li>
                                 </ul>
                             </li>
