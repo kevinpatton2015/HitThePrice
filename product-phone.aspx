@@ -232,7 +232,7 @@
                                             <h3><a title="苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机" href="product-details-iPhone X.aspx">苹果Apple iPhone X 64G 深空灰 5.8英寸 全网通4G手机</a></h3>
                                             <div class="price-cart-wrapper">
                                                 <div class="price">
-                                                    $120.00
+                                                    ￥7749.00
                                                 </div>
                                                 <div class="cart">
                                                     <a href="product-details-iPhone X.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>

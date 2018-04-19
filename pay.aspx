@@ -215,15 +215,14 @@
                                         </li>
                                         <li>
                                             <input type="radio" id="payment_method_bacs" class="input-radio" name="payment_method" value="bacs"  />
-                                            <label for="payment_method_bacs">Direct Bank Transfer </label> 
+                                            <label for="payment_method_bacs">银行卡支付 </label> 
                                             <div class="payment_box">
-                                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. 
-                                            Your order wont be shipped until the funds have cleared in our account.</p>
+                                            <p>网关支付是网银在线推出的基于银行卡在线支付的第三方电子支付系统，通过整合各家银行的支付接口，实现用户可直接把资金从银行卡中转账到网站账户中的支付服务，目前支持全国26家国内主流银行在线支付。致力于为国内外从事电子商务的企业或个人提供安全、快捷、稳定的支付服务。</p>
                                             </div>						
                                         </li>
                                         <li>
-                                            <input type="radio" id="payment_method_cheque" class="input-radio" name="payment_method" value="cheque"  />
-                                            <label for="payment_method_cheque">Cheque Payment </label> 					
+                                            <input type="radio" id="payment_method_cheque" class="input-radio" name="payment_method" value="微信支付"  />
+                                            <label for="payment_method_cheque"><img src="images/wechatpay.png" alt="微信支付" /></label> 					
                                         </li>
                                     </ul>
                                     <form id="payform" runat="server">
@@ -258,13 +257,13 @@
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="images/content/products/p-28.jpg" alt="" />
-                                        <h3><a href="#">Woman's Couple Shoes</a></h3>
-										<div class="price">$120.00</div>
+                                        <h3><a href="product-appliance.aspx">Midea/美的 MD100V71WDX 洗衣机滚筒全自动家用10kg公斤变频烘干</a></h3>
+										<div class="price">￥2999.00</div>
                                     </li>
                                     <li>
                                         <img src="images/content/products/p-20.jpg" alt="" />
-                                        <h3><a href="#">Modern Chair</a></h3>
-                                        <div class="price">$120.00</div>
+                                        <h3><a href="product-camera.aspx">Panasonic松下数码相机 DC-GF9KGK美颜4K高清自拍神器微单电gf9</a></h3>
+                                        <div class="price">￥3276.00</div>
                                     </li>
                                 </ul>
                             </li>

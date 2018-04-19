@@ -238,16 +238,16 @@
                                             <a title="Woman's Dress Flower" href=<%=sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><img src=<%=sortedList.Count==0?"images/content/products/p-1.jpg":sortedList[i].picUrl.ToString() %> alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
+                                        	<div class="status"><span>天猫</span> &nbsp;&nbsp;| &nbsp;&nbsp;包邮</div>
                                             <h3><a title=<%=sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %> href=<%=sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><%=sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %></a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price"><%=sortedList.Count==0?"$120.00":sortedList[i].price.ToString() %></div>
+                                                <div class="price">￥<%=sortedList.Count==0?"$120.00":sortedList[i].price.ToString() %></div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="favorite.aspx" class="cart">加入收藏 </a>
@@ -290,13 +290,13 @@
                                 <ul class="sp-widget">
                                     <li>
                                         <img id="recommendimg1" src="images/content/products/p-28.jpg" alt=""  runat="server"/>
-                                        <h3><a id="recommendtitle1" href="#" runat="server">Woman's Couple Shoes</a></h3>
-										<div id="recommendprice1" class="price" runat="server">$120.00</div>
+                                        <h3><a id="recommendtitle1" href="#" runat="server">Midea/美的 MD100V71WDX 洗衣机滚筒全自动家用10kg公斤变频烘干</a></h3>
+										<div id="recommendprice1" class="price" runat="server">￥2999.00</div>
                                     </li>
                                     <li>
                                         <img id="recommendimg2" src="images/content/products/p-20.jpg" alt="" runat="server"/>
-                                        <h3><a id="recommendtitle2" href="#" runat="server">Modern Chair</a></h3>
-                                        <div id="recommendprice2" class="price" runat="server">$120.00</div>
+                                        <h3><a id="recommendtitle2" href="#" runat="server">Panasonic松下数码相机 DC-GF9KGK美颜4K高清自拍神器微单电gf9</a></h3>
+                                        <div id="recommendprice2" class="price" runat="server">￥3276.00</div>
                                     </li>
                                 
                                 </ul>

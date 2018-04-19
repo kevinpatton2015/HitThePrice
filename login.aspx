@@ -217,14 +217,14 @@
                                 <div class="row">
                                     <div class="one_fourth columns">
 										<div class="product-wrapper">
-                                        	<a title="Men's Watch" href="product-details.aspx"><img src="images/content/products/p-31.jpg" alt=""/></a>
-                                            <h3><a title="Men's Watch" href="product-details.aspx">Men's Watch</a></h3>
+                                            <a title="送原装卡包/索尼ILCE-A6000L微单套机数码相机 专业高清wifi微单" href="product-details.aspx"><img src="images/content/products/p-21.jpg" alt=""/></a>
+                                            <h3><a title="送原装卡包/索尼ILCE-A6000L微单套机数码相机 专业高清wifi微单" href="product-details.aspx">送原装卡包/索尼ILCE-A6000L微单套机数码相机 专业高清wifi微单</a></h3>
                                             <div class="price-cart-wrapper">
-                                            	<div class="price">
-                                                	$120.00
+                                                <div class="price">
+                                                    ￥3549.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -232,14 +232,14 @@
                                     </div>
                                     <div class="one_fourth columns">
 										<div class="product-wrapper">
-                                        	<a title="White Dress" href="product-details.aspx"><img src="images/content/products/p-6.jpg" alt=""/></a>
-                                            <h3><a title="White Dress" href="product-details.aspx">White Dress</a></h3>
+                                            <a title="【抽券再减500】华硕飞行堡垒FX63学生吃鸡游戏本 i7笔记本电脑" href="product-details.aspx"><img src="images/content/products/p-9.jpg" alt=""/></a>
+                                            <h3><a title="【抽券再减500】华硕飞行堡垒FX63学生吃鸡游戏本 i7笔记本电脑" href="product-details.aspx">【抽券再减500】华硕飞行堡垒FX63学生吃鸡游戏本 i7笔记本电脑</a></h3>
                                             <div class="price-cart-wrapper">
-                                            	<div class="price">
-                                                	$120.00
+                                                <div class="price">
+                                                    ￥6299.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -247,29 +247,30 @@
                                     </div>
                                     <div class="one_fourth columns">
 										<div class="product-wrapper">
-                                        	<a title="Flower Handbag" href="product-details.aspx"><img src="images/content/products/p-32.jpg" alt=""/></a>
-                                            <h3><a title="Flower Handbag" href="product-details.aspx">Flower Handbag</a></h3>
+                                        	<span class="new"></span>
+                                            <a title="Panasonic松下数码相机 DC-GF9KGK美颜4K高清自拍神器微单电gf9" href="product-details.aspx"><img src="images/content/products/p-20.jpg" alt=""/></a>
+                                            <h3><a title="Panasonic松下数码相机 DC-GF9KGK美颜4K高清自拍神器微单电gf9" href="product-details.aspx">Panasonic松下数码相机 DC-GF9KGK美颜4K高清自拍神器微单电gf9</a></h3>
                                             <div class="price-cart-wrapper">
-                                            	<div class="price">
-                                                	$120.00
+                                                <div class="price">
+                                                    ￥3276.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="one_fourth columns">
-										<div class="product-wrapper">
-                                        	<a title="Red High Heels" href="product-details.aspx"><img src="images/content/products/p-25.jpg" alt=""/></a>
-                                            <h3><a title="Red High Heels" href="product-details.aspx">Red High Heels</a></h3>
+									  <div class="product-wrapper">
+                                            <a title="照相机数码 高清 旅游 迷你卡片机Canon/佳能 PowerShot SX730 HS" href="product-details.aspx"><img src="images/content/products/p-19.jpg" alt=""/></a>
+                                            <h3><a title="照相机数码 高清 旅游 迷你卡片机Canon/佳能 PowerShot SX730 HS" href="product-details.aspx">照相机数码 高清 旅游 迷你卡片机Canon/佳能 PowerShot SX730</a></h3>
                                             <div class="price-cart-wrapper">
-                                            	<div class="price">
-                                                	$120.00
+                                                <div class="price">
+                                                    ￥2279.00
                                                 </div>
                                                 <div class="cart">
-                                                	<a href="product-details.aspx" class="more">more</a> | <a href="#" class="buy">buy</a>
+                                                    <a href="product-details.aspx"  class="more">more</a> | <a href="favorite.aspx" class="buy">buy</a>
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>

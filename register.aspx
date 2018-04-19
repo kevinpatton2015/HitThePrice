@@ -277,13 +277,13 @@
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="images/content/products/p-28.jpg" alt="" />
-                                        <h3><a href="#">Woman's Couple Shoes</a></h3>
-										<div class="price">$120.00</div>
+                                        <h3><a href="product-appliance.aspx">Midea/美的 MD100V71WDX 洗衣机滚筒全自动家用10kg公斤变频烘干</a></h3>
+										<div class="price">￥2999.00</div>
                                     </li>
                                     <li>
                                         <img src="images/content/products/p-20.jpg" alt="" />
-                                        <h3><a href="#">Modern Chair</a></h3>
-                                        <div class="price">$120.00</div>
+                                        <h3><a href="product-camera.aspx">Panasonic松下数码相机 DC-GF9KGK美颜4K高清自拍神器微单电gf9</a></h3>
+                                        <div class="price">￥3276.00</div>
                                     </li>
                                 </ul>
                             </li>
