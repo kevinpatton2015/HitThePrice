@@ -295,8 +295,8 @@
                                 </div>
                                 
                                 <div class="row">
-                                	<div class="one_half columns"><a href="http://uland.taobao.com/sem/tbsearch?refpid=mm_26632258_3504122_32538762&clk1=a2214513c78bfa18f135763d2e1ca92d&keyword=%E6%89%8B%E6%9C%BA&page=0"><img src="images/content/sale1.jpg" alt=""/></a></div>
-                                    <div class="one_half columns"><a href="http://uland.taobao.com/sem/tbsearch?refpid=mm_26632258_3504122_32538762&clk1=a2214513c78bfa18f135763d2e1ca92d&keyword=%E7%94%B5%E8%84%91&page=0"><img src="images/content/sale2.jpg" alt=""/></a></div>
+                                	<div class="one_half columns"><a href="http://uland.taobao.com/sem/tbsearch?refpid=mm_26632258_3504122_32538762&clk1=a2214513c78bfa18f135763d2e1ca92d&keyword=%E6%89%8B%E6%9C%BA&page=0" target="_blank"><img src="images/content/sale1.jpg" alt=""/></a></div>
+                                    <div class="one_half columns"><a href="http://uland.taobao.com/sem/tbsearch?refpid=mm_26632258_3504122_32538762&clk1=a2214513c78bfa18f135763d2e1ca92d&keyword=%E7%94%B5%E8%84%91&page=0" target="_blank"><img src="images/content/sale2.jpg" alt=""/></a></div>
                                 </div> 
                                 
                                 <div class="new-products">                 
