@@ -85,7 +85,7 @@
 
                             <form  id="searchform"  runat="server">
                                 
-                                <input type="text" onBlur="if (this.value == '')this.value = 'Search keywords here';" onFocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field" runat="server">
+                                <input type="text" onBlur="if (this.value == '')this.value = 'Search keywords here';" onFocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" autocomplete=”on” id="s" name="s" class="field" runat="server">
                                 <input type="button" value="" class="searchbutton" onserverclick="Search" runat="server"/>
                                
                             </form>
