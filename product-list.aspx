@@ -85,7 +85,7 @@
 
                                 <form id="searchform" method="post">
 
-                                    <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" id="s" name="s" class="field" runat="server">
+                                    <input type="text" onblur="if (this.value == '')this.value = 'Search keywords here';" onfocus="if (this.value == 'Search keywords here')this.value = '';" value="Search keywords here" autocomplete="on" id="s" name="s" class="field" runat="server">
                                     <input type="submit" value="" class="searchbutton" onclick="document.login.submit()">
 
                                 </form>
@@ -235,16 +235,16 @@
                                 <%for (int i = 1; i <= 4; i++){ %>                                
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Woman's Dress Flower" href=<%=sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><img src=<%=sortedList.Count==0?"images/content/products/p-1.jpg":sortedList[i].picUrl.ToString() %> alt=""/></a>
+                                            <a title="Woman's Dress Flower" href=<%=sortedList==null||sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><img src=<%=sortedList==null||sortedList.Count==0?"images/content/products/p-1.jpg":sortedList[i].picUrl.ToString() %> alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>天猫</span> &nbsp;&nbsp;| &nbsp;&nbsp;包邮</div>
-                                            <h3><a title=<%=sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %> href=<%=sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><%=sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %></a></h3>
+                                            <h3><a title=<%=sortedList==null||sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %> href=<%=sortedList==null||sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><%=sortedList==null||sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %></a></h3>
                                             <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">￥<%=sortedList.Count==0?"$120.00":sortedList[i].price.ToString() %></div>
+                                                <div class="price">￥<%=sortedList==null||sortedList.Count==0?"$120.00":sortedList[i].price.ToString() %></div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>感兴趣</label>
