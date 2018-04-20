@@ -51,19 +51,19 @@
                                 
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
+                                            <a title="一级能效变频空调大1.5匹冷暖挂机AUX/奥克斯 KFR-35GW/BpQYQ1+1P" href="product-details.aspx"><img src="images/content/products/p-25.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;奥克斯</div>
+                                            <h3><a title="一级能效变频空调大1.5匹冷暖挂机AUX/奥克斯 KFR-35GW/BpQYQ1+1P" href="product-details.aspx">一级能效变频空调大1.5匹冷暖挂机AUX/奥克斯 KFR-35GW/BpQYQ1+1P</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥2799.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">加入收藏</a>
@@ -77,19 +77,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
+                                            <a title="Midea/美的 KFR-26GW/WXDA1@大1匹变频冷暖壁挂空调挂机一级能效" href="product-details.aspx"><img src="images/content/products/p-47.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;美的</div>
+                                            <h3><a title="Midea/美的 KFR-26GW/WXDA1@大1匹变频冷暖壁挂空调挂机一级能效" href="product-details.aspx">Midea/美的 KFR-26GW/WXDA1@大1匹变频冷暖壁挂空调挂机一级能效</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥3249.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" class="comparator"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">加入收藏</a>
@@ -103,19 +103,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
+                                            <a title="格力空调大1匹变频冷暖挂机KFR-26GW/(26592)FNhDa-A3品圆" href="product-details.aspx"><img src="images/content/products/p-48.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;格力</div>
+                                            <h3><a title="格力空调大1匹变频冷暖挂机KFR-26GW/(26592)FNhDa-A3品圆" href="product-details.aspx">格力空调大1匹变频冷暖挂机KFR-26GW/(26592)FNhDa-A3品圆</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥2699.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="favorite.aspx" class="cart">加入收藏</a>
@@ -129,19 +129,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
+                                            <a title="大1.5匹p变频冷暖壁挂式空调机Haier/海尔 KFR-35GW/21TMAAL23AU1" href="product-details.aspx"><img src="images/content/products/p-49.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;海尔</div>
+                                            <h3><a title="大1.5匹p变频冷暖壁挂式空调机Haier/海尔 KFR-35GW/21TMAAL23AU1" href="product-details.aspx">大1.5匹p变频冷暖壁挂式空调机Haier/海尔 KFR-35GW/21TMAAL23AU1</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥2899.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox"  class="comparator" > 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="favorite.aspx" class="cart">加入收藏</a>
@@ -156,9 +156,8 @@
                                 </div>    
                                 </div>
 								<div class="wp-pagenavi">
-                                	<a href="#" class="page">1</a><span class="current"><span>2</span></span><a href="#" class="page">3</a> &nbsp;&nbsp;Showing 4 to 4 of 12 (3 Pages)
+                                	<span class="current"><span>1</span></span><a href="#" class="page">2</a><a href="#" class="page">3</a> &nbsp;&nbsp;第1页/共3页
                             	</div>
-
 							</section>
                          
                         </div>
@@ -185,14 +184,14 @@
                                 <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
-                                        <img src="images/content/products/p-28.jpg" alt="" />
-                                        <h3><a href="#">Woman's Couple Shoes</a></h3>
-										<div class="price">$120.00</div>
+                                        <img src="images/content/products/p-19.jpg" alt="" />
+                                        <h3><a href="product-camera.aspx">照相机数码 高清 旅游 迷你卡片机Canon/佳能 PowerShot SX730 HS</a></h3>
+										<div class="price">￥2279.00</div>
                                     </li>
                                     <li>
-                                        <img src="images/content/products/p-20.jpg" alt="" />
-                                        <h3><a href="#">Modern Chair</a></h3>
-                                        <div class="price">$120.00</div>
+                                        <img src="images/content/products/p-17.jpg" alt="" />
+                                        <h3><a href="product-camera.aspx">Sony/索尼 DSC-H400 佳能 入门小单反 长焦照相机 高清 数码 旅游</a></h3>
+                                        <div class="price">￥1699.00</div>
                                     </li>
                                 </ul>
                             </li>

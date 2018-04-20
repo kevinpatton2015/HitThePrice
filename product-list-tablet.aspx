@@ -231,19 +231,19 @@
                                 
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
+                                            <a title="【12期免息】2018新款 Apple/苹果 9.7英寸ipad智能平板电脑A10" href="product-details.aspx"><img src="images/content/products/p-12.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;苹果</div>
+                                            <h3><a title="【12期免息】2018新款 Apple/苹果 9.7英寸ipad智能平板电脑A10" href="product-details.aspx">【12期免息】2018新款 Apple/苹果 9.7英寸ipad智能平板电脑A10</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥2488.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">加入收藏</a>
@@ -257,19 +257,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
+                                            <a title="Huawei/华为 平板 M5 10.8英寸全网通pc二合一安卓平板电脑M5Pro" href="product-details.aspx"><img src="images/content/products/p-33.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;华为</div>
+                                            <h3><a title="Huawei/华为 平板 M5 10.8英寸全网通pc二合一安卓平板电脑M5Pro" href="product-details.aspx">Huawei/华为 平板 M5 10.8英寸全网通pc二合一安卓平板电脑M5Pro</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥3788.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" class="comparator"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">加入收藏</a>
@@ -283,19 +283,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
+                                            <a title="荣耀 荣耀畅玩平板2正品4G通话10智能电脑安卓吃鸡手机8英寸T3" href="product-details.aspx"><img src="images/content/products/p-34.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;荣耀</div>
+                                            <h3><a title="荣耀 荣耀畅玩平板2正品4G通话10智能电脑安卓吃鸡手机8英寸T3" href="product-details.aspx">荣耀 荣耀畅玩平板2正品4G通话10智能电脑安卓吃鸡手机8英寸T3</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥1249.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="favorite.aspx" class="cart">加入收藏</a>
@@ -309,19 +309,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
+                                            <a title="Teclast/台电 A10S平板电脑安卓10英寸新款吃鸡平板超薄游戏pad" href="product-details.aspx"><img src="images/content/products/p-35.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;台电</div>
+                                            <h3><a title="Teclast/台电 A10S平板电脑安卓10英寸新款吃鸡平板超薄游戏pad" href="product-details.aspx">Teclast/台电 A10S平板电脑安卓10英寸新款吃鸡平板超薄游戏pad</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥699.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox"  class="comparator" > 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="favorite.aspx" class="cart">加入收藏</a>
@@ -336,7 +336,7 @@
                                 </div>    
                                 </div>
 								<div class="wp-pagenavi">
-                                	<a href="#" class="page">1</a><span class="current"><span>2</span></span><a href="#" class="page">3</a> &nbsp;&nbsp;Showing 4 to 4 of 12 (3 Pages)
+                                	<span class="current"><span>1</span></span><a href="#" class="page">2</a><a href="#" class="page">3</a> &nbsp;&nbsp;第1页/共3页
                             	</div>
 
 							</section>
@@ -366,13 +366,13 @@
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="images/content/products/p-28.jpg" alt="" />
-                                        <h3><a href="#">Woman's Couple Shoes</a></h3>
-										<div class="price">$120.00</div>
+                                        <h3><a href="product-appliance.aspx">Midea/美的 MD100V71WDX 洗衣机滚筒全自动家用10kg公斤变频烘干</a></h3>
+										<div class="price">￥2999.00</div>
                                     </li>
                                     <li>
-                                        <img src="images/content/products/p-20.jpg" alt="" />
-                                        <h3><a href="#">Modern Chair</a></h3>
-                                        <div class="price">$120.00</div>
+                                        <img src="images/content/products/p-26.jpg" alt="" />
+                                        <h3><a href="product-appliance.aspx">Midea/美的 BCD-535WKZM(E)冰箱双开门对开家用智能节能风冷无霜</a></h3>
+                                        <div class="price">￥3099.00</div>
                                     </li>
                                 </ul>
                             </li>

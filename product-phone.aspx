@@ -348,7 +348,7 @@
                                     </div>
                                 </div>
 								<div class="wp-pagenavi">
-                                	<a href="#" class="page">1</a><span class="current"><span>2</span></span><a href="#" class="page">3</a> &nbsp;&nbsp;Showing 4 to 4 of 12 (3 Pages)
+                                	<span class="current"><span>1</span></span><a href="#" class="page">2</a><a href="#" class="page">3</a> &nbsp;&nbsp;第1页/共3页
                             	</div>
 
 							</section>

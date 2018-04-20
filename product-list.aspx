@@ -264,7 +264,7 @@
                                 </form>    
                                 </div>
 								<div class="wp-pagenavi">
-                                	<a href="#" class="page">1</a><span class="current"><span>2</span></span><a href="#" class="page">3</a> &nbsp;&nbsp;Showing 4 to 4 of 12 (3 Pages)
+                                	<span class="current"><span>1</span></span><a href="#" class="page">2</a><a href="#" class="page">3</a> &nbsp;&nbsp;第1页/共3页
                             	</div>
 
 							</section>
@@ -298,7 +298,6 @@
                                         <h3><a id="recommendtitle2" href="#" runat="server">Panasonic松下数码相机 DC-GF9KGK美颜4K高清自拍神器微单电gf9</a></h3>
                                         <div id="recommendprice2" class="price" runat="server">￥3276.00</div>
                                     </li>
-                                
                                 </ul>
                             </li>
                             <li class="widget-container">

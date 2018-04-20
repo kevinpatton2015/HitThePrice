@@ -231,19 +231,19 @@
                                 
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Woman's Dress Flower" href="product-details.aspx"><img src="images/content/products/p-1.jpg" alt=""/></a>
+                                            <a title="佳能24-70 f2.8二代镜头 EF 24-70mm f/2.8L II USM 全新正品行货" href="product-details.aspx"><img src="images/content/products/p-23.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Woman's Dress Flower" href="product-details.aspx">Woman's Dress Flower</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;佳能</div>
+                                            <h3><a title="佳能24-70 f2.8二代镜头 EF 24-70mm f/2.8L II USM 全新正品行货" href="product-details.aspx">佳能24-70 f2.8二代镜头 EF 24-70mm f/2.8L II USM 全新正品行货</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥10199.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">加入收藏</a>
@@ -257,19 +257,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Gold Dress" href="product-details.aspx"><img src="images/content/products/p-2.jpg" alt=""/></a>
+                                            <a title="大光圈中徕25mm f1.8微单镜头 佳能富士松下m43相机E卡口人像定焦" href="product-details.aspx"><img src="images/content/products/p-43.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Gold Dress" href="product-details.aspx">Gold Dress</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;佳能</div>
+                                            <h3><a title="大光圈中徕25mm f1.8微单镜头 佳能富士松下m43相机E卡口人像定焦" href="product-details.aspx">大光圈中徕25mm f1.8微单镜头 佳能富士松下m43相机E卡口人像定焦</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥499.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" class="comparator"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="checkout.htm" class="cart">加入收藏</a>
@@ -283,19 +283,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Blue &amp; White" href="product-details.aspx"><img src="images/content/products/p-3.jpg" alt=""/></a>
+                                            <a title="Canon佳能 EF 70-200长焦镜头70-200mm f2.8L IS II USM 小白兔" href="product-details.aspx"><img src="images/content/products/p-24.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Blue &amp; White" href="product-details.aspx">Blue &amp; White</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;佳能</div>
+                                            <h3><a title="Canon佳能 EF 70-200长焦镜头70-200mm f2.8L IS II USM 小白兔" href="product-details.aspx">Canon佳能 EF 70-200长焦镜头70-200mm f2.8L IS II USM 小白兔</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥11238.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="favorite.aspx" class="cart">加入收藏</a>
@@ -309,19 +309,19 @@
                                     
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="Brown Dress" href="product-details.aspx"><img src="images/content/products/p-4.jpg" alt=""/></a>
+                                            <a title="佳能50 1.8 STM 大光圈定焦人像 50mm /F1.8 佳能小痰盂防抖镜头" href="product-details.aspx"><img src="images/content/products/p-42.jpg" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>New</span> &nbsp;&nbsp;| &nbsp;&nbsp;Available</div>
-                                            <h3><a title="Brown Dress" href="product-details.aspx">Brown Dress</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis purus a arcu porta convallis ut in nunc. Donec elementum erat ipsum, eu consectetur tellus. Morbi et venenatis dui. Quisque at arcu ante, in placerat arcu. Curabitur scelerisque imperdiet elementum.</p>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;佳能</div>
+                                            <h3><a title="佳能50 1.8 STM 大光圈定焦人像 50mm /F1.8 佳能小痰盂防抖镜头" href="product-details.aspx">佳能50 1.8 STM 大光圈定焦人像 50mm /F1.8 佳能小痰盂防抖镜头</a></h3>
+                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">$120.00</div>
+                                                <div class="price">￥488.00</div>
                                                 <form action="index.aspx" class="compare">
                                                 <input type="checkbox"  class="comparator" > 
-                                                <label>Add to Compare</label>
+                                                <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
                                                 	<a href="favorite.aspx" class="cart">加入收藏</a>
@@ -336,7 +336,7 @@
                                 </div>    
                                 </div>
 								<div class="wp-pagenavi">
-                                	<a href="#" class="page">1</a><span class="current"><span>2</span></span><a href="#" class="page">3</a> &nbsp;&nbsp;Showing 4 to 4 of 12 (3 Pages)
+                                	<span class="current"><span>1</span></span><a href="#" class="page">2</a><a href="#" class="page">3</a> &nbsp;&nbsp;第1页/共3页
                             	</div>
 
 							</section>
@@ -365,14 +365,14 @@
                                 <h2 class="widget-title">相关推荐</h2>
                                 <ul class="sp-widget">
                                     <li>
-                                        <img src="images/content/products/p-28.jpg" alt="" />
-                                        <h3><a href="#">Woman's Couple Shoes</a></h3>
-										<div class="price">$120.00</div>
+                                        <img src="images/content/products/p-6.jpg" alt="" />
+                                        <h3><a href="product-phone.aspx">ROMOSS/罗马仕 sense4 正品10000+毫安移动电源 手机通用充电宝</a></h3>
+										<div class="price">￥59.00</div>
                                     </li>
                                     <li>
-                                        <img src="images/content/products/p-20.jpg" alt="" />
-                                        <h3><a href="#">Modern Chair</a></h3>
-                                        <div class="price">$120.00</div>
+                                        <img src="images/content/products/p-4.jpg" alt="" />
+                                        <h3><a href="product-phone.aspx">OPPO R15 oppor15手机全新机正品 r15 oppor15梦境版r11s r15plus</a></h3>
+                                        <div class="price">￥2999.00</div>
                                     </li>
                                 </ul>
                             </li>
