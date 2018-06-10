@@ -2,9 +2,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 /// <summary>
 /// Crawl 的摘要说明
@@ -106,7 +108,7 @@ namespace CrawlUtils
             string url = String.Format("https://search.jd.com/Search?keyword={0}&enc={1}", keyword, ie);
 
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load(url);
+            HtmlAgilityPack.HtmlDocument doc = web.Load(url);
  
             foreach (HtmlNode item in doc.DocumentNode.SelectNodes("//li[@class='gl-item']"))
             {
@@ -129,23 +131,45 @@ namespace CrawlUtils
         /* 获取苏宁商品品名、图片、价格 */
         public void SNcrawl()
         {
-            string url = String.Format("https://search.suning.com//{0}//",keyword);
+            string url = String.Format("https://search.suning.com/{0}/",keyword);
+            HtmlDocument doc = new HtmlDocument();
 
-            HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load(url);
-
-            foreach (HtmlNode item in doc.DocumentNode.SelectNodes("//*[@class='product-box']"))
+            foreach (HtmlNode item in doc.DocumentNode.SelectNodes("//div[@class='product-box']"))
             {
-                titleList.Add(item.SelectSingleNode("./div[@class='res-info']/div[@class='title-selling-point']/a").GetAttributeValue("title",""));
-                detailUrList.Add(item.SelectSingleNode("./div[@class='res-info']/div[@class='title-selling-point']/a").GetAttributeValue("href", ""));
-                priceList.Add(item.SelectSingleNode("./div[@class='res-info']/div[@class='price box']/span/i/text()"));
-                picUrList.Add(item.SelectSingleNode("./div[@class='res-img']/div[@class='img-block']/a/img").GetAttributeValue("src2", ""));
+                titleList.Add(item.SelectSingleNode("./div[2]/div[2]/a").GetAttributeValue("title",""));
+                detailUrList.Add(item.SelectSingleNode("./div[2]/div[2]/a").GetAttributeValue("href", ""));
+
+                /* Price Process Begin */
+                string td = item.SelectSingleNode("./div[2]/div[2]/a").GetAttributeValue("href", "");
+                string ID = td.Substring(td.Length-15, 9);
+                string Purl = String.Format("https://ds.suning.cn/ds/generalForTile/000000000{0}_-021--0000000000---ds.jsonp?callback=ds",ID);
+
+                System.Net.WebRequest wReq = System.Net.WebRequest.Create(Purl);
+                System.Net.WebResponse wResp = wReq.GetResponse();
+                System.IO.Stream respStream = wResp.GetResponseStream();
+                string data = "";
+                using (System.IO.StreamReader reader = new System.IO.StreamReader(respStream, Encoding.GetEncoding("utf-8")))
+                {
+                    data = reader.ReadToEnd();
+                }
+                data = Regex.Unescape(data);
+                /* Price Process End */
+
+                priceList.Add("0");
+                picUrList.Add(item.SelectSingleNode("//div[@class='res-img']/div[@class='img-block']/a/img").GetAttributeValue("src2", ""));
+
+                Item product = new Item("苏宁",
+                        item.SelectSingleNode("//div[2]/div[2]/a").GetAttributeValue("title", ""),
+                        "0",
+                        item.SelectSingleNode("./div[@class='res-img']/div[@class='img-block']/a/img").GetAttributeValue("src2", ""),
+                        item.SelectSingleNode("//div[2]/div[2]/a").GetAttributeValue("href", ""));
+                productList.Add(product);
 
             }
         }
-
+        
         /* 获取网页源码 淘宝使用 */
-        public  string GetHtml(string url)
+        private string GetHtml(string url)
         {
             WebClient wc = new WebClient();
             wc.Encoding = Encoding.UTF8;
@@ -153,5 +177,24 @@ namespace CrawlUtils
             return html;
         }
 
+        /* 获取苏宁Json */
+        public static string GetHttpResponse(string url, int Timeout)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+            request.ContentType = "text/html;charset=UTF-8";
+            request.UserAgent = "Mozilla / 5.0";
+            request.Host = "ds.suning.cn";
+            request.Timeout = Timeout;
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            Stream myResponseStream = response.GetResponseStream();
+            StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.GetEncoding("utf-8"));
+            string retString = myStreamReader.ReadToEnd();
+            myStreamReader.Close();
+            myResponseStream.Close();
+
+            return retString;
+        }        
     }
 }
