@@ -9,7 +9,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8" />
-	<title>苹果Apple iPhone X - HitThePrice - 价格再低一点</title>
+	<title><%=title_name %></title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -132,34 +132,34 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li><a href="product-list-where.aspx">手机</a></li>
-                                            <li><a href="product-list-where.aspx">移动电源</a></li>
-                                            <li><a href="product-list-where.aspx">耳机</a></li>
-                                            <li><a href="product-list-where.aspx">存储卡</a></li>
+                                            <li><a href="product-list-where.aspx?where=phone">手机</a></li>
+                                            <li><a href="product-list-where.aspx?where=powerbank">移动电源</a></li>
+                                            <li><a href="product-list-where.aspx?where=earphone">耳机</a></li>
+                                            <li><a href="product-list-where.aspx?where=SDcard">存储卡</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-                                            <li><a href="product-list-where.aspx">平板电脑</a></li>
-                                            <li><a href="product-list-where.aspx">笔记本电脑</a></li>
-                                            <li><a href="product-list-where.aspx">键盘</a></li>
-                                            <li><a href="product-list-where.aspx">鼠标</a></li>
+                                            <li><a href="product-list-where.aspx?where=pad">平板电脑</a></li>
+                                            <li><a href="product-list-where.aspx?where=laptop">笔记本电脑</a></li>
+                                            <li><a href="product-list-where.aspx?where=keyboard">键盘</a></li>
+                                            <li><a href="product-list-where.aspx?where=mouse">鼠标</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-                                            <li><a href="product-list-where.aspx">数码相机</a></li>
-                                            <li><a href="product-list-where.aspx">单反相机</a></li>
-                                            <li><a href="product-list-where.aspx">微单\单电相机</a></li>
-                                            <li><a href="product-list-where.aspx">单反镜头</a></li>
+                                            <li><a href="product-list-where.aspx?where=DC">数码相机</a></li>
+                                            <li><a href="product-list-where.aspx?where=SLR">单反相机</a></li>
+                                            <li><a href="product-list-where.aspx?where=ILDC">微单\单电相机</a></li>
+                                            <li><a href="product-list-where.aspx?where=DSLR_lens">单反镜头</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-appliance.aspx">家用电器</a>
                                         <ul>
-                                            <li><a href="product-list-where.aspx">电视机</a></li>
-                                            <li><a href="product-list-where.aspx">洗衣机</a></li>
-                                            <li><a href="product-list-where.aspx">空调</a></li>
-                                            <li><a href="product-list-where.aspx">电冰箱</a></li>
+                                            <li><a href="product-list-where.aspx?where=TV">电视机</a></li>
+                                            <li><a href="product-list-where.aspx?where=washer">洗衣机</a></li>
+                                            <li><a href="product-list-where.aspx?where=AC">空调</a></li>
+                                            <li><a href="product-list-where.aspx?where=fridge">电冰箱</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -190,8 +190,8 @@
                     	<div class="padcontent">
                     
                         	<section class="content" id="product-detail">                          
-                                <div class="breadcrumb"><a href="index.aspx">首页</a> / %%% / *** / @@@</div>
-                                <h1 class="pagetitle">###</h1>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / <%=breadcrumb %> / <%=pagetitle %> / <%=product_name %></div>
+                                <h1 class="pagetitle"><%=product_fullname %></h1>
                                 
                                 <div class="row">
                                 	<div class="one_fourth columns">
@@ -200,8 +200,8 @@
                                                     <div id="imageitems" class="flexslider">
                                                         <ul class="slides">
                                                             <li>
-                                                            <a class="image" href="../images/content/products/iphonex-1.jpg" data-rel="prettyPhoto[mixed]" >
-                                                           		<img src="../images/content/products/iphonex-1.jpg" alt="" />
+                                                            <a class="image" href="<%=product_src %>" data-rel="prettyPhoto[mixed]" >
+                                                           		<img src="<%=product_src %>" alt="" />
                                                             </a>
                                                             </li>
                                                             <li>
@@ -252,9 +252,11 @@
                                     
                                 	<div class="three_fourth columns">
                                     
-                                  <p>全网最低价格：<span class="price">￥7749.00</span></p>
+                                  <p>全网最低价格：<span class="price">￥<%=Lprice %></span></p>
                                     <div class="cs"><ul>
-                                        <li><span class='cs-name'>???</span></li>
+                                        <% for (int i = 0; i < 8; i++){ %>
+                                        <li><span class='cs-name'><%=description[i] %></span></li>
+                                        <% } %>
                                         </ul><a class="morecs" href="#tab2" >详细参数&gt;&gt;</a>
                                         <br />
 									    <a href="checkout.aspx" class="cart">加入购物车</a>
@@ -285,13 +287,13 @@
                                                 </td>
                                                 <td width="250px"class="cart_description">
                                                     <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
-                                                   ###  </a>   	
+                                                   <%=other_fullname[0] %>  </a>   	
                                                 </td>
                                                 <td width="10px"class="cart_ref">--</td>
                                                 <td width="40px"class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[0] %></span>
                                                 </td>
-                                                <td width="30px"class="cart_description"> !!! </td>
+                                                <td width="30px"class="cart_description"> <%=other_brand[0] %> </td>
                                                 <td width="80px">
                                                 <a class="button" href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">去购买</a>
                                                 </td>
@@ -303,13 +305,13 @@
                                                 </td>
                                                 <td class="cart_description">
                                                      <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
-                                                    ### </a>   	
+                                                    <%=other_fullname[1] %> </a>   	
                                                 </td>
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[1] %></span>
                                                 </td>
-                                                <td class="cart_description"> !!! </td>
+                                                <td class="cart_description"> <%=other_brand[1] %> </td>
                                                 <td>
                                                 <a class="button" href="product-phone.aspx">去购买</a></td>
 
@@ -321,13 +323,13 @@
                                                 </td>
                                                 <td class="cart_description">
                                                      <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
-                                                    ###</a>    	
+                                                    <%=other_fullname[2] %></a>    	
                                                 </td>
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[2] %></span>
                                                 </td>
-                                                <td class="cart_description"> !!! </td>
+                                                <td class="cart_description"> <%=other_brand[2] %> </td>
                                                 <td>
                                                 <a class="button" href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">去购买</a></td>
 
@@ -338,13 +340,13 @@
                                                 </td>
                                                 <td width="250px"class="cart_description">
                                                     <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
-                                                   ###  </a>   	
+                                                   <%=other_fullname[3] %></a>   	
                                                 </td>
                                                 <td width="10px"class="cart_ref">--</td>
                                                 <td width="40px"class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[3] %></span>
                                                 </td>
-                                                <td width="30px"class="cart_description"> !!! </td>
+                                                <td width="30px"class="cart_description"> <%=other_brand[3] %> </td>
                                                 <td width="80px">
                                                 <a class="button" href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">去购买</a>
                                                 </td>
@@ -356,13 +358,13 @@
                                                 </td>
                                                 <td class="cart_description">
                                                      <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
-                                                    ### </a>   	
+                                                    <%=other_fullname[4] %></a>   	
                                                 </td>
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[4] %></span>
                                                 </td>
-                                                <td class="cart_description"> !!! </td>
+                                                <td class="cart_description"> <%=other_brand[4] %> </td>
                                                 <td>
                                                 <a class="button" href="product-phone.aspx">去购买</a></td>
 
@@ -374,13 +376,13 @@
                                                 </td>
                                                 <td class="cart_description">
                                                      <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
-                                                    ###</a>    	
+                                                    <%=other_fullname[5] %></a>    	
                                                 </td>
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[5] %></span>
                                                 </td>
-                                                <td class="cart_description"> !!! </td>
+                                                <td class="cart_description"> <%=other_brand[5] %> </td>
                                                 <td>
                                                 <a class="button" href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">去购买</a></td>
 
@@ -391,13 +393,13 @@
                                                 </td>
                                                 <td width="250px"class="cart_description">
                                                     <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
-                                                   ### </a>   	
+                                                   <%=other_fullname[6] %></a>   	
                                                 </td>
                                                 <td width="10px"class="cart_ref">--</td>
                                                 <td width="40px"class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[6] %></span>
                                                 </td>
-                                                <td width="30px"class="cart_description"> !!! </td>
+                                                <td width="30px"class="cart_description"> <%=other_brand[6] %> </td>
                                                 <td width="80px">
                                                 <a class="button" href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">去购买</a>
                                                 </td>
@@ -409,13 +411,13 @@
                                                 </td>
                                                 <td class="cart_description">
                                                      <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
-                                                   ### </a>   	
+                                                   <%=other_fullname[7] %></a>   	
                                                 </td>
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[7] %></span>
                                                 </td>
-                                                <td class="cart_description"> !!! </td>
+                                                <td class="cart_description"> <%=other_brand[7] %> </td>
                                                 <td>
                                                 <a class="button" href="product-phone.aspx">去购买</a></td>
 
@@ -427,13 +429,13 @@
                                                 </td>
                                                 <td class="cart_description">
                                                      <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
-                                                    ###</a>    	
+                                                    <%=other_fullname[8] %></a>    	
                                                 </td>
                                                 <td class="cart_ref">--</td>
                                                 <td class="cart_total">
-                                                    <span class="price">￥$$</span>
+                                                    <span class="price">￥<%=other_price[8] %></span>
                                                 </td>
-                                                <td class="cart_description"> !!! </td>
+                                                <td class="cart_description"> <%=other_brand[8] %> </td>
                                                 <td>
                                                 <a class="button" href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">去购买</a></td>
 

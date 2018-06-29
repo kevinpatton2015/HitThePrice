@@ -135,34 +135,34 @@
                                     <li>
                                         <a href="product-phone.aspx">手机数码</a>
                                         <ul>
-                                            <li><a href="product-list-where.aspx">手机</a></li>
-                                            <li><a href="product-list-where.aspx">移动电源</a></li>
-                                            <li><a href="product-list-where.aspx">耳机</a></li>
-                                            <li><a href="product-list-where.aspx">存储卡</a></li>
+                                            <li><a href="product-list-where.aspx?where=phone">手机</a></li>
+                                            <li><a href="product-list-where.aspx?where=powerbank">移动电源</a></li>
+                                            <li><a href="product-list-where.aspx?where=earphone">耳机</a></li>
+                                            <li><a href="product-list-where.aspx?where=SDcard">存储卡</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-laptop.aspx">电脑、配件</a>
                                         <ul>
-                                            <li><a href="product-list-where.aspx">平板电脑</a></li>
-                                            <li><a href="product-list-where.aspx">笔记本电脑</a></li>
-                                            <li><a href="product-list-where.aspx">键盘</a></li>
-                                            <li><a href="product-list-where.aspx">鼠标</a></li>
+                                            <li><a href="product-list-where.aspx?where=pad">平板电脑</a></li>
+                                            <li><a href="product-list-where.aspx?where=laptop">笔记本电脑</a></li>
+                                            <li><a href="product-list-where.aspx?where=keyboard">键盘</a></li>
+                                            <li><a href="product-list-where.aspx?where=mouse">鼠标</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-camera.aspx">摄影、摄像</a>
                                         <ul>
-                                            <li><a href="product-list-where.aspx">数码相机</a></li>
-                                            <li><a href="product-list-where.aspx">单反相机</a></li>
-                                            <li><a href="product-list-where.aspx">微单\单电相机</a></li>
-                                            <li><a href="product-list-where.aspx">单反镜头</a></li>
+                                            <li><a href="product-list-where.aspx?where=DC">数码相机</a></li>
+                                            <li><a href="product-list-where.aspx?where=SLR">单反相机</a></li>
+                                            <li><a href="product-list-where.aspx?where=ILDC">微单\单电相机</a></li>
+                                            <li><a href="product-list-where.aspx?where=DSLR_lens">单反镜头</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product-appliance.aspx">家用电器</a>
                                         <ul>
-                                            <li><a href="product-list-where.aspx">电视机</a></li>
-                                            <li><a href="product-list-where.aspx">洗衣机</a></li>
-                                            <li><a href="product-list-where.aspx">空调</a></li>
-                                            <li><a href="product-list-where.aspx">电冰箱</a></li>
+                                            <li><a href="product-list-where.aspx?where=TV">电视机</a></li>
+                                            <li><a href="product-list-where.aspx?where=washer">洗衣机</a></li>
+                                            <li><a href="product-list-where.aspx?where=AC">空调</a></li>
+                                            <li><a href="product-list-where.aspx?where=fridge">电冰箱</a></li>
                                         </ul>
                                     </li>
                                 </ul>

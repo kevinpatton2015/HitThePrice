@@ -35,14 +35,18 @@ public partial class re : System.Web.UI.Page
     }
 
     protected void Button1_Click(object sender, EventArgs e)
-    {
+    {     
+        //string strConnection = "Server=.;database=USER; Integrated Security=SSPI;";
+        //conn = new SqlConnection(strConnection);
+        //conn.Open();
         string strConnection = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("../App_Data/userchec.mdb");
-
-
         OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
         objConnection.Open();
         string sqltest = "select * from user_infor where txtUserID='" + this.TextBox1.Text + "'";
         string sqltest2 = "select * from user_infor where txtPwd='" + this.TextBox2.Text + "'";
+        //SqlCommand sqlcom = new SqlCommand(sqltest, conn);
+        //SqlDataReader read = sqlcom.ExecuteReader();
+
         OleDbCommand sqlcom = new OleDbCommand(sqltest, objConnection);
 
         OleDbDataReader read = sqlcom.ExecuteReader();
@@ -82,13 +86,8 @@ public partial class re : System.Web.UI.Page
         {
             Response.Write("<script language='javascript'>alert('ID或密码有误');</script>");
         }
-        objConnection.Close();
-        /*string strConnection = "Server=.;database=USER; Integrated Security=SSPI;"; ;
-        conn = new SqlConnection(strConnection);
-       
-        conn.Open();
-       
-    }*/
+        //conn.Close();
+        objConnection.Close();      
     }
 
     protected void Direct2Register(object sender, EventArgs e)

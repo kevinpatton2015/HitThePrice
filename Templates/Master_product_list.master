@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" MasterPageFile="../Templates/MasterPage.master" AutoEventWireup="true" CodeFile="Master_product_list.master.cs" Inherits="product_list" %>
+﻿<%@ Master Language="C#" MasterPageFile="../Templates/MasterPage.master" AutoEventWireup="true" CodeFile="Master_product_list.master.cs" Inherits="product_list_master" %>
 <asp:Content ContentPlaceHolderId="CPH1" runat="server"> 
         <!-- MAIN CONTENT -->
         <div id="outermain">
@@ -10,8 +10,8 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">首页</a> / %%% / *** </div>
-                   				<h1 class="pagetitle">***</h1>
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / <%=breadcrumb %> / <%=pagetitle %> </div>
+                   				<h1 class="pagetitle"><%=pagetitle %></h1>
                                 
                                 <div class="sortPagiBar">
                                 <form action="index.aspx" class="productsSortForm">
@@ -33,11 +33,11 @@
                                         <label>品牌：</label>
                                         <select>
                                             <option selected="selected"> … </option>
-                                            <option>&&</option>
-                                            <option>&&</option>
-                                            <option>&&</option>
-                                            <option>&&</option>
-                                            <option>&&</option>
+                                            <option><%=brand[0] %></option>
+                                            <option><%=brand[1] %></option>
+                                            <option><%=brand[2] %></option>
+                                            <option><%=brand[3] %></option>
+                                            <option><%=brand[4] %></option>
                                        	</select>
                                     </p>
                                 </form>
@@ -47,21 +47,21 @@
                                 
                                 <div class="row">
                                 <div id="product-list-container">
-                                
+									<% for(int i=pagenum-1;i<pagenum+4-1;i++){ %>
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="###" href="product-details.aspx"><img src="../images/content/products/p-25.jpg" alt=""/></a>
+                                            <a title="<%=fullname[i] %>" href="product-details.aspx"><img src="<%=product_src[i] %>" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;&&&</div>
-                                            <h3><a title="###" href="product-details.aspx">###</a></h3>
+                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;<%=brand[i] %></div>
+                                            <h3><a title="<%=fullname[i] %>" href="product-details.aspx"><%=fullname[i] %></a></h3>
                                             <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
-                                                <div class="price">￥$$</div>
+                                                <div class="price">￥<%=price[i] %></div>
                                                 <form action="index.aspx" class="compare">
-                                                <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
+                                                <input type="checkbox" value="12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
@@ -73,84 +73,7 @@
                                         </div>
 										<div class="clear"></div>
                                 	</div>
-                                    
-                                	<div class="product-list-wrapper">
-                                        <div class="one_fifth columns product-img">
-                                            <a title="###" href="product-details.aspx"><img src="../images/content/products/p-25.jpg" alt=""/></a>
-                                        </div>
-                                        <div class="three_fifth columns">
-                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;&&&</div>
-                                            <h3><a title="###" href="product-details.aspx">###</a></h3>
-                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
-                                        </div>
-                                        <div class="one_fifth columns">
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">￥$$</div>
-                                                <form action="index.aspx" class="compare">
-                                                <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>感兴趣</label>
-                                                </form>
-                                                <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">加入收藏</a>
-                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-										<div class="clear"></div>
-                                	</div>
-                                    
-                                	<div class="product-list-wrapper">
-                                        <div class="one_fifth columns product-img">
-                                            <a title="###" href="product-details.aspx"><img src="../images/content/products/p-25.jpg" alt=""/></a>
-                                        </div>
-                                        <div class="three_fifth columns">
-                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;&&&</div>
-                                            <h3><a title="###" href="product-details.aspx">###</a></h3>
-                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
-                                        </div>
-                                        <div class="one_fifth columns">
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">￥$$</div>
-                                                <form action="index.aspx" class="compare">
-                                                <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>感兴趣</label>
-                                                </form>
-                                                <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">加入收藏</a>
-                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-										<div class="clear"></div>
-                                	</div>
-                                    
-                                	<div class="product-list-wrapper">
-                                        <div class="one_fifth columns product-img">
-                                            <a title="###" href="product-details.aspx"><img src="../images/content/products/p-25.jpg" alt=""/></a>
-                                        </div>
-                                        <div class="three_fifth columns">
-                                        	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;&&&</div>
-                                            <h3><a title="###" href="product-details.aspx">###</a></h3>
-                                            <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
-                                        </div>
-                                        <div class="one_fifth columns">
-                                            <div class="price-cart-wrapper">
-                                                <div class="price">￥$$</div>
-                                                <form action="index.aspx" class="compare">
-                                                <input type="checkbox" value="12" id="comparator_item_12" class="comparator" onclick="checkForComparison(3)"> 
-                                                <label>感兴趣</label>
-                                                </form>
-                                                <div class="but-wrapper">
-                                                	<a href="checkout.htm" class="cart">加入收藏</a>
-                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-										<div class="clear"></div>
-                                	</div>
+                                    <% } %>                                                                        
                                     
                                 </div>    
                                 </div>

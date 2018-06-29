@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="MasterPage.master" CodeFile="Master_order.master.cs" Inherits="Master_order" %>
+<asp:Content ContentPlaceHolderId="CPH1" runat="server">
+        <!-- MAIN CONTENT -->
+        <div id="outermain">
+        	<div class="container">
+                <div class="row">
+                
+                    <section id="maincontent" class="ten columns positionleft">
+                    	<div class="padcontent">
+                    
+                        </div>
+                    </section>
+                    
+                        	<section class="content">
+                            
+                                <div class="breadcrumb"><a href="index.aspx">首页</a> / 我的订单</div>
+                                <h1 class="pagetitle">我的订单</h1>
+  
+                                <div class="table_block" id="order-detail-content">
+                                    <table id="cart_summary">
+                                        <thead>
+                                            <tr>
+                                                <th class="cart_product first_item">图片</th>
+                                                <th class="cart_description item">产品名称</th>
+                                                <th class="cart_avail item">数量</th>
+                                                <th class="cart_unit item">&emsp;</th>
+                                                <th class="cart_quantity item">运费</th>
+                                                <th class="cart_total item">价格</th>
+                                            </tr>
+                                        </thead>
+                                        <% for (int i = 0; i < order.Length; i++) { %>
+                                        <tbody>
+                                            <tr class="cart_item" >
+                                                <td width="70px" class="cart_product">
+                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
+                                                </td>
+                                                <td width="250px"class="cart_description">
+                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
+                                                   ### </a>   	
+                                                </td>
+                                                <td width="30px"class="cart_avail">1</td>
+                                                <td width="100px" class="cart_unit item">
+                                                <a class="button" href="favorite.aspx">删除</a></td>
+                                                <td width="70px"class="cart_description"> 包邮 </td>
+                                                <td width="40px"class="cart_total">
+                                                    <font color = "#FF0000">
+                                                    <span class="price">￥$$</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <% } %>
+                                        </table>
+                                </div>
+								
+							</section>
+                         
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+</asp:Content>

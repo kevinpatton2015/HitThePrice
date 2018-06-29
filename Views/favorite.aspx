@@ -14,189 +14,53 @@
                                 <h1 class="pagetitle">我的收藏</h1>
   
                                 <div class="table_block" id="order-detail-content">
-                                    <table id="cart_summary">
-                                        <thead>
-                                            <tr>
-                                                <th class="cart_product first_item">图片</th>
-                                                <th class="cart_description item">产品名称</th>
-                                                <th class="cart_ref item">&emsp;</th>
-                                                <th class="cart_avail item">&emsp;</th>
-                                                <th class="cart_unit item">&emsp;</th>
-                                                <th class="cart_quantity item">运费</th>
-                                                <th class="cart_total item">价格</th>
-                                            </tr>
-                                        </thead>
+                                      <!--<table id="cart_summary">-->
+                                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="itemname" DataSourceID="AccessDataSource1">
+                                        <Columns>
+                                            <asp:BoundField DataField="itemname" HeaderText="品名" ReadOnly="True" SortExpression="itemname" />
+                                            <asp:BoundField DataField="itemprice" HeaderText="价格" SortExpression="itemprice" />
+                                            <asp:ImageField DataImageUrlField="itempic" HeaderText="样式">
+                                            </asp:ImageField>
+                                            <asp:CommandField ShowDeleteButton="True" />
+                                        </Columns>
 
-                                        <tbody>
-                                            <tr class="cart_item" >
-                                                <td width="70px" class="cart_product">
-                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
-                                                </td>
-                                                <td width="250px"class="cart_description">
-                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
-                                                   【华东爽购】Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机  </a>   	
-                                                </td>
-                                                <td width="10px"class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td width="100px" class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>
-                                                <td width="70px"class="cart_description"> 包邮 </td>
-                                                <td width="40px"class="cart_total">
-                                                    <span class="price"><font color = "#FF0000">￥7749.00</span>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr class="cart_item" >
-                                                <td class="cart_product">
-                                                    <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434"><img alt="" src="http://gfs10.gomein.net.cn/T1agbvBCKj1RCvBVdK_60.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                     <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
-                                                    Apple iPhone X 64G 深空灰 全网通4G手机 </a>   	
-                                                </td>
-                                                <td class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>
-                                                <td class="cart_description"> 包邮 </td>
-                                                 <td class="cart_total">
-                                                    <span class="price"><font color = "#FF0000" >￥7888.00</span>
-                                                </td>
-
-                                            </tr>
-                                            
-                                            <tr class="cart_item" >
-                                                <td class="cart_product">
-                                                    <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1"><img alt="" src="http://img12.360buyimg.com/n8/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                     <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
-                                                    Apple 苹果 手机 iPhone X 深空灰色 64G</a>    	
-                                                </td>
-                                                <td class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>                                                
-                                                <td class="cart_description"> 包邮 </td>
-                                                <td class="cart_total">
-                                                    <span class="price"><font color = "#FF0000" >￥7947.00</span>
-                                                </td>
-                                                
-                                            </tr>
-
-                                            <tr class="cart_item" >
-                                                <td width="70px" class="cart_product">
-                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
-                                                </td>
-                                                <td width="250px"class="cart_description">
-                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
-                                                   【华东爽购】Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机  </a>   	
-                                                </td>
-                                                <td width="10px"class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td width="100px" class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>
-                                                <td width="70px"class="cart_description"> 包邮 </td>
-                                                <td width="40px"class="cart_total">
-                                                    <span class="price"><font color = "#FF0000">￥7749.00</span>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr class="cart_item" >
-                                                <td class="cart_product">
-                                                    <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434"><img alt="" src="http://gfs10.gomein.net.cn/T1agbvBCKj1RCvBVdK_60.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                     <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
-                                                    Apple iPhone X 64G 深空灰 全网通4G手机 </a>   	
-                                                </td>
-                                                <td class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>
-                                                <td class="cart_description"> 包邮 </td>
-                                                 <td class="cart_total">
-                                                    <span class="price"><font color = "#FF0000" >￥7888.00</span>
-                                                </td>
-
-                                            </tr>
-                                            
-                                            <tr class="cart_item" >
-                                                <td class="cart_product">
-                                                    <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1"><img alt="" src="http://img12.360buyimg.com/n8/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                     <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
-                                                    Apple 苹果 手机 iPhone X 深空灰色 64G</a>    	
-                                                </td>
-                                                <td class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>                                                
-                                                <td class="cart_description"> 包邮 </td>
-                                                <td class="cart_total">
-                                                    <span class="price"><font color = "#FF0000" >￥7947.00</span>
-                                                </td>
-                                                
-                                            </tr>
-
-                                            <tr class="cart_item" >
-                                                <td width="70px" class="cart_product">
-                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
-                                                </td>
-                                                <td width="250px"class="cart_description">
-                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
-                                                   【华东爽购】Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机  </a>   	
-                                                </td>
-                                                <td width="10px"class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td width="100px" class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>
-                                                <td width="70px"class="cart_description"> 包邮 </td>
-                                                <td width="40px"class="cart_total">
-                                                    <span class="price"><font color = "#FF0000">￥7749.00</span>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr class="cart_item" >
-                                                <td class="cart_product">
-                                                    <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434"><img alt="" src="http://gfs10.gomein.net.cn/T1agbvBCKj1RCvBVdK_60.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                     <a href="http://item.gome.com.cn/9140055865-1130523949.html?sid=438&wid=434&feedback=&cmpid=cps_438_434">
-                                                    Apple iPhone X 64G 深空灰 全网通4G手机 </a>   	
-                                                </td>
-                                                <td class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>
-                                                <td class="cart_description"> 包邮 </td>
-                                                 <td class="cart_total">
-                                                    <span class="price"><font color = "#FF0000" >￥7888.00</span>
-                                                </td>
-
-                                            </tr>
-                                            
-                                            <tr class="cart_item" >
-                                                <td class="cart_product">
-                                                    <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1"><img alt="" src="http://img12.360buyimg.com/n8/jfs/t7297/154/3413903491/65679/45ae4902/59e42830N9da56c41.jpg"></a>
-                                                </td>
-                                                <td class="cart_description">
-                                                     <a href="https://www.amazon.cn/gp/product/B075L9T8HF?tag=manmanbuynew24273-23&th=1">
-                                                    Apple 苹果 手机 iPhone X 深空灰色 64G</a>    	
-                                                </td>
-                                                <td class="cart_ref">&emsp;</td>
-                                                <td width="10px"class="cart_avail">&emsp;</td>
-                                                <td class="cart_unit item">
-                                                <a class="button" href="favorite.aspx">删除</a></td>                                                
-                                                <td class="cart_description"> 包邮 </td>
-                                                <td class="cart_total">
-                                                    <span class="price"><font color = "#FF0000" >￥7947.00</span>
-                                                </td>
-                                                
-                                            </tr>
-                                        </tbody>
-                                        </table>
+                                    </asp:GridView>
+                                    <asp:AccessDataSource ID="AccessDataSource1" runat="server" 
+                                        DataFile="~/userchec.mdb" DeleteCommand="DELETE FROM [item_infor] WHERE (([itemname] = ?) OR ([itemname] IS NULL AND ? IS NULL)) AND (([itemprice] = ?) OR ([itemprice] IS NULL AND ? IS NULL)) AND (([itemid] = ?) OR ([itemid] IS NULL AND ? IS NULL)) AND (([itempic] = ?) OR ([itempic] IS NULL AND ? IS NULL))"
+                                        InsertCommand="INSERT INTO [item_infor] ([itemname], [itemprice], [itemid], [itempic]) VALUES (?, ?, ?, ?)"
+                                        SelectCommand="SELECT [itemname], [itemprice], [itemid], [itempic] FROM [item_infor] WHERE ([itemid] = ?)"
+                                        UpdateCommand="UPDATE [item_infor] SET [itemprice] = ?, [itemid] = ?, [itempic] = ? WHERE (([itemname] = ?) OR ([itemname] IS NULL AND ? IS NULL)) AND (([itemprice] = ?) OR ([itemprice] IS NULL AND ? IS NULL)) AND (([itemid] = ?) OR ([itemid] IS NULL AND ? IS NULL)) AND (([itempic] = ?) OR ([itempic] IS NULL AND ? IS NULL))" ConflictDetection="CompareAllValues" OldValuesParameterFormatString="original_{0}">
+                                        <DeleteParameters>
+                                            <asp:Parameter Name="original_itemname" Type="String" />
+                                            <asp:Parameter Name="original_itemprice" Type="Int32" />
+                                            <asp:Parameter Name="original_itemprice" Type="Int32" />
+                                            <asp:Parameter Name="original_itemid" Type="Int32" />
+                                            <asp:Parameter Name="original_itemid" Type="Int32" />
+                                            <asp:Parameter Name="original_itempic" Type="String" />
+                                            <asp:Parameter Name="original_itempic" Type="String" />
+                                        </DeleteParameters>
+                                        <InsertParameters>
+                                            <asp:Parameter Name="itemname" Type="String" />
+                                            <asp:Parameter Name="itemprice" Type="Int32" />
+                                            <asp:Parameter Name="itemid" Type="Int32" />
+                                            <asp:Parameter Name="itempic" Type="String" />
+                                        </InsertParameters>
+                                        <SelectParameters>
+                                            <asp:SessionParameter DefaultValue="3" Name="itemid" SessionField="itemid" Type="Int32" />
+                                        </SelectParameters>
+                                        <UpdateParameters>
+                                            <asp:Parameter Name="itemprice" Type="Int32" />
+                                            <asp:Parameter Name="itemid" Type="Int32" />
+                                            <asp:Parameter Name="itempic" Type="String" />
+                                            <asp:Parameter Name="original_itemname" Type="String" />
+                                            <asp:Parameter Name="original_itemprice" Type="Int32" />
+                                            <asp:Parameter Name="original_itemprice" Type="Int32" />
+                                            <asp:Parameter Name="original_itemid" Type="Int32" />
+                                            <asp:Parameter Name="original_itemid" Type="Int32" />
+                                            <asp:Parameter Name="original_itempic" Type="String" />
+                                            <asp:Parameter Name="original_itempic" Type="String" />
+                                        </UpdateParameters>
+                                    </asp:AccessDataSource>
                                 </div>
 								
 							</section>
