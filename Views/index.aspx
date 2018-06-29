@@ -22,7 +22,6 @@
 
 	<!-- CSS
   ================================================== -->
-  	<link href='http://fonts.useso.com/css?family=Ubuntu:400,700,500,300,400italic,300italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/inner.css" />
     <link rel="stylesheet" href="../styles/layout.css" />
@@ -196,7 +195,7 @@
         <!-- SLIDER -->
         <div id="outerslider">
         	<div id="slidercontainer">            
-                <iframe name="index" src="Default.aspx" frameborder="0" scrolling="no" width="100%" height="300px"></iframe> 
+                <iframe name="index" src="../default.aspx" frameborder="0" scrolling="no" width="100%" height="300px"></iframe> 
             </div>
         </div>
 

@@ -36,20 +36,20 @@ public partial class re : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {     
-        //string strConnection = "Server=.;database=USER; Integrated Security=SSPI;";
-        //conn = new SqlConnection(strConnection);
-        //conn.Open();
-        string strConnection = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("../App_Data/userchec.mdb");
-        OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
-        objConnection.Open();
+        string strConnection = "Server=.;database=USER; Integrated Security=SSPI;";
+        conn = new SqlConnection(strConnection);
+        conn.Open();
+        //string strConnection = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("../App_Data/userchec.mdb");
+        //OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
+        //objConnection.Open();
         string sqltest = "select * from user_infor where txtUserID='" + this.TextBox1.Text + "'";
         string sqltest2 = "select * from user_infor where txtPwd='" + this.TextBox2.Text + "'";
-        //SqlCommand sqlcom = new SqlCommand(sqltest, conn);
-        //SqlDataReader read = sqlcom.ExecuteReader();
+        SqlCommand sqlcom = new SqlCommand(sqltest, conn);
+        SqlDataReader read = sqlcom.ExecuteReader();
 
-        OleDbCommand sqlcom = new OleDbCommand(sqltest, objConnection);
+        //OleDbCommand sqlcom = new OleDbCommand(sqltest, objConnection);
 
-        OleDbDataReader read = sqlcom.ExecuteReader();
+        //OleDbDataReader read = sqlcom.ExecuteReader();
 
         read.Read();
 
@@ -57,7 +57,7 @@ public partial class re : System.Web.UI.Page
         {
             if (this.TextBox1.Text.Trim() == read["txtUserID"].ToString().Trim())
             {
-                if (this.TextBox2.Text.Trim() == read["txtPwd"].ToString().Trim())
+                if (this.TextBox2.Text.Trim() == encrypt(read["txtPwd"].ToString().Trim(),8))
                 {
                     Response.Write("<script language='javascript'>alert('登录成功');</script>");
                     Session["UserId"] = this.TextBox1.Text.Trim();
@@ -86,8 +86,8 @@ public partial class re : System.Web.UI.Page
         {
             Response.Write("<script language='javascript'>alert('ID或密码有误');</script>");
         }
-        //conn.Close();
-        objConnection.Close();      
+        conn.Close();
+        //objConnection.Close();      
     }
 
     protected void Direct2Register(object sender, EventArgs e)
@@ -98,5 +98,31 @@ public partial class re : System.Web.UI.Page
             Response.Write("<script>alert('即将跳转到注册页');window.location.href='register.aspx';</script>");
         }
 
+    }
+
+    //加密算法
+    public string encrypt(string raw, int offset)
+    {
+        string CaserCode = "";
+        foreach (char c in raw)
+        {
+            int letter = Convert.ToInt32(c);
+            if ((letter >= 97 && letter <= 122 - 8) || (letter >= 65 && letter <= 90 - 8))//大写字母小写字母放在一起做判断
+                letter += offset;
+            if ((letter >= 122 - 8 && letter <= 122) || (letter >= 90 - 8 && letter <= 90))
+                letter -= 26 - offset;
+            char result = Convert.ToChar(letter);
+            CaserCode += result;
+        }
+        return CaserCode;
+    }
+
+    //字符转换
+    private int AscII(string str)
+    {
+        byte[] array = new byte[1];
+        array = System.Text.Encoding.ASCII.GetBytes(str);
+        int asciicode = (short)(array[0]);
+        return asciicode;
     }
 }

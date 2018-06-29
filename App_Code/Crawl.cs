@@ -20,6 +20,9 @@ namespace CrawlUtils
         private string ie;// 编码格式
 
         private List<Item> productList = new List<Item>();
+        private List<Item> TBproductList = new List<Item>();
+        private List<Item> JDproductList = new List<Item>();
+
         private ArrayList titleList = new ArrayList();
         private ArrayList priceList = new ArrayList();
         private ArrayList picUrList = new ArrayList();
@@ -34,6 +37,12 @@ namespace CrawlUtils
 
         public List<Item> get_productList()
         { return productList; }
+
+        public List<Item> get_TBproductList()
+        { return TBproductList; }
+
+        public List<Item> get_JDproductList()
+        { return JDproductList; }
 
         public ArrayList get_titleList()
         { return titleList; }
@@ -68,22 +77,22 @@ namespace CrawlUtils
 
             string url = String.Format("https://s.taobao.com/search?q={0}&ie={1}&s={2}", keyword, ie, page_num);
             string TBhtml = GetHtml(url);
+
             List<string> Title = new List<string>();
             List<string> Price = new List<string>();
             List<string> Img = new List<string>();
             List<string> Detail = new List<string>();
+
             foreach (Match match in Regex.Matches(TBhtml, title))
             {
                 titleList.Add(match.ToString().Remove(0, 12).Replace("\"", ""));
                 Title.Add(match.ToString().Remove(0, 12).Replace("\"", ""));
-
             }
             foreach (Match match in Regex.Matches(TBhtml, price))
             {
                 priceList.Add(match.ToString().Remove(0, 13).Replace("\"", ""));
                 Price.Add(match.ToString().Remove(0, 13).Replace("\"", ""));
             }
-
             foreach (Match match in Regex.Matches(TBhtml, picUrl))
             {
                 picUrList.Add(match.ToString().Remove(0, 10).Replace("\"", ""));
@@ -94,11 +103,15 @@ namespace CrawlUtils
                 detailUrList.Add(match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "="));
                 Detail.Add(match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "="));
             }
-
             foreach (Match match in Regex.Matches(TBhtml, loc))
-                locList.Add(match.ToString().Remove(0, 11).Replace("\"", ""));
-
-            for(int num = 0; num < Title.Count; num++) { productList.Add(new Item("淘宝",Title[num],Price[num],Img[num],Detail[num])); }
+            { locList.Add(match.ToString().Remove(0, 11).Replace("\"", "")); }
+                
+            for(int num = 0; num < Title.Count; num++)
+            {
+                Item item = new Item("淘宝", Title[num], Price[num], Img[num], Detail[num]);
+                productList.Add(item);
+                TBproductList.Add(item);
+            }
 
         }
 
@@ -109,22 +122,46 @@ namespace CrawlUtils
 
             HtmlWeb web = new HtmlWeb();
             HtmlAgilityPack.HtmlDocument doc = web.Load(url);
- 
-            foreach (HtmlNode item in doc.DocumentNode.SelectNodes("//li[@class='gl-item']"))
+            String body = "\"J_goodsList\"";
+            String header = @"//*[@id=" + body + "]";
+            HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes(header+"/ul/li");
+            int i = 1;
+            foreach (HtmlNode node in nodes)
             {
-                titleList.Add(item.SelectSingleNode("./div/div[3]/a/em/text()").InnerText);
-                priceList.Add(item.SelectSingleNode("./div/div[2]/strong/i").InnerText);
-                picUrList.Add(item.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("src", ""));
-                detailUrList.Add(item.SelectSingleNode("./div/div[1]/a").GetAttributeValue("href",""));
+                Item product = null;
+                try
+                {
+                    titleList.Add(node.SelectSingleNode("./div/div[3]/a").InnerText.Trim());
+                    priceList.Add(node.SelectSingleNode("./div/div[2]/strong/i").InnerText);
+                    picUrList.Add(node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""));
+                    detailUrList.Add("https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
 
-                Item product = new Item("京东",
-                                        item.SelectSingleNode("./div/div[3]/a/em/text()").InnerText, 
-                                        item.SelectSingleNode("./div/div[2]/strong/i").InnerText,
-                                        item.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("src", ""),
-                                        item.SelectSingleNode("./div/div[1]/a").GetAttributeValue("href", ""));
-                productList.Add(product);
-                //item.SelectSingleNode("./div/@data-sku").InnerText;
-                //HtmlNode shopname = item.SelectSingleNode("./div/div[@class='p-shop']/@data-shop_name");
+                    product = new Item("京东",
+                                            node.SelectSingleNode("./div/div[3]/a").InnerText.Trim(),
+                                            node.SelectSingleNode("./div/div[2]/strong/i").InnerText,
+                                            node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""),
+                   "https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
+                }
+                catch (NullReferenceException)
+                {
+                    titleList.Add(node.SelectSingleNode("./div/div[4]/a").InnerText.Trim());
+                    priceList.Add(node.SelectSingleNode("./div/div[3]/strong/i").InnerText);
+                    picUrList.Add(node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""));
+                    detailUrList.Add("https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
+
+                    product = new Item("京东",
+                                            node.SelectSingleNode("./div/div[4]/a").InnerText.Trim(),
+                                            node.SelectSingleNode("./div/div[3]/strong/i").InnerText,
+                                            node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""),
+                   "https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
+                }
+                finally
+                {
+                    i++;
+                    productList.Add(product);
+                    JDproductList.Add(product);
+                }
+
             }
         }
 	
