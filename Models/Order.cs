@@ -23,4 +23,12 @@ public class Order
         this.ship = ship;
         this.price = price;
     }
+
+    public int get_order_ID() { return order_ID; }
+    public string get_order_src() { return order_src; }
+    public string get_order_name() { return order_name; }
+    public string get_quantity() { return quantity; }
+    public string get_ship() { return ship; }
+    public string get_price() { return price; }
+
 }

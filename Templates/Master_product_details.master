@@ -22,7 +22,6 @@
 
 	<!-- CSS
   	================================================== -->
-  	<link href='http://fonts.useso.com/css?family=Ubuntu:400,700,500,300,400italic,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/inner.css" />
     <link rel="stylesheet" href="../styles/layout.css" />
@@ -260,7 +259,7 @@
                                         </ul><a class="morecs" href="#tab2" >详细参数&gt;&gt;</a>
                                         <br />
 									    <a href="checkout.aspx" class="cart">加入购物车</a>
-                                        <a href="pay.aspx" class="cart">立即购买</a>
+                                        <a href="pay.aspx?product=<%=PID %>" class="cart">立即购买</a>
                                     </div>
                                 </div>
                                 

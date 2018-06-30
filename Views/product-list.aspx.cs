@@ -1,5 +1,7 @@
-﻿using HtmlAgilityPack;
-using CrawlUtils;
+﻿using CrawlUtils;
+using IronPython;
+using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +18,7 @@ public partial class product_list : System.Web.UI.Page
 {
     public string userId;
     public string keyword;
+    public ArrayList tagList;
     public ArrayList titleList;
     public ArrayList priceList;
     public ArrayList picUrList;
@@ -40,6 +43,7 @@ public partial class product_list : System.Web.UI.Page
             spider.TBcrawl();
             spider.JDcrawl();
             Session["keyword"] = keyword;
+            Session["productList"] = spider.get_productList();
             Session["titleList"] = spider.get_titleList();
             Session["priceList"] = spider.get_priceList();
             Session["picUrList"] = spider.get_picUrList();
@@ -52,18 +56,17 @@ public partial class product_list : System.Web.UI.Page
             keyword = Session["keyword"].ToString();
             pagetitle.InnerText = keyword + "信息";
             proList.InnerText = keyword;
-            
+
+            tagList = (ArrayList)Session["tagList"];
             titleList = (ArrayList)Session["titleList"];
             priceList = (ArrayList)Session["priceList"];
             picUrList = (ArrayList)Session["picUrList"];
             detailUrList = (ArrayList)Session["detailUrList"];
             locList = (ArrayList)Session["locList"];
-
-            itemList = new List<Item>();
-            for(int i = 0; i < titleList.Count; i++)
-            {itemList.Add(new Item("", titleList[i].ToString(), priceList[i].ToString(), picUrList[i].ToString(), detailUrList[i].ToString()));}
+            itemList = (List<Item>)Session["productList"];
            
             sortedList = new Sort().BubbleSort(itemList);
+
             string tag = "华硕电脑,华硕笔记本,宏基笔记本,苹果笔记本,华硕显卡,华硕FX50J";
             Recommend reco = new Recommend(tag);
             string recoKeyword = reco.generateKeyword();
@@ -91,7 +94,16 @@ public partial class product_list : System.Web.UI.Page
         }
         catch(Exception)
         {
-
+            string tag = "华硕电脑,华硕笔记本,宏基笔记本,苹果笔记本,华硕显卡,华硕FX50J";
+            Recommend reco = new Recommend(tag);
+           // reco.User_Item_Reco(Session["UserId"].ToString());
+            ScriptEngine engine = Python.CreateEngine();
+            ScriptScope scope = engine.CreateScope();
+            scope.SetVariable("user_id", Session["user_id"].ToString());
+            int usertype = 1;
+            scope.SetVariable("user_type", usertype);
+            ScriptSource script = engine.CreateScriptSourceFromFile(@"../App_Code/RecoEngine.py");
+            var result = script.Execute(scope);
         }
     }
 

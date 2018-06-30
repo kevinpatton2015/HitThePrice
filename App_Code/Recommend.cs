@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -107,5 +109,23 @@ public class Recommend
     public string generateKeyword()
     {        
         return findMatchedBrand() + findMatcheditem(); ;
+    }
+
+    public string User_Item_Reco(string username)
+    {
+        string reco_href = "";
+        string[] keyword = null;
+        string[] field = null;
+        string[] item = null;
+        int[] duration = null;
+        string[] process = null;
+
+        User_Item e = new User_Item(username, keyword, field, item, duration, process);
+        ScriptEngine engine = Python.CreateEngine();
+        ScriptScope scope = engine.CreateScope();
+        ScriptSource script = engine.CreateScriptSourceFromFile(@"./App_Code/RecoEngine.py");
+
+        var result = script.Execute(scope);
+        return reco_href;
     }
 }

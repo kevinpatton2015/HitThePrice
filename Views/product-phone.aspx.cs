@@ -20,6 +20,7 @@ public partial class product_phone : System.Web.UI.Page
             Crawl spider = new Crawl(keyword, "utf8");
             spider.TBcrawl();
             Session["keyword"] = keyword;
+            Session["productList"] = spider.get_productList();
             Session["titleList"] = spider.get_titleList();
             Session["priceList"] = spider.get_priceList();
             Session["picUrList"] = spider.get_picUrList();
@@ -27,6 +28,18 @@ public partial class product_phone : System.Web.UI.Page
             Session["locList"] = spider.get_locList();
             Response.Redirect("product-list.aspx");
         }
+    }
+
+    protected void Logout(object sender, EventArgs e)
+    {
+        Session["logoutFlag"] = "true";
+        try
+        {
+            Session["UserId"] = null;
+            Session.Remove("UserId");
+        }
+        catch { }
+        Response.Redirect("index.aspx");
     }
 
 }

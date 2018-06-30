@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrawlUtils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,6 +21,7 @@ public partial class product_appliance : System.Web.UI.Page
             Crawl spider = new Crawl(keyword, "utf8");
             spider.TBcrawl();
             Session["keyword"] = keyword;
+            Session["productList"] = spider.get_productList();
             Session["titleList"] = spider.get_titleList();
             Session["priceList"] = spider.get_priceList();
             Session["picUrList"] = spider.get_picUrList();

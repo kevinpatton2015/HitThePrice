@@ -22,7 +22,6 @@
 
 	<!-- CSS
   ================================================== -->
-  	<link href='http://fonts.useso.com/css?family=Ubuntu:400,700,500,300,400italic,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/inner.css" />
     <link rel="stylesheet" href="../styles/layout.css" />
@@ -238,7 +237,7 @@
                                             <a title="Woman's Dress Flower" href=<%=sortedList==null||sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><img src=<%=sortedList==null||sortedList.Count==0?"../images/content/products/p-1.jpg":sortedList[i].picUrl.ToString() %> alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
-                                        	<div class="status"><span>天猫</span> &nbsp;&nbsp;| &nbsp;&nbsp;包邮</div>
+                                        	<div class="status"><span><%=sortedList==null||sortedList.Count==0?"天猫":sortedList[i].tag.ToString() %></span> &nbsp;&nbsp;| &nbsp;&nbsp;包邮</div>
                                             <h3><a title=<%=sortedList==null||sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %> href=<%=sortedList==null||sortedList.Count==0?"product-details.aspx":sortedList[i].detailUrl.ToString() %>><%=sortedList==null||sortedList.Count==0?"Woman's Dress Flower":sortedList[i].title.ToString() %></a></h3>
                                             <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>

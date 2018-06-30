@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 
 public partial class Templates_product_details : System.Web.UI.MasterPage
 {
+    public string PID = "";
     public string title_name = "苹果Apple iPhone X - HitThePrice - 价格再低一点";
     public string breadcrumb = "手机数码";
     public string pagetitle = "手机";
@@ -30,6 +31,6 @@ public partial class Templates_product_details : System.Web.UI.MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        PID = HttpContext.Current.Request.QueryString["product"];
     }
 }

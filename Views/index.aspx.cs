@@ -10,6 +10,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CrawlUtils;
+using IronPython.Hosting;
+using Microsoft.Scripting.Hosting;
 
 public partial class index : System.Web.UI.Page
 {
@@ -25,6 +27,10 @@ public partial class index : System.Web.UI.Page
             Session["UserId"] = null;
             Session.Remove("UserId");
         }
+        //ScriptRuntime pyRuntime = Python.CreateRuntime();
+        //dynamic py = pyRuntime.UseFile("test.py");
+        //string result = py.text();
+        //Response.Write(result);
     }
 
     protected void Search(object sender, EventArgs e)
@@ -34,6 +40,7 @@ public partial class index : System.Web.UI.Page
         spider.TBcrawl();
         spider.JDcrawl();
         Session["keyword"] = keyword;
+        Session["productList"] = spider.get_productList();
         Session["titleList"] = spider.get_titleList();
         Session["priceList"] = spider.get_priceList();
         Session["picUrList"] = spider.get_picUrList();

@@ -32,19 +32,19 @@
                                         <tbody>
                                             <tr class="cart_item" >
                                                 <td width="70px" class="cart_product">
-                                                    <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3"><img alt="" src="https://img1.360buyimg.com/n7/jfs/t18148/200/634988197/246557/dcc015f9/5a9cb40cNefd80812.jpg"></a>
+                                                    <a href="<%=order_href[i] %>"><img alt="" src="<%=order_pic[i] %>" /></a>
                                                 </td>
                                                 <td width="250px"class="cart_description">
                                                     <a href="https://re.jd.com/cps/item/5825376.html?cu=true&utm_source=zk.zhimazhekou.com&utm_medium=tuiguang&utm_campaign=t_1000141398_&utm_term=774b4bab757b44b5bb2f0b0a7bc88eef&abt=3">
-                                                   ### </a>   	
+                                                   <%=order_title[i] %> </a>   	
                                                 </td>
                                                 <td width="30px"class="cart_avail">1</td>
                                                 <td width="100px" class="cart_unit item">
                                                 <a class="button" href="favorite.aspx">删除</a></td>
                                                 <td width="70px"class="cart_description"> 包邮 </td>
-                                                <td width="40px"class="cart_total">
-                                                    <font color = "#FF0000">
-                                                    <span class="price">￥$$</span>
+                                                <td width="40px"class="cart_total" />
+                                                    <font color = "#FF0000" />
+                                                    <span class="price">￥<%=order_price[i] %></span>
                                                 </td>
                                             </tr>
                                         </tbody>

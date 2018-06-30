@@ -286,7 +286,7 @@ public partial class product_list_where :  System.Web.UI.Page
 				((product_list_master)Master).price[2] = "3578.00";
 				((product_list_master)Master).price[3] = "3799.00";			
 				break;	
-			case "wahser":
+			case "washer":
 				((product_list_master)Master).breadcrumb = "家用电器";
 				((product_list_master)Master).pagetitle = "洗衣机";
 				((product_list_master)Master).brand[0] = "海尔";
@@ -350,4 +350,15 @@ public partial class product_list_where :  System.Web.UI.Page
 
     }
 
+    protected void Logout(object sender, EventArgs e)
+    {
+        Session["logoutFlag"] = "true";
+        try
+        {
+            Session["UserId"] = null;
+            Session.Remove("UserId");
+        }
+        catch { }
+        Response.Redirect("index.aspx");
+    }
 }

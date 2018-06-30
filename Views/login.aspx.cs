@@ -43,7 +43,7 @@ public partial class re : System.Web.UI.Page
         //OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
         //objConnection.Open();
         string sqltest = "select * from user_infor where txtUserID='" + this.TextBox1.Text + "'";
-        string sqltest2 = "select * from user_infor where txtPwd='" + this.TextBox2.Text + "'";
+        //string sqltest2 = "select * from user_infor where txtPwd='" + this.TextBox2.Text + "'";
         SqlCommand sqlcom = new SqlCommand(sqltest, conn);
         SqlDataReader read = sqlcom.ExecuteReader();
 
@@ -53,6 +53,17 @@ public partial class re : System.Web.UI.Page
 
         read.Read();
 
+        //string strConnection = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Server.MapPath("../App_Data/userchec.mdb");
+
+        //OleDbConnection objConnection = new OleDbConnection(strConnection); //建立连接
+        //objConnection.Open();
+        //string sqltest = "select * from user_infor where txtUserID='" + this.TextBox1.Text + "'";
+        //string sqltest2 = "select * from user_infor where txtPwd='" + this.TextBox2.Text + "'";
+       // OleDbCommand sqlcom = new OleDbCommand(sqltest, objConnection);
+
+        //OleDbDataReader read = sqlcom.ExecuteReader();
+
+        read.Read();
         if (read.HasRows)
         {
             if (this.TextBox1.Text.Trim() == read["txtUserID"].ToString().Trim())
