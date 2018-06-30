@@ -40,7 +40,7 @@ public partial class product_list_where :  System.Web.UI.Page
 				((product_list_master)Master).product_src[0] = "../images/content/products/iphonex-1.jpg";
 				((product_list_master)Master).product_src[1] = "../images/content/products/p-2.jpg";
 				((product_list_master)Master).product_src[2] = "../images/content/products/p-3.jpg";
-				((product_list_master)Master).product_src[3] = "../images/content/products/p-4jpg";
+				((product_list_master)Master).product_src[3] = "../images/content/products/p-4.jpg";
 				((product_list_master)Master).price[0] = "7749.00";
 				((product_list_master)Master).price[1] = "6699.00";
 				((product_list_master)Master).price[2] = "5488.00";

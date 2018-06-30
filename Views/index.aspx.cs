@@ -19,6 +19,7 @@ public partial class index : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["itemid"] = null;
         if (Session["UserId"] != null)
         { userId = Session["UserId"].ToString(); }
 

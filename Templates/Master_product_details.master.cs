@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrawlUtils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,6 +8,7 @@ using System.Web.UI.WebControls;
 
 public partial class Templates_product_details : System.Web.UI.MasterPage
 {
+    public string userId;
     public string PID = "";
     public string title_name = "苹果Apple iPhone X - HitThePrice - 价格再低一点";
     public string breadcrumb = "手机数码";
@@ -32,5 +34,21 @@ public partial class Templates_product_details : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         PID = HttpContext.Current.Request.QueryString["product"];
+        if (Session["UserId"] != null)
+        { userId = Session["UserId"].ToString(); }
+
+        if (Request["s"] != null)
+        {
+            string keyword = Request.Form["s"];
+            Crawl spider = new Crawl(keyword, "utf8");
+            spider.TBcrawl();
+            Session["keyword"] = keyword;
+            Session["titleList"] = spider.get_titleList();
+            Session["priceList"] = spider.get_priceList();
+            Session["picUrList"] = spider.get_picUrList();
+            Session["detailUrList"] = spider.get_detailUrList();
+            Session["locList"] = spider.get_locList();
+            Response.Redirect("product-list.aspx");
+        }
     }
 }

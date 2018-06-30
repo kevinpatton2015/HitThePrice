@@ -35,7 +35,7 @@ public partial class re : System.Web.UI.Page
     }
 
     protected void Button1_Click(object sender, EventArgs e)
-    {     
+    {
         string strConnection = "Server=.;database=USER; Integrated Security=SSPI;";
         conn = new SqlConnection(strConnection);
         conn.Open();
@@ -59,7 +59,7 @@ public partial class re : System.Web.UI.Page
         //objConnection.Open();
         //string sqltest = "select * from user_infor where txtUserID='" + this.TextBox1.Text + "'";
         //string sqltest2 = "select * from user_infor where txtPwd='" + this.TextBox2.Text + "'";
-       // OleDbCommand sqlcom = new OleDbCommand(sqltest, objConnection);
+        // OleDbCommand sqlcom = new OleDbCommand(sqltest, objConnection);
 
         //OleDbDataReader read = sqlcom.ExecuteReader();
 

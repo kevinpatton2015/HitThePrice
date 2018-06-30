@@ -12,7 +12,7 @@
                             
                                 <div class="breadcrumb"><a href="index.aspx">首页</a> / 我的收藏</div>
                                 <h1 class="pagetitle">我的收藏</h1>
-  
+                                <form name="fav" runat="server">
                                 <div class="table_block" id="order-detail-content">
                                       <!--<table id="cart_summary">-->
                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="itemname" DataSourceID="AccessDataSource1">
@@ -26,7 +26,7 @@
 
                                     </asp:GridView>
                                     <asp:AccessDataSource ID="AccessDataSource1" runat="server" 
-                                        DataFile="~/userchec.mdb" DeleteCommand="DELETE FROM [item_infor] WHERE (([itemname] = ?) OR ([itemname] IS NULL AND ? IS NULL)) AND (([itemprice] = ?) OR ([itemprice] IS NULL AND ? IS NULL)) AND (([itemid] = ?) OR ([itemid] IS NULL AND ? IS NULL)) AND (([itempic] = ?) OR ([itempic] IS NULL AND ? IS NULL))"
+                                        DataFile="~/App_Data/userchec.mdb" DeleteCommand="DELETE FROM [item_infor] WHERE (([itemname] = ?) OR ([itemname] IS NULL AND ? IS NULL)) AND (([itemprice] = ?) OR ([itemprice] IS NULL AND ? IS NULL)) AND (([itemid] = ?) OR ([itemid] IS NULL AND ? IS NULL)) AND (([itempic] = ?) OR ([itempic] IS NULL AND ? IS NULL))"
                                         InsertCommand="INSERT INTO [item_infor] ([itemname], [itemprice], [itemid], [itempic]) VALUES (?, ?, ?, ?)"
                                         SelectCommand="SELECT [itemname], [itemprice], [itemid], [itempic] FROM [item_infor] WHERE ([itemid] = ?)"
                                         UpdateCommand="UPDATE [item_infor] SET [itemprice] = ?, [itemid] = ?, [itempic] = ? WHERE (([itemname] = ?) OR ([itemname] IS NULL AND ? IS NULL)) AND (([itemprice] = ?) OR ([itemprice] IS NULL AND ? IS NULL)) AND (([itemid] = ?) OR ([itemid] IS NULL AND ? IS NULL)) AND (([itempic] = ?) OR ([itempic] IS NULL AND ? IS NULL))" ConflictDetection="CompareAllValues" OldValuesParameterFormatString="original_{0}">
@@ -62,7 +62,7 @@
                                         </UpdateParameters>
                                     </asp:AccessDataSource>
                                 </div>
-								
+								</form>
 							</section>
                          
                         </div>

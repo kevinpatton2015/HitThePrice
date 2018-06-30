@@ -259,7 +259,11 @@
                                         </ul><a class="morecs" href="#tab2" >详细参数&gt;&gt;</a>
                                         <br />
 									    <a href="checkout.aspx" class="cart">加入购物车</a>
+                                        <%if (userId != null){ %>
                                         <a href="pay.aspx?product=<%=PID %>" class="cart">立即购买</a>
+                                        <%}else{ %>
+                                        <a href="#" onclick="javascript:alert('请先登录！')" class="cart">立即购买</a>
+                                        <% } %>
                                     </div>
                                 </div>
                                 
