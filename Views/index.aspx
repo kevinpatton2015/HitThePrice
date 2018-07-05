@@ -58,7 +58,7 @@
                     	<div id="topmenu" class=" six columns">
                             <%if (userId != null)
                                 {%>
-                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"  onserverclick="Logout" runat="server"><strong>退出</strong></a>&emsp;|&emsp;<a href="favorite.aspx"><strong>我的收藏</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>购物车</strong></a></div>
+                            <div class="login">欢迎！<strong><%=userId %></strong>&emsp;|&emsp;<a href="index.aspx"  onserverclick="Logout" runat="server"><strong>退出</strong></a>&emsp;|&emsp;<a href="favorite.aspx"><strong>我的收藏</strong></a>&emsp;|&emsp;<a href="checkout.aspx"><strong>购物车</strong></a>&emsp;|&emsp;<a href="order.aspx"><strong>我的订单</strong></a></div>
                             <%}
                                 else
                                 {%>
