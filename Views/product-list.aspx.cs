@@ -1,7 +1,4 @@
 ﻿using CrawlUtils;
-using IronPython;
-using IronPython.Hosting;
-using Microsoft.Scripting.Hosting;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -97,13 +94,13 @@ public partial class product_list : System.Web.UI.Page
             string tag = "华硕电脑,华硕笔记本,宏基笔记本,苹果笔记本,华硕显卡,华硕FX50J";
             Recommend reco = new Recommend(tag);
            // reco.User_Item_Reco(Session["UserId"].ToString());
-            ScriptEngine engine = Python.CreateEngine();
-            ScriptScope scope = engine.CreateScope();
-            scope.SetVariable("user_id", Session["user_id"].ToString());
-            int usertype = 1;
-            scope.SetVariable("user_type", usertype);
-            ScriptSource script = engine.CreateScriptSourceFromFile(@"../App_Code/RecoEngine.py");
-            var result = script.Execute(scope);
+            //ScriptEngine engine = Python.CreateEngine();
+            //ScriptScope scope = engine.CreateScope();
+            //scope.SetVariable("user_id", Session["user_id"].ToString());
+            //int usertype = 1;
+            //scope.SetVariable("user_type", usertype);
+            //ScriptSource script = engine.CreateScriptSourceFromFile(@"../App_Code/RecoEngine.py");
+            //var result = script.Execute(scope);
         }
     }
 

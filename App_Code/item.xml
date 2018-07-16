@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itemRepository>
+	<library name="笔记本整机">
+		<stock name="笔记本">
+			<itemtype>笔记本电脑</itemtype>
+			<itemtype>超极本</itemtype>
+			<itemtype>上网本</itemtype>
+			<itemtype>UMPC</itemtype>
+			<itemtype>笔记本包</itemtype>
+			<itemtype>笔记本电池</itemtype>
+			<itemtype>笔记本电源适配器</itemtype>
+			<itemtype>笔记本扩展坞/底座</itemtype>
+			<itemtype>笔记本膜</itemtype>
+			<itemtype>笔记本电脑桌</itemtype>
+			<itemtype>笔记本配件</itemtype>
+			<itemtype>笔记本外壳</itemtype>
+			<itemtype>笔记本显示屏</itemtype>
+		</stock>
+		<stock name="平板产品">
+			<itemtype>平板电脑</itemtype>
+			<itemtype>MID</itemtype>
+			<itemtype>平板电脑包</itemtype>
+			<itemtype>平板保护套/壳</itemtype>
+			<itemtype>平板底座/支架</itemtype>
+			<itemtype>平板贴膜</itemtype>
+			<itemtype>车载设备</itemtype>
+			<itemtype>连接线</itemtype>
+			<itemtype>其它配件</itemtype>
+		</stock>
+		<stock name="台式整机">
+			<itemtype>台式电脑</itemtype>
+			<itemtype>一体电脑</itemtype>
+			<itemtype>工作站</itemtype>
+			<itemtype>电脑遥控器</itemtype>
+			<itemtype>准系统</itemtype>
+			<itemtype>工控设备</itemtype>
+			<itemtype>小型机</itemtype>
+			<itemtype>电脑指纹加密锁</itemtype>
+			<itemtype>电脑终端机</itemtype>
+			<itemtype>单机多用户</itemtype>
+			<itemtype>瘦客户机</itemtype>
+		</stock>
+	</library>
+	<library name="手机">
+		<stock name="手机">
+			<itemtype>手机</itemtype> 
+			<itemtype>手机电池</itemtype> 
+			<itemtype>手机充电器 </itemtype> 
+			<itemtype>手机数据线</itemtype> 
+			<itemtype>手机手写笔</itemtype> 
+			<itemtype>手机底座</itemtype> 
+			<itemtype>手机贴膜</itemtype> 
+			<itemtype>手机防滑/彩贴手机保护套</itemtype> 
+			<itemtype>手机车载配件</itemtype> 
+			<itemtype>手机伴侣</itemtype> 
+			<itemtype>手机其他附件</itemtype> 
+		</stock>
+		<stock name="通讯产品">
+			<itemtype>GPS</itemtype>
+			<itemtype>集团电话</itemtype>
+			<itemtype>对讲机</itemtype> 
+			<itemtype>电话机</itemtype> 
+			<itemtype>录音电话</itemtype>
+			<itemtype>电话IT伴侣</itemtype>
+			<itemtype>网络电话</itemtype>
+			<itemtype>电话会议</itemtype>
+			<itemtype>电话语音卡</itemtype>  
+			<itemtype>呼叫中心</itemtype>
+			<itemtype>呼叫器</itemtype> 
+		</stock>
+	</library>
+	<library name="相机">
+		<stock name="相机摄像机">
+			<itemtype>数码相机</itemtype>
+			<itemtype>数码摄像机</itemtype>
+			<itemtype>镜头</itemtype>
+			<itemtype>闪存卡</itemtype>
+			<itemtype>读卡器</itemtype>
+			<itemtype>相机贴膜</itemtype>
+			<itemtype>滤镜</itemtype>
+			<itemtype>三脚架</itemtype>
+			<itemtype>遮光罩</itemtype>
+			<itemtype>闪光灯</itemtype>
+			<itemtype>闪光灯配件</itemtype>
+			<itemtype>相机电池</itemtype>
+			<itemtype>充电器</itemtype>
+			<itemtype>相机包</itemtype>
+			<itemtype>摄影箱</itemtype>
+			<itemtype>转接环/转接筒</itemtype>
+			<itemtype>镜头盖</itemtype>
+			<itemtype>取景器</itemtype>
+			<itemtype>快门线</itemtype>
+			<itemtype>单反手柄</itemtype>
+			<itemtype>相机遥控器</itemtype>
+			<itemtype>对焦屏</itemtype>
+			<itemtype>清洁养护</itemtype>
+			<itemtype>色彩管理</itemtype>
+			<itemtype>双筒望远镜</itemtype>
+			<itemtype>单筒望远镜</itemtype>
+			<itemtype>天文望远镜</itemtype>
+			<itemtype>显微镜</itemtype>
+			<itemtype>其他相机配件</itemtype>
+		</stock>
+	</library>
+	<library name="数码">
+		<stock name="数码产品">
+			<itemtype>MP3</itemtype> 
+			<itemtype>MP4</itemtype>
+			<itemtype>数字移动电视</itemtype>
+			<itemtype>耳机</itemtype>
+			<itemtype>U盘</itemtype>
+			<itemtype>移动硬盘</itemtype>
+			<itemtype>电子书</itemtype>
+			<itemtype>录音笔</itemtype>
+			<itemtype>摄像头</itemtype>
+			<itemtype>麦克风</itemtype>
+			<itemtype>数码伴侣</itemtype>
+			<itemtype>数码相框</itemtype>
+			<itemtype>掌上电脑</itemtype>
+			<itemtype>电子辞典</itemtype>
+			<itemtype>点读机</itemtype>
+			<itemtype>复读机</itemtype>
+			<itemtype>移动电源</itemtype>
+			<itemtype>USBHUB电源转换器</itemtype>
+			<itemtype>多媒体</itemtype>
+			<itemtype>硬盘录放</itemtype>
+			<itemtype>数码配件</itemtype>
+		</stock>
+	</library>	
+	<library name="DIY硬件">
+		<stock name="装机硬件">
+			<itemtype>主板</itemtype>   
+			<itemtype>显卡</itemtype>  
+			<itemtype>CPU</itemtype> 
+			<itemtype>内存</itemtype>  
+			<itemtype>硬盘</itemtype>  
+			<itemtype>机箱</itemtype>    
+			<itemtype>电源</itemtype>    
+			<itemtype>散热器</itemtype>    
+			<itemtype>固态硬盘</itemtype>   
+			<itemtype>光驱</itemtype>   
+			<itemtype>声卡</itemtype>
+		</stock>
+		<stock name="硬件外设">
+			<itemtype>液晶显示器</itemtype> 
+			<itemtype>音箱</itemtype>  
+			<itemtype>键鼠套装</itemtype>  
+			<itemtype>鼠标</itemtype>  
+			<itemtype>键盘</itemtype>  
+			<itemtype>鼠标垫</itemtype>  
+			<itemtype>鼠标脚贴</itemtype>  
+			<itemtype>手写绘画输入</itemtype>  
+			<itemtype>音箱配件</itemtype>
+		</stock>
+		<stock name="扩展配件">
+			<itemtype>蓝牙适配器</itemtype>   
+			<itemtype>监控</itemtype>  
+			<itemtype>硬盘</itemtype>  
+			<itemtype>红外适配器</itemtype>  
+			<itemtype>视频采集卡</itemtype>  
+			<itemtype>TV卡</itemtype>  
+			<itemtype>硬盘/光驱盒</itemtype>  
+			<itemtype>连接线转接卡</itemtype>   
+			<itemtype>多串口卡</itemtype>  
+			<itemtype>光盘片</itemtype>   
+			<itemtype>CPU系列</itemtype>   
+			<itemtype>主板芯片组</itemtype>    
+			<itemtype>显示芯片</itemtype>   
+			<itemtype>其他装机配件</itemtype>
+		</stock>
+	</library>
+	<library name="家电">
+	    <stock name="电视影音">
+			<itemtype>液晶电视</itemtype>
+			<itemtype>等离子电视</itemtype>
+			<itemtype>电视挂架</itemtype>
+			<itemtype>电视底座</itemtype>
+			<itemtype>遥控器   </itemtype> 
+			<itemtype>家庭影院</itemtype>
+			<itemtype>无线高清</itemtype>
+			<itemtype>AV</itemtype>
+			<itemtype>音箱迷你组合音响</itemtype>
+			<itemtype>蓝光播放器</itemtype>
+			<itemtype>DVD播放机</itemtype>
+			<itemtype>电视播放机</itemtype>
+			<itemtype>机顶盒</itemtype> 
+			<itemtype>影音线材</itemtype>
+            <itemtype>网络客厅健身</itemtype>
+        </stock>
+		<stock name="冰箱空调">
+			<itemtype>空调</itemtype>
+			<itemtype>洗衣机</itemtype>
+			<itemtype>冰箱</itemtype>
+			<itemtype>冷冻柜</itemtype>
+		</stock>
+		<stock name="厨卫电器">
+			<itemtype>抽油烟机</itemtype>
+			<itemtype>燃气灶</itemtype>
+			<itemtype>电饭煲</itemtype>
+			<itemtype>压力锅</itemtype>
+			<itemtype>电火锅</itemtype>
+			<itemtype>电磁炉</itemtype>
+			<itemtype>微波炉</itemtype>
+			<itemtype>电饼铛</itemtype>
+			<itemtype>洗碗机</itemtype>
+			<itemtype>消毒柜</itemtype>
+			<itemtype>排气换气扇</itemtype>
+			<itemtype>电热水器</itemtype>
+			<itemtype>太阳能热水器</itemtype>
+			<itemtype>燃气热水器</itemtype>
+            <itemtype>中央热水器</itemtype>
+			<itemtype>浴霸</itemtype> 
+            <itemtype>多士炉电烤箱</itemtype>
+		</stock>
+		<stock name="生活家电">
+			<itemtype>电暖器</itemtype>
+			<itemtype>空调扇</itemtype>
+			<itemtype>电风扇</itemtype>
+			<itemtype>加湿器</itemtype>
+			<itemtype>除湿机</itemtype>
+			<itemtype>豆浆机</itemtype>
+			<itemtype>榨汁机</itemtype>
+			<itemtype>果蔬清洗机</itemtype>
+			<itemtype>收音机</itemtype>
+			<itemtype>酸奶机</itemtype>
+			<itemtype>咖啡机</itemtype>
+			<itemtype>电水壶</itemtype>
+			<itemtype>吸尘器</itemtype>
+			<itemtype>饮水机</itemtype>
+            <itemtype>电吹风</itemtype>
+			<itemtype>电熨斗</itemtype>
+            <itemtype>空气净化器</itemtype>
+			<itemtype>足浴盆</itemtype>
+            <itemtype>护眼台灯</itemtype>
+			<itemtype>座便器</itemtype>
+            <itemtype>其他家电</itemtype>
+		</stock>
+		<stock name="个人护理">
+			<itemtype>剃须刀</itemtype>
+			<itemtype>电动牙刷</itemtype>
+			<itemtype>脱毛器</itemtype>
+			<itemtype>按摩器</itemtype>
+			<itemtype>计步器</itemtype>
+		</stock>
+	</library>
+	<library name="办公投影">
+	    <stock name="办公打印">
+			<itemtype>打印机</itemtype>
+			<itemtype>激光打印机</itemtype>
+			<itemtype>喷墨打印机</itemtype>
+			<itemtype>多功能一体机</itemtype>
+			<itemtype>大幅面打印机</itemtype>
+			<itemtype>扫描仪</itemtype>
+			<itemtype>传真机复印机</itemtype>
+			<itemtype>热升华打印机</itemtype>
+			<itemtype>针式打印机</itemtype>
+			<itemtype>标签打印机</itemtype>
+			<itemtype>票据打印机</itemtype>
+			<itemtype>证卡打印机</itemtype>
+			<itemtype>行式打印机</itemtype>
+			<itemtype>条码打印机</itemtype>
+            <itemtype>墨盒</itemtype>
+			<itemtype>硒鼓</itemtype>
+            <itemtype>墨粉</itemtype>
+			<itemtype>色带</itemtype>
+            <itemtype>打印介质</itemtype>
+			<itemtype>打印服务器</itemtype>
+            <itemtype>UPS</itemtype>
+			<itemtype>电源碎纸机</itemtype>
+			<itemtype>销毁设备</itemtype>
+			<itemtype>光盘拷贝机</itemtype>
+			<itemtype>光盘打印刻录机</itemtype>
+			<itemtype>塑封机</itemtype>
+			<itemtype>一体化速印机</itemtype>
+			<itemtype>收款机</itemtype>
+			<itemtype>点钞机</itemtype>
+			<itemtype>切纸机</itemtype>
+			<itemtype>数字化仪</itemtype>
+			<itemtype>光标阅卷机</itemtype>
+			<itemtype>刻字机</itemtype>
+			<itemtype>激光笔及简报器</itemtype>
+			<itemtype>冷裱机</itemtype>
+            <itemtype>覆膜机</itemtype>
+			<itemtype>MO驱动器</itemtype>
+            <itemtype>条码及读卡设备</itemtype>
+			<itemtype>晒图机</itemtype>
+            <itemtype>装订机</itemtype>
+			<itemtype>办公设备配件</itemtype>
+            <itemtype>其他办公设备</itemtype>
+	    </stock>
+        <stock name="投影显示">
+			<itemtype>投影机</itemtype>
+			<itemtype>投影灯泡</itemtype>
+			<itemtype>投影展台</itemtype>
+            <itemtype>投影幕布</itemtype>
+			<itemtype>电子白板</itemtype>
+            <itemtype>投影机吊架</itemtype>
+			<itemtype>显示器支架</itemtype>
+            <itemtype>数码讲台手写屏</itemtype>
+			<itemtype>液晶屏升降系统</itemtype>
+            <itemtype>3D眼镜</itemtype> 
+		</stock>
+		<stock name="商用显示">
+			<itemtype>背投</itemtype>
+			<itemtype>拼接液晶</itemtype>
+			<itemtype>拼接专业显示器</itemtype>
+            <itemtype>工业显示器</itemtype>
+			<itemtype>等离子显示器</itemtype>
+            <itemtype>数字标牌</itemtype>
+			<itemtype>LED显示屏</itemtype>
+            <itemtype>触控一体机</itemtype>
+			<itemtype>触摸屏</itemtype>
+            <itemtype>多屏显示设备</itemtype>
+		</stock>
+	</library>
+	<library name="游戏机">
+	    <stock name="游戏机">
+			<itemtype>掌上游戏机</itemtype>
+			<itemtype>游戏机手柄</itemtype>
+			<itemtype>方向盘</itemtype> 
+            <itemtype>游戏机存储器</itemtype>
+			<itemtype>游戏机包/盒</itemtype>
+            <itemtype>游戏机套</itemtype> 
+			<itemtype>游戏机贴膜</itemtype>
+            <itemtype>游戏机电池</itemtype>
+			<itemtype>游戏机充电器</itemtype>
+            <itemtype>游戏机线材</itemtype>
+            <itemtype>游戏摇杆</itemtype> 
+			<itemtype>游戏光枪</itemtype> 
+            <itemtype>游戏周边</itemtype> 
+	    </stock>
+	</library>
+	<library name="软件">
+	    <stock name="软件类">
+			<itemtype>OA办公自动化</itemtype>
+			<itemtype>双机容错与集群</itemtype>
+			<itemtype>操作系统</itemtype>
+            <itemtype>财务管理ERP</itemtype>
+			<itemtype>办公软件</itemtype>
+            <itemtype>图像软件排版软件</itemtype>
+			<itemtype>辅助设计</itemtype>
+            <itemtype>杀毒软件</itemtype>
+			<itemtype>多媒体软件</itemtype>
+            <itemtype>数据库软件</itemtype>
+            <itemtype>软件加密</itemtype>
+			<itemtype>VPN软件安防及入侵检测</itemtype>
+            <itemtype>教学软件</itemtype>
+            <itemtype>翻译软件</itemtype>
+			<itemtype>通讯软件</itemtype>
+            <itemtype>开发软件</itemtype>
+			<itemtype>网管及备份软件虚拟化软件</itemtype>
+            <itemtype>SaaS软件 </itemtype> 
+			<itemtype>邮件服务器软件</itemtype>
+            <itemtype>房产物业类</itemtype>
+            <itemtype>酒店娱乐类</itemtype>
+			<itemtype>客户管理软件CRM</itemtype>
+            <itemtype>其他软件</itemtype>
+		</stock>
+	</library>
+	<library name="网络">
+	    <stock name="服务器">
+            <itemtype>服务器</itemtype>
+			<itemtype>服务器CPU</itemtype>
+            <itemtype>服务器内存</itemtype>
+			<itemtype>服务器硬盘</itemtype>
+            <itemtype>服务器主板</itemtype>
+			<itemtype>服务器准系统</itemtype>
+            <itemtype>服务器配件</itemtype>
+            <itemtype>服务器机箱</itemtype>
+			<itemtype>服务器电源</itemtype>
+	    </stock>
+		<stock name="无线网络">
+            <itemtype>无线上网卡</itemtype>
+			<itemtype>无线网卡</itemtype> 
+            <itemtype>无线接入器</itemtype>
+            <itemtype>无线路由器</itemtype>
+			<itemtype>天馈系统</itemtype> 
+            <itemtype>功率放大器</itemtype>
+			<itemtype>无线安全保密</itemtype>
+		</stock>
+		<stock name="网络设备">
+			<itemtype>网卡</itemtype>
+			<itemtype>交换机</itemtype>
+			<itemtype>路由器</itemtype>
+            <itemtype>程控交换机</itemtype>
+			<itemtype>ADSL</itemtype> 
+            <itemtype>xDSL设备</itemtype> 
+			<itemtype>Modem</itemtype> 
+            <itemtype>中继器</itemtype>
+			<itemtype>模块接口卡集线器</itemtype>
+            <itemtype>测试仪</itemtype>
+            <itemtype>负载均衡</itemtype>
+			<itemtype>流量管理</itemtype>
+            <itemtype>机柜</itemtype>
+            <itemtype>转换器</itemtype>
+			<itemtype>收发器</itemtype>
+            <itemtype>串口通讯服务器</itemtype>
+			<itemtype>工业网络交换机</itemtype>
+            <itemtype>上网行为管理</itemtype>
+			<itemtype>功能服务器</itemtype>
+            <itemtype>计费系统</itemtype>
+            <itemtype>电力线通信设备</itemtype>
+			<itemtype>网络加速及优化</itemtype>
+            <itemtype>网页过滤</itemtype>
+			<itemtype>复用器</itemtype>
+            <itemtype>其他网络设备</itemtype>
+		</stock>
+		<stock name="网络安全">
+			<itemtype>防火墙</itemtype>
+            <itemtype>UTM入侵检测</itemtype>
+			<itemtype>VPN及SSL</itemtype> 
+            <itemtype>VPN</itemtype> 
+            <itemtype>防毒及邮件过滤</itemtype>
+			<itemtype>物理安全隔离</itemtype>
+            <itemtype>内网安全网络漏洞扫描</itemtype>
+			<itemtype>应用监管</itemtype>
+		</stock>
+		<stock name="网络存储">
+			<itemtype>RAID卡</itemtype>
+            <itemtype>SCSI卡</itemtype>
+            <itemtype>SCSI及SAS配件</itemtype>
+			<itemtype>磁带机</itemtype>
+            <itemtype>磁带库</itemtype>
+			<itemtype>磁盘阵列</itemtype>
+            <itemtype>NAS网络存储</itemtype>
+            <itemtype>SAN网络存储</itemtype>
+			<itemtype>IP网络存储</itemtype>
+            <itemtype>硬盘抽取盒</itemtype>
+            <itemtype>KVM切换器</itemtype>
+			<itemtype>网络延长器</itemtype>
+            <itemtype>磁带</itemtype>
+		</stock>
+		<stock name="机房布线">
+            <itemtype>综合布线</itemtype>
+            <itemtype>电缆与双绞线</itemtype>
+			<itemtype>光纤设备</itemtype>
+            <itemtype>光纤线缆</itemtype>
+            <itemtype>防雷产品</itemtype>
+			<itemtype>PDU电源分配器</itemtype>
+            <itemtype>精密空调</itemtype>
+		</stock>
+	</library>	
+	<library name="安防">
+        <stock name="视频监控">
+			<itemtype>监控摄像机</itemtype>
+            <itemtype>硬盘录像机</itemtype>
+            <itemtype>视频服务器</itemtype>
+			<itemtype>监控采集卡</itemtype>
+            <itemtype>光端机</itemtype> 
+			<itemtype>监视器</itemtype> 
+            <itemtype>画面分割器</itemtype>
+            <itemtype>视频分配器</itemtype>
+			<itemtype>编解码器</itemtype> 
+            <itemtype>中央控制系统</itemtype>
+            <itemtype>电视墙与操作台</itemtype>
+			<itemtype>监控周边</itemtype> 
+        </stock>
+		<stock name="考勤门禁系统">
+			<itemtype>考勤机</itemtype>
+            <itemtype>门禁一体机</itemtype>
+            <itemtype>收费机</itemtype>
+			<itemtype>门禁控制器</itemtype>
+            <itemtype>门禁系统</itemtype>
+            <itemtype>楼宇对讲</itemtype>
+		</stock>
+		<stock name="防盗报警">
+			<itemtype>防盗报警主机</itemtype>
+            <itemtype>感应探测器</itemtype>
+            <itemtype>图像报警器</itemtype>
+			<itemtype>电子围栏</itemtype> 
+            <itemtype>防盗报警周边</itemtype>
+		</stock>
+		<stock name="语音视频">
+            <itemtype>视频会议</itemtype>
+			<itemtype>多媒体视频</itemtype>
+            <itemtype>音频及会议系统</itemtype>
+		</stock>
+	</library>	
+	<library name="LED">
+	    <stock name="LED">
+			<itemtype>LED显示屏</itemtype>
+            <itemtype>LED室内照明</itemtype>
+            <itemtype>LED舞台照明</itemtype>
+			<itemtype>LED景观照明</itemtype>
+            <itemtype>LED道路照明</itemtype>
+			<itemtype>LED交通指示灯</itemtype>
+            <itemtype>LED汽车照明</itemtype>
+            <itemtype>LED特殊照明</itemtype>
+			<itemtype>太阳能LED灯具</itemtype>
+            <itemtype>LED背光源</itemtype>
+		</stock>
+	</library>		
+</itemRepository>
