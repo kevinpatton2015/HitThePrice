@@ -8,7 +8,20 @@ using System.Xml;
 
 /// <summary>
 /// 推荐引擎 v-0.1
-/// 对用户粗分类对应不同推荐方法
+/// Classifying users
+/// Read back-end data;
+/// Get User Type
+/// For:
+/// Type 0:most frequent item
+/// Type 1:
+///     1).count all fields data
+///     2).generate original matrix
+///     3).use cos-similarity to convert user matrix to value matrix
+///     4).use modified cos-similarity to compute the similarity
+///     5).sort the computed similarity
+///     6).generate a list of index by similarity-rank; eg. the i of sortedSimilarity
+///     7).provide current user crawl keyword or our own merchandises
+/// Type 2:
 /// </summary>
 public class Recommend
 {
@@ -24,6 +37,7 @@ public class Recommend
     private readonly string userID;
     private static readonly int deepUserThreshold = 100;
     private int userType;
+    private int userIndex = -1;
 
     private string[] brandTag;
     private string[] itemTag;
@@ -56,13 +70,13 @@ public class Recommend
         {
             case 0:
                 //寻找热门商品
-                return findMatchedBrand() + findMatcheditem();
+                return findBestMatchedBrand() + findBestMatcheditem();
             case 1:
                 //利用协同过滤 UserCF ItemCF
-                return findMatchedBrand() + findMatcheditem();
+                return findBestMatchedBrand() + findBestMatcheditem();
             case 2:
                 //利用大数据
-                return findMatchedBrand() + findMatcheditem();
+                return findBestMatchedBrand() + findBestMatcheditem();
             default:
                 return null;
         }
@@ -74,8 +88,8 @@ public class Recommend
         string[] list = new string[length / 32];
         int id = 0;
         string attempt1 = generateKeyword();
-        string attempt2 = findMatchedBrand();
-        string attempt3 = findMatcheditem();
+        string attempt2 = findBestMatchedBrand();
+        string attempt3 = findBestMatcheditem();
         for (int i = 0; i < itemRepository.GetLength(0); i++)
         {
             if (itemRepository[i, 6].Contains(attempt1)) { list[id++] = itemRepository[i, 0]; }
@@ -115,7 +129,7 @@ public class Recommend
     }
 
     /* find the most frequent brand by keyword */
-    private string findMatchedBrand()
+    private string findBestMatchedBrand()
     {
         brandScore = new int[brandTag.Length];
         foreach (string originTag in segTag)
@@ -138,7 +152,7 @@ public class Recommend
     }
 
     /* find the most frequent item by keyword */
-    private string findMatcheditem()
+    private string findBestMatcheditem()
     {
         itemScore = new int[itemTag.Length];
         foreach (string originTag in segTag)
@@ -160,45 +174,203 @@ public class Recommend
         return itemTag[retID];
     }
 
-    /* generate a user-matrix */
-    private double[,] generateUserMatrix()
+    /* get brand vector */
+    private int[] getMatchedBrand(string[] keywordsTable)
     {
-        double[,] matrix = new double[1,1];
+        int[] score = new int[188];
+        foreach (string keywd in keywordsTable)
+        {
+            for (int i = 0; i < brandTag.Length; i++)
+            {
+                if (keywd.Contains(brandTag[i]))
+                { score[i]++; }
+            }
+        }
+        return score;
+    }
+
+    /* get field vector */
+    private int[] getMatchedField(string[] keywordsTable)
+    {
+        int i = 0;
+        string[] fields = new string[length];
+        int[] score = new int[length];
+        XmlDocument doc = new XmlDocument();
+        doc.Load(itempath);
+        XmlNode itemRepository = doc.SelectSingleNode("itemRepository");
+        XmlNodeList libraries = itemRepository.ChildNodes;
+        foreach (XmlNode library in libraries)
+        {            
+            if (i + 1 > fields.Length) { Array.Resize(ref fields, 2 * length + 10); }
+            fields[i++] = library.InnerText;
+        }
+        Array.Resize(ref fields, i);
+        foreach (string keywd in keywordsTable)
+        {
+            for (int j = 0; j < fields.Length; j++)
+            {
+                if (keywd.Contains(fields[i]))
+                { score[i]++; }
+            }
+        }
+        return score;
+    }
+
+    /* get item vector */
+    private int[] getMatchedItem(string[] keywordsTable)
+    {
+        int i = 0;
+        string[] items = new string[length];
+        int[] score = new int[length];
+        XmlDocument doc = new XmlDocument();
+        doc.Load(itempath);
+        XmlNode itemRepository = doc.SelectSingleNode("itemRepository");
+        XmlNodeList libraries = itemRepository.ChildNodes;
+        foreach (XmlNode library in libraries)
+        {
+            XmlNodeList stocks = library.ChildNodes;
+            foreach (XmlNode stock in stocks)
+            {
+                if (i + 1 > items.Length) { Array.Resize(ref items, 2 * length + 10); }
+                items[i++] = stock.InnerText;
+            }
+        }
+        Array.Resize(ref items, i);
+        foreach (string keywd in keywordsTable)
+        {
+            for (int j = 0; j < items.Length; j++)
+            {
+                if (keywd.Contains(items[i]))
+                { score[i]++; }
+            }
+        }
+        return score;
+    }
+
+    /* generate a user-matrix */
+    private Vector[] generateUserMatrix()
+    {
+        int row = this.keywordlist.Length;
+        string userName;
+        string[] keywordsTable = new string[row];
+        Vector[] matrix = new Vector[row]; //用户矩阵
+        int[] brands = new int[188]; //品牌共计188枚
+        int[] lClass = new int[12]; //门类共计12大类
+        int[] tClass = new int[31]; //门类共计31小类
+        double[] duration = new double[188*31]; //商品停留时长
+        double[] process = new double[188*31]; //商品进程
+        string[] tmp1, tmp2;
+        for (int i = 0; i < row; i++)
+        {
+            userName = this.keywordlist[i].Split('|')[0];
+            if (userName == this.userID) { this.userIndex = i; } //记录当前用户表中位置
+            keywordsTable = getSeg(this.keywordlist[i].Split('|')[1]);
+            tmp1 = (this.keywordlist[i].Split('|')[2]).Split(',');
+            tmp2 = (this.keywordlist[i].Split('|')[3]).Split(',');
+            for (int j = 0; j < tmp1.Length; j++) { duration[j] = double.Parse(tmp1[j]); process[j] = double.Parse(tmp2[j]); }
+            for (int k = 0; k < keywordsTable[i].Length; k++)
+            {
+                brands = getMatchedBrand(keywordsTable);
+                lClass = getMatchedField(keywordsTable);
+                tClass = getMatchedItem(keywordsTable);
+            }
+            matrix[i] = new Vector(userName, brands, lClass, tClass, duration, process);  
+        }
         return matrix;
     }
 
-    /* caculate similarity of users matrix */
-    private double[] cacluateSimilarity(double[,] userMatrix, int which, int choice)
+    /* convert raw user-matrix to a value matrix */
+    private double[,] convertMatrix(Vector[] userMatrix)
     {
-        int row = userMatrix.GetLength(0), col = userMatrix.GetLength(1);
-        double[] CosSimilarity = new double[row];
+        int m = userMatrix.Length;
+        int n = userMatrix[0].getPropertyNum();
+        double[,] valueMatrix = new double[m,n];
+        Vector currentUser = userMatrix[this.userIndex]; 
+        for (int i = 0; i < m; i++)
+        {
+            valueMatrix[i, 0] = i;
+            double numo = 0, pow1 = 0, pow2 = 0;
+            for (int j1 = 0; j1 < 188; j1++)
+            {
+                numo += userMatrix[i].brand[j1] * currentUser.brand[j1];
+                pow1 += userMatrix[i].brand[j1] * userMatrix[i].brand[j1];
+                pow2 += currentUser.brand[j1] * currentUser.brand[j1];
+            }
+            valueMatrix[i, 1] = numo /(Math.Sqrt(pow1) * Math.Sqrt(pow2));
+            for (int j2 = 0; j2 < 12; j2++)
+            {
+                numo += userMatrix[i].field[j2] * currentUser.field[j2];
+                pow1 += userMatrix[i].field[j2] * userMatrix[i].field[j2];
+                pow2 += currentUser.field[j2] * currentUser.field[j2];
+            }
+            valueMatrix[i, 2] = numo / (Math.Sqrt(pow1) * Math.Sqrt(pow2));
+            for (int j3 = 0; j3 < 31; j3++)
+            {
+                numo += userMatrix[i].item[j3] * currentUser.item[j3];
+                pow1 += userMatrix[i].item[j3] * userMatrix[i].item[j3];
+                pow2 += currentUser.item[j3] * currentUser.item[j3];
+            }
+            valueMatrix[i, 3] = numo / (Math.Sqrt(pow1) * Math.Sqrt(pow2));
+            for (int j4 = 0; j4 < 188*31; j4++)
+            {
+                numo += userMatrix[i].duration[j4] * currentUser.duration[j4];
+                pow1 += userMatrix[i].duration[j4] * userMatrix[i].duration[j4];
+                pow2 += currentUser.duration[j4] * currentUser.duration[j4];
+            }
+            valueMatrix[i, 4] = numo / (Math.Sqrt(pow1) * Math.Sqrt(pow2));
+            for (int j5 = 0; j5 < 188 * 31; j5++)
+            {
+                numo += userMatrix[i].process[j5] * currentUser.process[j5];
+                pow1 += userMatrix[i].process[j5] * userMatrix[i].process[j5];
+                pow2 += currentUser.process[j5] * currentUser.process[j5];
+            }
+            valueMatrix[i, 5] = numo / (Math.Sqrt(pow1) * Math.Sqrt(pow2));
+        }
+        return valueMatrix;
+    }
+
+    /* caculate similarity of users matrix */
+    private double[] cacluateSimilarity(double[,] valueMatrix, int choice)
+    {
+        int row = valueMatrix.GetLength(0), col = valueMatrix.GetLength(1);
+        double[] CosSimilarity = new double[row - 1];
         double[] sum = new double[col], mean = new double[col];
         double numo = 0.0 ,x2 = 0.0, y2 = 0.0;
         for (int i = 0; i < row; i++)
         {
             for (int j = 0; j < col; j++)
-            { sum[j] += userMatrix[i, j]; }
+            { sum[j] += valueMatrix[i, j]; }
         }
         for (int i = 0; i < col; i++)
         { mean[i] = sum[i]/row; }
         for (int i = 0; i < row; i++)
         {
             for (int j = 0; j < col; j++)
-            { userMatrix[i, j] -= mean[j]; }
+            { valueMatrix[i, j] -= mean[j]; }
         }
         for (int i = 0; i < row; i++)
         {
             for (int j = 0; j < col; j++)
             {
-                numo += userMatrix[which,j] * userMatrix[i,j];
-                x2 += userMatrix[which,i] * userMatrix[i,j];
-                y2 += userMatrix[which,i] * userMatrix[i,j];
+                numo += valueMatrix[this.userIndex,j] * valueMatrix[i,j];
+                x2 += valueMatrix[this.userIndex, i] * valueMatrix[i,j];
+                y2 += valueMatrix[this.userIndex, i] * valueMatrix[i,j];
             }
             CosSimilarity[i] = numo / (Math.Sqrt(x2) * Math.Sqrt(y2));
-            if (CosSimilarity[i] == 1) { i--; }//找到对应样本本身，回退到上一样本
         }
         return CosSimilarity;
     }
+
+    /* sort according to similarity from high-rank to low-rank */
+    private double[] sortSimilarity(double[] CosSimilarity)
+    {
+        double[] sortedSimilarity = new double[CosSimilarity.Length];
+        /*
+         * sort algs
+         */
+        return sortedSimilarity;
+    }
+
 
     /* generate correctional seg from keyword */
     private string[] getSeg(string rawTag)

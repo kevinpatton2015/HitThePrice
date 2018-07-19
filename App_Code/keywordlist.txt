@@ -3,13 +3,3 @@
 王铁柱|iPhone 6,ThinkPad,联想,三星手机,华为荣耀9iPhone 6,ThinkPad,联想,三星手机,华为荣耀9
 张二麻子|vivo,OPPO,中兴手机,surfacebook,金士顿vivo,OPPO,中兴手机,surfacebook,金士顿
 李翠花|东芝u盘,索尼移动硬盘,机械键盘,雷蛇鼠标,铁三角耳机东芝u盘,索尼移动硬盘,机械键盘,雷蛇鼠标,铁三角耳机
-李狗蛋|System.String[]
-王铁柱|System.String[]
-王铁柱|System.String[]
-张二麻子|System.String[]
-张二麻子|System.String[]
-张二麻子|System.String[]
-李翠花|System.String[]
-李翠花|System.String[]
-李翠花|System.String[]
-李翠花|System.String[]

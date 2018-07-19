@@ -62,7 +62,10 @@ namespace CrawlUtils
         /* 获取淘宝商品品名、价格、图片、超链接、地区 */
         public void TBcrawl()
         {
-            string page_num = "1";
+            List<string> Title = new List<string>();
+            List<string> Price = new List<string>();
+            List<string> Img = new List<string>();
+            List<string> Detail = new List<string>();
 
             string title = "\"raw_title\":\"([^\"]+)\"";
             string price = "\"view_price\":\"([^\"]+)\"";
@@ -75,93 +78,92 @@ namespace CrawlUtils
             Regex detailUrlMatch = new Regex(detailUrl);
             Regex locMatch = new Regex(loc);
 
-            string url = String.Format("https://s.taobao.com/search?q={0}&ie={1}&s={2}", keyword, ie, page_num);
-            string TBhtml = GetHtml(url);
+            for (int page = 1; page <= 5; page++)
+            {
+                string url = String.Format("https://s.taobao.com/search?q={0}&ie={1}&s={2}", keyword, ie, page.ToString());
+                string TBhtml = GetHtml(url);
 
-            List<string> Title = new List<string>();
-            List<string> Price = new List<string>();
-            List<string> Img = new List<string>();
-            List<string> Detail = new List<string>();
+                foreach (Match match in Regex.Matches(TBhtml, title))
+                {
+                    titleList.Add(match.ToString().Remove(0, 12).Replace("\"", ""));
+                    Title.Add(match.ToString().Remove(0, 12).Replace("\"", ""));
+                }
+                foreach (Match match in Regex.Matches(TBhtml, price))
+                {
+                    priceList.Add(match.ToString().Remove(0, 13).Replace("\"", ""));
+                    Price.Add(match.ToString().Remove(0, 13).Replace("\"", ""));
+                }
+                foreach (Match match in Regex.Matches(TBhtml, picUrl))
+                {
+                    picUrList.Add(match.ToString().Remove(0, 10).Replace("\"", ""));
+                    Img.Add(match.ToString().Remove(0, 10).Replace("\"", ""));
+                }
+                foreach (Match match in Regex.Matches(TBhtml, detailUrl))
+                {
+                    detailUrList.Add(match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "="));
+                    Detail.Add(match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "="));
+                }
+                foreach (Match match in Regex.Matches(TBhtml, loc))
+                { locList.Add(match.ToString().Remove(0, 11).Replace("\"", "")); }
 
-            foreach (Match match in Regex.Matches(TBhtml, title))
-            {
-                titleList.Add(match.ToString().Remove(0, 12).Replace("\"", ""));
-                Title.Add(match.ToString().Remove(0, 12).Replace("\"", ""));
+                for (int num = 0; num < Title.Count; num++)
+                {
+                    Item item = new Item("淘宝", Title[num], Price[num], Img[num], Detail[num]);
+                    productList.Add(item);
+                    TBproductList.Add(item);
+                }
             }
-            foreach (Match match in Regex.Matches(TBhtml, price))
-            {
-                priceList.Add(match.ToString().Remove(0, 13).Replace("\"", ""));
-                Price.Add(match.ToString().Remove(0, 13).Replace("\"", ""));
-            }
-            foreach (Match match in Regex.Matches(TBhtml, picUrl))
-            {
-                picUrList.Add(match.ToString().Remove(0, 10).Replace("\"", ""));
-                Img.Add(match.ToString().Remove(0, 10).Replace("\"", ""));
-            }
-            foreach (Match match in Regex.Matches(TBhtml, detailUrl))
-            {
-                detailUrList.Add(match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "="));
-                Detail.Add(match.ToString().Remove(0, 13).Replace("\"", "").Replace("\\u0026", "&").Replace("\\u003d", "="));
-            }
-            foreach (Match match in Regex.Matches(TBhtml, loc))
-            { locList.Add(match.ToString().Remove(0, 11).Replace("\"", "")); }
-                
-            for(int num = 0; num < Title.Count; num++)
-            {
-                Item item = new Item("淘宝", Title[num], Price[num], Img[num], Detail[num]);
-                productList.Add(item);
-                TBproductList.Add(item);
-            }
-
         }
 
         /* 获取京东商品品名、价格、图片、超链接 */
         public void JDcrawl()
         {
-            string url = String.Format("https://search.jd.com/Search?keyword={0}&enc={1}", keyword, ie);
-
-            HtmlWeb web = new HtmlWeb();
-            HtmlAgilityPack.HtmlDocument doc = web.Load(url);
-            String body = "\"J_goodsList\"";
-            String header = @"//*[@id=" + body + "]";
-            HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes(header+"/ul/li");
-            int i = 1;
-            foreach (HtmlNode node in nodes)
+            for (int page = 1; page <= 15; page += 2)
             {
-                Item product = null;
-                try
-                {
-                    titleList.Add(node.SelectSingleNode("./div/div[3]/a").InnerText.Trim());
-                    priceList.Add(node.SelectSingleNode("./div/div[2]/strong/i").InnerText);
-                    picUrList.Add(node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""));
-                    detailUrList.Add("https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
+                string url = String.Format("https://search.jd.com/Search?keyword={0}&enc={1}&page={2}", keyword, ie, page);
 
-                    product = new Item("京东",
-                                            node.SelectSingleNode("./div/div[3]/a").InnerText.Trim(),
-                                            node.SelectSingleNode("./div/div[2]/strong/i").InnerText,
-                                            node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""),
-                   "https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
-                }
-                catch (NullReferenceException)
+                HtmlWeb web = new HtmlWeb();
+                HtmlAgilityPack.HtmlDocument doc = web.Load(url);
+                String body = "\"J_goodsList\"";
+                String header = @"//*[@id=" + body + "]";
+                HtmlNodeCollection nodes = doc.DocumentNode.SelectNodes(header + "/ul/li");
+                int i = 1;
+                foreach (HtmlNode node in nodes)
                 {
-                    titleList.Add(node.SelectSingleNode("./div/div[4]/a").InnerText.Trim());
-                    priceList.Add(node.SelectSingleNode("./div/div[3]/strong/i").InnerText);
-                    picUrList.Add(node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""));
-                    detailUrList.Add("https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
+                    Item product = null;
+                    try
+                    {
+                        titleList.Add(node.SelectSingleNode("./div/div[3]/a").InnerText.Trim());
+                        priceList.Add(node.SelectSingleNode("./div/div[2]/strong/i").InnerText);
+                        picUrList.Add(node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""));
+                        detailUrList.Add("https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
 
-                    product = new Item("京东",
-                                            node.SelectSingleNode("./div/div[4]/a").InnerText.Trim(),
-                                            node.SelectSingleNode("./div/div[3]/strong/i").InnerText,
-                                            node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""),
-                   "https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
-                }
-                finally
-                {
-                    i++;
-                    productList.Add(product);
-                    JDproductList.Add(product);
-                }
+                        product = new Item("京东",
+                                                node.SelectSingleNode("./div/div[3]/a").InnerText.Trim(),
+                                                node.SelectSingleNode("./div/div[2]/strong/i").InnerText,
+                                                node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""),
+                       "https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
+                    }
+                    catch (NullReferenceException)
+                    {
+                        titleList.Add(node.SelectSingleNode("./div/div[4]/a").InnerText.Trim());
+                        priceList.Add(node.SelectSingleNode("./div/div[3]/strong/i").InnerText);
+                        picUrList.Add(node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""));
+                        detailUrList.Add("https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
 
+                        product = new Item("京东",
+                                                node.SelectSingleNode("./div/div[4]/a").InnerText.Trim(),
+                                                node.SelectSingleNode("./div/div[3]/strong/i").InnerText,
+                                                node.SelectSingleNode("./div/div[1]/a/img").GetAttributeValue("source-data-lazy-img", ""),
+                       "https://item.jd.com/" + node.GetAttributeValue("data-sku", "") + ".html");
+                    }
+                    finally
+                    {
+                        i++;
+                        productList.Add(product);
+                        JDproductList.Add(product);
+                    }
+                }
             }
         }
 	
