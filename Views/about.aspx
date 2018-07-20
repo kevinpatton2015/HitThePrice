@@ -40,8 +40,8 @@
                             
 								<div class="highlight-content">
                                     <div class="top separator"></div>
-                                    <h4>"Maecenas sollicitudin, urna sit amet <span class="textcolor">tristique euismod</span>, tellus orci malesuada sapien, ut volutpat ante augue interdum leo. Ut neque <br>massa, lacinia et consectetur ac, <span class="textcolor">sodales ac risus</span>."</h4>
-                                 	<em>John Doe - Developer</em>
+                                    <h4>"Life is <span class="textcolor">short</span>, Don't be <span class="textcolor">evil</span>."</h4>
+                                 	<em>HYF ZYC GJJ - Developer Team</em>
                                     <div class="bottom separator"></div>
                                 </div>  
                             

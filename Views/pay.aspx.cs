@@ -60,7 +60,7 @@ public partial class checkout : System.Web.UI.Page
         model.ProductCode = "FAST_INSTANT_TRADE_PAY";
 
         AlipayTradePagePayRequest payRequest = new AlipayTradePagePayRequest();
-        //payRequest.SetReturnUrl("blank.aspx");
+        //payRequest.SetReturnUrl("http://blank.aspx?PID=" + PID + "order_num=" + order_num);
         payRequest.SetBizModel(model);
         string form = client.pageExecute(payRequest).Body;
         Response.Write("<script> alert('Success');</script>");

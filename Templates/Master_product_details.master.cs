@@ -51,4 +51,18 @@ public partial class Templates_product_details : System.Web.UI.MasterPage
             Response.Redirect("product-list.aspx");
         }
     }
+
+    protected void Logout(object sender, EventArgs e)
+    {
+        Session["logoutFlag"] = "true";
+
+        try
+        {
+            Session["UserId"] = null;
+            Session.Remove("UserId");
+        }
+        catch { }
+
+        Response.Redirect("index.aspx");
+    }
 }

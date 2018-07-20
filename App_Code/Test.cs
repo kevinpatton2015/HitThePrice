@@ -1,6 +1,4 @@
 ﻿using HtmlAgilityPack;
-using NHtmlUnit;
-using NHtmlUnit.Html;
 using System;
 using System.Collections;
 using System.Collections.Generic;

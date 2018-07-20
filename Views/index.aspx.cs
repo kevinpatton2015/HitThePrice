@@ -10,8 +10,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CrawlUtils;
-using IronPython.Hosting;
-using Microsoft.Scripting.Hosting;
 
 public partial class index : System.Web.UI.Page
 {

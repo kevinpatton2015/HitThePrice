@@ -10,11 +10,11 @@
                     
                         	<section class="content">
                             
-                                <div class="breadcrumb"><a href="index.aspx">首页</a> / <%=breadcrumb %> / <%=pagetitle %> </div>
+                                <div class="breadcrumb"><a href="../Views/index.aspx">首页</a> / <%=breadcrumb %> / <%=pagetitle %> </div>
                    				<h1 class="pagetitle"><%=pagetitle %></h1>
                                 
                                 <div class="sortPagiBar">
-                                <form action="index.aspx" class="productsSortForm">
+                                <form action="../Views/index.aspx" class="productsSortForm">
                                     <p class="select">
                                          <label for="selectPrductSort">综合排序</label>
                                         <select class="selectProductSort">
@@ -28,7 +28,7 @@
                                     </p>
                                 </form>
                                 
-                                <form action="index.aspx" class="productsShowForm">
+                                <form action="../Views/index.aspx" class="productsShowForm">
                                     <p class="select">
                                         <label>品牌：</label>
                                         <select>
@@ -49,23 +49,23 @@
 									<% for(int i=pagenum-1;i<pagenum+4-1;i++){ %>
                                 	<div class="product-list-wrapper">
                                         <div class="one_fifth columns product-img">
-                                            <a title="<%=fullname[i] %>" href="product-details.aspx"><img src="<%=product_src[i] %>" alt=""/></a>
+                                            <a title="<%=fullname[i] %>" href="../Views/product-details.aspx"><img src="<%=product_src[i] %>" alt=""/></a>
                                         </div>
                                         <div class="three_fifth columns">
                                         	<div class="status"><span>品牌</span> &nbsp;&nbsp;| &nbsp;&nbsp;<%=brand[i] %></div>
-                                            <h3><a title="<%=fullname[i] %>" href="product-details.aspx"><%=fullname[i] %></a></h3>
+                                            <h3><a title="<%=fullname[i] %>" href="../Views/product-details.aspx"><%=fullname[i] %></a></h3>
                                             <p>淘宝网商城,旗舰品牌入驻,爆款手机,强劲配置,热卖机型,正品行货,性价比超高!网购手机,来「天猫手机馆」让人放心的手机商城.采购批发找电子产品<br />电子产品从原料,生产,加工一系列服务.找阿里巴巴,全球领先采购批发平台.<br />深圳 &nbsp;&nbsp;23993人付款</p>
                                         </div>
                                         <div class="one_fifth columns">
                                             <div class="price-cart-wrapper">
                                                 <div class="price">￥<%=price[i] %></div>
-                                                <form action="index.aspx" class="compare">
+                                                <form action="../Views/index.aspx" class="compare">
                                                 <input type="checkbox" value="12" class="comparator" onclick="checkForComparison(3)"> 
                                                 <label>感兴趣</label>
                                                 </form>
                                                 <div class="but-wrapper">
-                                                	<a href="favorite.aspx" class="cart">加入收藏</a>
-                                                    <a href="product-details.aspx"  class="more-link">查看更多</a>  
+                                                	<a href="../Views/favorite.aspx" class="cart">加入收藏</a>
+                                                    <a href="../Views/product-details.aspx"  class="more-link">查看更多</a>  
                                                 </div>
                                                 <div class="clear"></div>
                                             </div>
@@ -91,12 +91,12 @@
                             <li class="widget-container">
                                 <h2 class="widget-title">商品目录</h2>
                                 <ul>
-                                    <li><a href="product-phone.aspx">手机数码 (8)</a></li>
-                                    <li><a href="product-laptop.aspx">电脑、配件 (4)</a></li>
-                                    <li><a href="product-camera.aspx">摄影、摄像 (4)</a></li>
-                                    <li><a href="product-appliance.aspx">家用电器 (4)</a>
+                                    <li><a href="../Views/product-phone.aspx">手机数码 (8)</a></li>
+                                    <li><a href="../Views/product-laptop.aspx">电脑、配件 (4)</a></li>
+                                    <li><a href="../Views/product-camera.aspx">摄影、摄像 (4)</a></li>
+                                    <li><a href="../Views/product-appliance.aspx">家用电器 (4)</a>
                                         <ul>
-                                            <li><a href="product-list-airconditioner.aspx">空调 (4)</a></li>
+                                            <li><a href="../Views/product-list-airconditioner.aspx">空调 (4)</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -106,12 +106,12 @@
                                 <ul class="sp-widget">
                                     <li>
                                         <img src="../images/content/products/p-19.jpg" alt="" />
-                                        <h3><a href="product-camera.aspx">照相机数码 高清 旅游 迷你卡片机Canon/佳能 PowerShot SX730 HS</a></h3>
+                                        <h3><a href="../Views/product-camera.aspx">照相机数码 高清 旅游 迷你卡片机Canon/佳能 PowerShot SX730 HS</a></h3>
 										<div class="price">￥2279.00</div>
                                     </li>
                                     <li>
                                         <img src="../images/content/products/p-17.jpg" alt="" />
-                                        <h3><a href="product-camera.aspx">Sony/索尼 DSC-H400 佳能 入门小单反 长焦照相机 高清 数码 旅游</a></h3>
+                                        <h3><a href="../Views/product-camera.aspx">Sony/索尼 DSC-H400 佳能 入门小单反 长焦照相机 高清 数码 旅游</a></h3>
                                         <div class="price">￥1699.00</div>
                                     </li>
                                 </ul>

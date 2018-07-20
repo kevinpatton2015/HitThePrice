@@ -23,6 +23,10 @@ public partial class product_list : System.Web.UI.Page
     public ArrayList locList;
     public List<Item> itemList;
     public List<Item> sortedList;
+    
+    public int page = 1;
+    public string currentPage = "1";
+    
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Session["UserId"] != null)
@@ -48,6 +52,11 @@ public partial class product_list : System.Web.UI.Page
             Session["locList"] = spider.get_locList();
             Response.Redirect("product-list.aspx");
         }
+		if(HttpContext.Current.Request.QueryString["page"]!=null)
+		{
+			page = int.Parse(HttpContext.Current.Request.QueryString["page"]);	
+			currentPage = page.ToString();
+		}
         try
         {
             keyword = Session["keyword"].ToString();
@@ -64,40 +73,29 @@ public partial class product_list : System.Web.UI.Page
            
             sortedList = new Sort().BubbleSort(itemList);
 
-            string tag = "华硕电脑,华硕笔记本,宏基笔记本,苹果笔记本,华硕显卡,华硕FX50J";
-            Recommend reco = new Recommend(tag);
-            string recoKeyword = reco.generateKeyword();
-            Crawl recoSpider = new Crawl(recoKeyword, "utf8");
-            recoSpider.TBcrawl();
-            recoSpider.JDcrawl();
-
-            recommendtitle1.InnerText = titleList[6].ToString();
-            recommendtitle2.InnerText = titleList[9].ToString();
-
-            recommendtitle1.InnerText = recoSpider.get_titleList().ToArray()[0].ToString();
-            recommendtitle2.InnerText = recoSpider.get_titleList().ToArray()[1].ToString();
-
-            recommendprice1.InnerText = priceList[6].ToString();
-            recommendprice2.InnerText = priceList[9].ToString();
-
-            recommendprice1.InnerText = recoSpider.get_priceList().ToArray()[0].ToString();
-            recommendprice2.InnerText = recoSpider.get_priceList().ToArray()[1].ToString();
-
-            recommendimg1.Src = picUrList[6].ToString();
-            recommendimg2.Src = picUrList[9].ToString();
-
-            recommendimg1.Src = recoSpider.get_picUrList().ToArray()[0].ToString();
-            recommendimg2.Src = recoSpider.get_picUrList().ToArray()[1].ToString();
+            //string tag = "华硕电脑,华硕笔记本,宏基笔记本,苹果笔记本,华硕显卡,华硕FX50J";
+            string tag = "苹果电脑,神舟笔记本,西门子冰箱,三星笔记本,英伟达GPU";
+            //string tag = "苹果电脑";
+            if (userId != null)
+            {
+                Recommend reco = new Recommend(userId, tag);
+                string recoKeyword = reco.generateKeyword();
+                Crawl recoSpider = new Crawl(recoKeyword, "utf8");
+                recoSpider.TBcrawl();
+                recoSpider.JDcrawl();
+            }
         }
         catch(Exception)
         {
-            string tag = "华硕电脑,华硕笔记本,宏基笔记本,苹果笔记本,华硕显卡,华硕FX50J";
-            Recommend reco = new Recommend(tag);
-           // reco.User_Item_Reco(Session["UserId"].ToString());
+            if (userId != null)
+            {
+                string tag = "华硕电脑,华硕笔记本,宏基笔记本,苹果笔记本,华硕显卡,华硕FX50J";
+                Recommend reco = new Recommend(userId, tag);
+            }
+            // reco.User_Item_Reco(Session["UserId"].ToString());
             //ScriptEngine engine = Python.CreateEngine();
             //ScriptScope scope = engine.CreateScope();
             //scope.SetVariable("user_id", Session["user_id"].ToString());
-            //int usertype = 1;
             //scope.SetVariable("user_type", usertype);
             //ScriptSource script = engine.CreateScriptSourceFromFile(@"../App_Code/RecoEngine.py");
             //var result = script.Execute(scope);

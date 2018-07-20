@@ -27,12 +27,12 @@ public class Recommend
 {
     private static readonly int length = 1024;
 
-    private static readonly string brandpath = "../../brand.txt";
-    private static readonly string itempath = "../../item.xml";
-    private static readonly string selfitempath = "../../selfitem.txt";
+    private static readonly string brandpath = AppDomain.CurrentDomain.BaseDirectory + "App_Code/brand.txt";
+    private static readonly string itempath = AppDomain.CurrentDomain.BaseDirectory + "App_Code/item.xml";
+    private static readonly string selfitempath = AppDomain.CurrentDomain.BaseDirectory + "App_Code/selfitem.txt";
 
-    private static readonly string keywordlistpath = "../../keywordlist.txt";
-    private static readonly string keywordcountpath = "../../keywordcount.txt";
+    private static readonly string keywordlistpath = AppDomain.CurrentDomain.BaseDirectory + "App_Code/keywordlist.txt";
+    private static readonly string keywordcountpath = AppDomain.CurrentDomain.BaseDirectory + "App_Code/keywordcount.txt";
 
     private readonly string userID;
     private static readonly int deepUserThreshold = 100;
