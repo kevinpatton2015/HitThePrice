@@ -1,4 +1,6 @@
 ﻿using HtmlAgilityPack;
+using NHtmlUnit;
+using NHtmlUnit.Html;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,7 +18,21 @@ namespace CrawlUtils
         {
             //recommendCrawlTest();
             //recommendSelfTest();
-            recommend4NewTest();
+            //recommend4NewTest();
+            
+            DateTime beforDT = System.DateTime.Now;
+
+            Crawl spider = new Crawl("电脑", "utf8");
+            spider.TBcrawl(1);// 爬取淘宝
+            spider.JDcrawl(1);// 爬取京东
+            List<Item> x = spider.get_productList();
+            List<Item> y = new Sort().BubbleSort(x);
+            foreach (Item i in y) { Console.WriteLine(i.title+" "+i.detailUrl); }
+
+            DateTime afterDT = System.DateTime.Now;
+            TimeSpan ts = afterDT.Subtract(beforDT);
+            Console.WriteLine("DateTime总共花费{0}ms.", ts.TotalMilliseconds);
+            
         }
 
         /* 爬虫全站点测试 */
@@ -24,8 +40,8 @@ namespace CrawlUtils
         {
             Crawl spider = new Crawl("电脑", "utf8");
 
-            spider.TBcrawl();// 爬取淘宝
-            spider.JDcrawl();// 爬取京东
+            spider.TBcrawl(1);// 爬取淘宝
+            spider.JDcrawl(1);// 爬取京东
 
             List<Item> all = spider.get_productList();// 获取所有商品列表
 
@@ -45,7 +61,7 @@ namespace CrawlUtils
         {
             Crawl spider = new Crawl("电脑", "utf8");
 
-            spider.TBcrawl();// 爬取淘宝
+            spider.TBcrawl(1);// 爬取淘宝
 
             List<Item> TB = spider.get_TBproductList();// 获取淘宝商品列表
 
@@ -65,7 +81,7 @@ namespace CrawlUtils
         {
             Crawl spider = new Crawl("电脑", "utf8");
 
-            spider.JDcrawl();// 爬取京东
+            spider.JDcrawl(1);// 爬取京东
 
             List<Item> JD = spider.get_JDproductList();// 获取京东商品列表
 
@@ -93,8 +109,8 @@ namespace CrawlUtils
             string posbwd = recotest.generateKeyword();
             Console.WriteLine("recommend sys keyword:"+posbwd);
             Crawl recospider = new Crawl(posbwd, "utf8");
-            recospider.TBcrawl();
-            recospider.JDcrawl();
+            recospider.TBcrawl(1);
+            recospider.JDcrawl(1);
             List<Item> all = recospider.get_productList();
             foreach (Item i in all)
             {
@@ -131,8 +147,8 @@ namespace CrawlUtils
             {
                 string posbwd = recotest[ind].generateKeyword();
                 Crawl recospider = new Crawl(posbwd, "utf8");
-                recospider.TBcrawl();
-                recospider.JDcrawl();
+                recospider.TBcrawl(1);
+                recospider.JDcrawl(1);
                 List<Item> all = recospider.get_productList();
                 foreach (Item i in all)
                 {

@@ -60,7 +60,7 @@ namespace CrawlUtils
         { return locList; }
 
         /* 获取淘宝商品品名、价格、图片、超链接、地区 */
-        public void TBcrawl()
+        public void TBcrawl(int ppage)
         {
             List<string> Title = new List<string>();
             List<string> Price = new List<string>();
@@ -78,7 +78,7 @@ namespace CrawlUtils
             Regex detailUrlMatch = new Regex(detailUrl);
             Regex locMatch = new Regex(loc);
 
-            for (int page = 1; page <= 5; page++)
+            for (int page = ppage+1; page <= ppage+3; page++)
             {
                 string url = String.Format("https://s.taobao.com/search?q={0}&ie={1}&s={2}", keyword, ie, page.ToString());
                 string TBhtml = GetHtml(url);
@@ -116,9 +116,9 @@ namespace CrawlUtils
         }
 
         /* 获取京东商品品名、价格、图片、超链接 */
-        public void JDcrawl()
+        public void JDcrawl(int ppage)
         {
-            for (int page = 1; page <= 15; page += 2)
+            for (int page = ppage+1; page <= ppage+3; page++)
             {
                 string url = String.Format("https://search.jd.com/Search?keyword={0}&enc={1}&page={2}", keyword, ie, page);
 
