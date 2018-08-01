@@ -71,7 +71,7 @@ public partial class re : System.Web.UI.Page
                 if (this.TextBox2.Text.Trim() == encrypt(read["txtPwd"].ToString().Trim(),8))
                 {
                     Response.Write("<script language='javascript'>alert('登录成功');</script>");
-                    Session["UserId"] = this.TextBox1.Text.Trim();
+                    Session["txtUserId"] = this.TextBox1.Text.Trim();
                     if (IsPostBack)
                     {
                         if (this.TextBox1.Text.Trim()=="Administrator")
